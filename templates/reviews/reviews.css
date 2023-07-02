@@ -1,0 +1,2757 @@
+:root {
+    --ColorPrincipal:#232526;
+    --ColorNav:#590306;
+    --ColorBlanco: #ffffff;
+  --Fuenteprincipal: 'Work Sans', sans-serif;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+  }
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%
+  }
+  body {
+    min-height: 100%;
+    font-family: var(--Fuenteprincipal);
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .formulario-1 {
+    display: inline-flex;
+    gap: 24rem;
+ }
+ 
+ .btn-contacto{
+   margin-left: 10%;
+ }
+ #botonValidar {
+  padding: 0.2rem;
+ font-size: 1.4rem;
+ font-family: var(--Fuenteprincipal);
+ background-color: black;
+ color: var(--ColorBlanco);
+ cursor: pointer;
+}
+
+
+
+  .contenedor-grid > * {
+  
+    padding: 1rem;
+    border:solid
+  }
+  .contenedor-grid{
+    display: grid;
+  
+  grid-template-areas: 
+  "header"
+  "navbar"
+  "main"
+  "footer";
+  }
+  .header {
+    grid-area: header;
+    background-color: #590306;
+  }
+  .navbar {
+    grid-area: navbar;
+   background-color: var(--ColorNav);
+  }
+  .main {
+    grid-area: main;
+    background-color: var(--ColorPrincipal)
+  }
+  .footer {
+    grid-area: footer;
+  background-color: var(--Fuenteprincipal);
+  
+  }
+  .Footer-h3 {
+  color: aqua;
+  text-align: center;
+  }
+  
+  
+  @media (min-width: 1224px) {    
+    .container-1 { /* EDITAR */
+      border: solid;
+      height: 54.3rem;
+      width: 70rem;
+      border-radius: 12%;
+      margin-top: 1rem;
+      background-color: #160a3b;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+  }
+    
+    .lista-albums{
+      margin-top: 6.5rem;
+      margin-left: 4.5rem;
+      margin-bottom: 4rem;
+    }
+    
+    
+    .nombre-album{
+      color:white;
+      font-size: 2rem;
+      margin-left: 1.5rem;
+    }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+      .atributo-puntuacion{
+        color:white;
+        margin-top:10rem;
+        margin-left: 6rem;
+        font-size: 3rem;
+      }
+
+      textarea{
+        margin-left: 6.2rem;
+      }
+    
+      .select-estrellas{
+        margin-left: 41rem;
+        font-size: 4rem;
+        margin-top: -4.3rem;
+      }
+      .select-estrellas select{
+        font-size: 2.3rem;
+      }  
+      
+      #sub-title {
+          margin-left: 11.8rem;
+          margin-top: 1.9rem;
+          margin-bottom: -3.6rem;
+          font-size: 3rem;
+          color: var(--ColorBlanco);
+        }
+        #sub-title-listas {
+          margin-left: 9rem;
+          margin-top: 1.9rem;
+          margin-bottom: -0rem;
+          font-size: 3rem;
+          color: var(--ColorBlanco);
+        }
+        .lista-albums{
+          margin-top: -0.2rem;
+          margin-left: 9rem;
+          margin-bottom: 0rem;
+        }
+        .opcion-album{
+          margin-top: 2rem;
+          margin-bottom: 0rem;
+        }
+        .nombre-album{
+          color:white;
+          font-size: 2rem;
+          margin-left: 1.5rem;
+        }
+        #Album { /*ES EL CHECKBOX */
+          margin-left: 4.3rem;
+          margin-top: 0rem;
+          width:16px;
+          height:16px;
+        }
+    
+    
+    .guardado-albums{
+      margin-left: 30rem;
+      margin-bottom: 2rem;
+      margin-top: 5rem;
+    }
+    .cerrar-albums{
+      margin-left: 30rem;
+    }
+    
+      #guardar-detalle-album{
+      width: 10rem;
+      height: 3.3rem;
+      font-size: 1.5rem;
+      background-color:#590306;
+      color:white;
+      font-family: var(--Fuenteprincipal);
+    }
+    #cerrar-detalle-album{
+      width: 10rem;
+      height: 3.3rem;
+      font-size: 1.5rem;
+      background-color: grey;
+      color:black;
+      font-weight: bold;
+      font-family: var(--Fuenteprincipal);
+    }
+    
+
+    
+    .nombre_usuario{
+      color:rgb(185, 185, 0);
+      font-size: 2rem;
+      margin-top: 0.6rem;
+    }
+  
+    
+    .boton-puntuacion-album{
+      margin-top: 5rem;
+      margin-left: 18.4rem;
+    }
+    .boton-agregar-lista{
+      margin-top: 2rem;
+      margin-left: 18.4rem;
+    }
+    .boton-puntuar{
+      background-color:#590306;
+      width: 21rem;
+      height: 3rem;
+      border-color: white;
+      border-radius: 0.7rem;
+      border-style: solid;
+      font-size: 1.8rem;
+    }
+    
+    .datos-album{
+      color:white;
+      font-size: 2.7rem;
+      margin-left: 42rem;
+      margin-top: -40rem;
+    }
+    .caracteristica{
+      margin-top: 20rem;
+    }
+    
+
+
+
+
+    .review{
+      margin-bottom: 5rem;
+      margin-left: 5.2rem;
+      margin-right: 6.5rem;
+      border-style: solid;
+      border-color: yellow;
+      padding-bottom: 9rem;
+    }
+    .datos-review{
+      color:white;
+      margin-left: 35rem;
+      margin-top: -20rem;
+    }
+    .artista-album{
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    .datos-album-review{
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    .datos-album-puntuacion{
+      font-size: 2rem;
+    }
+    .foto-album{
+      width: 30rem;
+      height: 20rem;
+      margin-left: 2rem;
+      margin-top: 2rem;
+      
+    }
+    .titulo_album{
+      color:white;
+      font-size: 5rem;
+      margin-left: 5rem;
+      margin-bottom: 5rem;
+    }
+
+
+
+
+    
+    
+    
+    .contenedor-grid {
+        grid-template-columns: 4rem 3rem 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header header header"
+        "navbar navbar navbar"
+        "main   main   main"
+        "footer footer footer" 
+    }     
+    .contenedor-main {
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;                  
+      }
+      .imagen-1 {
+        border: solid;
+        border-color:crimson;
+        height: 25.4rem;
+        width: 40rem;
+        margin-left: 2.5rem;
+        
+      }
+      
+      .imagen-2 {
+        height: 25.4rem;
+        width: 40rem;
+        border: solid;
+        margin-left: 2.5rem;
+        margin-top: 2.3rem;
+      
+      }
+      .imagen-3 {
+        border: solid;
+        height: 25.5rem;
+        width: 35rem;
+        margin-left: 2rem;
+        margin-top: 4rem;
+      }
+      
+      .imagen-4 {
+        border: solid;
+        border-color: gray;
+        height: 25.4rem;
+        width: 40rem;
+        margin-left: 2.5rem;
+        margin-top: 1rem;
+      }
+  
+      .caja1 {
+        width: 40rem;
+          }
+          .caja2 {
+         width: 40rem;
+         height: 2rem;
+         margin-top: 2rem;
+          
+          }
+          .caja3 {
+        width: 40rem;
+        margin-top: 2.4rem;
+       
+          }
+          .caja4{
+        width: 40rem;
+        margin-top: 5rem;
+       
+          }
+    
+          /** Arreglos header **/
+          .header {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            flex-direction: row-reverse;
+            
+            padding: 2rem;
+            background-color: var(--ColorNav);
+          }
+          
+          
+          
+          .NAV-LIST{
+          display: flex;
+          list-style-type: none;
+          gap: 1rem;
+          
+          }
+          .NAV-LIST a {
+            text-decoration: none;
+            color: var(--ColorBlanco);
+            font-family: var(--Fuenteprincipal);
+            font-size: 2rem;
+          }
+          .NAV-LIST a:hover{
+            transition: 0.3s ease;
+            color: aqua;
+          }
+          .hamburguer {
+            display: none;
+            cursor: pointer
+          }
+          .bar {
+          display: block;
+          width: 20px;
+          height: 2px;
+          margin-left: auto;
+          margin-top: 3px;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          background-color: var(--ColorBlanco);
+          }
+        
+  
+  .inputs-nav {
+  background-color: var(--ColorNav);
+  }
+  
+  .input-contenedor-tipo-busqueda {
+    border: solid;
+    width: auto;
+   border-color:rgb(255, 255, 255);
+   background-color: green;
+  }
+  
+  .barra_boton_nueva_lista .btn { 
+    font-size: 20px;
+    color: white;
+    background-color: #590306;
+    border-color: white;
+    border-radius: 5px;
+    padding-bottom: 2.5rem;
+  }
+  
+  .input-contenedor-2 {
+    border: solid;
+    width: auto;
+   border-color:rgb(255, 255, 255);
+   border-radius: 1rem;
+  }
+  .formulario__campo-2 {
+  margin: auto;
+  font-size: 1.5rem;
+  font-family: var(--Fuenteprincipal);
+  background-color: black;
+  color: white;
+  width: 20rem;
+  font-size: 1.7rem;
+  font-family: var(--Fuenteprincipal);
+  } 
+
+
+  /**H2 - H3**/
+  
+  #H2 {
+    color: var(--ColorBlanco);
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  #H2-dos {
+    color: var(--ColorBlanco);
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  #h3-1 {
+  color: var(--ColorBlanco);
+  margin-left: 2.4rem;
+  }
+  #h3-2{
+  color: var(--ColorBlanco);
+  margin-left: 2.4rem
+  }
+  #h3-3{
+  color: var(--ColorBlanco);
+  margin-left: 2.4rem;
+  }
+  #h3-4{
+    color: var(--ColorBlanco);
+   text-align: center;
+  }
+  .footer {
+    background-color: var(--ColorPrincipal);
+  }
+  /**H2 - H3**/
+  
+  /*Imagenes-icono*/
+  .imagen-icono {
+    width: 2.4rem;
+    margin-top: 1px;
+  }
+  .imagen-icono-2 {
+    width: 2.6rem;
+    margin-top: 1.2px;
+  
+  }
+  .imagen-icono-3 {
+    width: 2.5rem;
+    margin-top: 1px;
+  }
+  .imagen-icono-4 {
+    width: 2.5rem;
+    margin-top: 1px;
+  }
+  .imagen-icono-5 {
+    width: 2.5rem;
+    margin-top: 1px;
+  }
+  .imagen-icono-6 {
+    width: 2.9rem;
+    margin-top: 1px;
+  }
+  .imagen-icono-7 {
+    width: 2.5rem;
+    margin-top: 1px;
+  }
+  .imagen-icono-logo {
+    width: 3.4rem;
+    height: 3rem;
+  }
+ 
+
+button {
+ background-color: black;
+ color: var(--ColorBlanco);
+width: 11rem;
+height: 2.3rem;
+transition: .2s;
+cursor: pointer;
+}
+button span {
+  font-size: 1.7rem;
+  transition: .2s;
+}
+button:active {
+  transform: scale(0.9);
+}
+
+}
+  
+@media only screen and (min-width: 1080px) and (max-width:1223px) {
+  .barra_boton_nueva_lista .btn { 
+    font-size: 20px;
+    color: white;
+    background-color: #590306;
+    border-color: white;
+    border-radius: 5px;
+    padding-bottom: 0.2rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+  
+  .review{
+    margin-bottom: 5rem;
+    margin-left: 5.2rem;
+    margin-right: 6.5rem;
+    border-style: solid;
+    border-color: yellow;
+    padding-bottom: 7.5rem;
+  }
+  .datos-review{
+    color:white;
+    margin-left: 35rem;
+    margin-top: -20rem;
+  }
+  .artista-album{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .datos-album-review{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .datos-album-puntuacion{
+    font-size: 2rem;
+  }
+  .foto-album{
+    width: 30rem;
+    height: 20rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .titulo_album{
+    color:white;
+    font-size: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+  }
+
+
+  
+  
+  
+  .lista-albums{
+    margin-top: -0.2rem;
+    margin-left: 9rem;
+    margin-bottom: 0rem;
+  }
+  #sub-title-listas {
+    margin-left: 9rem;
+    margin-top: 1.9rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: var(--ColorBlanco);
+  }
+  .opcion-album{
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+  .nombre-album{
+    color:white;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+  }
+  #Album { /*ES EL CHECKBOX */
+    margin-left: 4.3rem;
+    margin-top: 0rem;
+    width:16px;
+    height:16px;
+  }
+  
+  #modal{ 
+    margin: auto;
+    border: none;
+  background: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    }
+    #modalListas{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+    .atributo-puntuacion{
+      color:white;
+      margin-top:10rem;
+      margin-left: 6rem;
+      font-size: 3rem;
+    }
+    textarea{
+      margin-left: 6.2rem;
+    }
+  
+    .select-estrellas{
+      margin-left: 41rem;
+      font-size: 4rem;
+      margin-top: -4.3rem;
+    }
+    .select-estrellas select{
+      font-size: 2.3rem;
+    }  
+    
+    #sub-title {
+        margin-left: 11.8rem;
+        margin-top: 1.9rem;
+        margin-bottom: -3.6rem;
+        font-size: 3rem;
+        color: var(--ColorBlanco);
+      }
+      
+  
+  
+  .guardado-albums{
+    margin-left: 30rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+  }
+  .cerrar-albums{
+    margin-left: 30rem;
+  }
+  
+    #guardar-detalle-album{
+    width: 10rem;
+    height: 3.3rem;
+    font-size: 1.5rem;
+    background-color:#590306;
+    color:white;
+    font-family: var(--Fuenteprincipal);
+  }
+  #cerrar-detalle-album{
+    width: 10rem;
+    height: 3.3rem;
+    font-size: 1.5rem;
+    background-color: grey;
+    color:black;
+    font-weight: bold;
+    font-family: var(--Fuenteprincipal);
+  }
+  
+  
+  .container-1 { /* EDITAR */
+    border: solid;
+    height: 54.3rem;
+    width: 70rem;
+    border-radius: 12%;
+    margin-top: 1rem;
+    background-color: #160a3b;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+}
+  #modal{ 
+    margin: auto;
+    border: none;
+  background: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    }
+    #modalListas{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+  
+  .NAV-LIST a {
+    font-size: 2rem;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row-reverse;
+    
+    padding: 2rem;
+    background-color: var(--ColorNav);
+  }
+
+  
+  .link_album{
+    color:white;
+    margin-top: 1rem; 
+  }
+  .datos-album{
+    color:white;
+    font-size: 2.7rem;
+    margin-left: 62rem;
+    margin-top: -35.8rem;
+  }
+  .listado-canciones{
+    color:white;
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+  .caracteristica{
+    margin-top: 1rem;
+  }
+  
+  .portada-album{
+    width: 45rem;
+    height: 35rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
+  }
+  
+  .titulo_album{
+    color:white;
+    font-size: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+  }
+  .banda_album{
+    color:white;
+    font-size: 2.3rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+.formulario__campo-2 {
+margin: auto;
+font-size: 1.5rem;
+font-family: var(--Fuenteprincipal);
+background-color: black;
+color: white;
+width: 20rem;
+font-size: 1.7rem;
+font-family: var(--Fuenteprincipal);
+} 
+.formulario__campo-1{
+      background-color: black;
+      color: white;
+      width: 24.4rem;
+      font-size: 1.7rem;
+      font-family: var(--Fuenteprincipal);
+      font-weight: bold;        
+    }
+.input-contenedor-1 {
+    border: solid;
+    border-radius: 0.7rem;
+    width: 25rem;
+    color: white;
+    }
+.formulario-1{
+      background-color: black;
+    }
+.input-contenedor-2 {
+  border: solid;
+  width: auto;
+ border-color:rgb(255, 255, 255);
+ border-radius: 1rem;
+}
+}
+  
+  @media only screen and (min-width: 800px) and (max-width:1080px) {       
+    .review{
+      margin-bottom: 5rem;
+      margin-left: 5.2rem;
+      margin-right: 6.5rem;
+      border-style: solid;
+      border-color: yellow;
+      padding-bottom: 7.5rem;
+    }
+    .datos-review{
+      color:white;
+      margin-left: 35rem;
+      margin-top: -20rem;
+    }
+    .artista-album{
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    .datos-album-review{
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    .datos-album-puntuacion{
+      font-size: 2rem;
+    }
+    .foto-album{
+      width: 30rem;
+      height: 20rem;
+      margin-left: 2rem;
+      margin-top: 2rem;
+    }
+    .titulo_album{
+      color:white;
+      font-size: 5rem;
+      margin-left: 5rem;
+      margin-bottom: 5rem;
+    }
+    
+    .lista-albums{
+      margin-top: -0.2rem;
+      margin-left: 9rem;
+      margin-bottom: 0rem;
+    }
+    .opcion-album{
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+    .nombre-album{
+      color:white;
+      font-size: 2rem;
+      margin-left: 1.5rem;
+    }
+    #Album { /*ES EL CHECKBOX */
+      margin-left: 4.3rem;
+      margin-top: 0rem;
+      width:16px;
+      height:16px;
+    }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+    
+      .select-estrellas{
+        margin-left: 41rem;
+        font-size: 4rem;
+        margin-top: -4.3rem;
+      }
+      .select-estrellas select{
+        font-size: 2.3rem;
+      }  
+      
+      #sub-title {
+          margin-left: 11.8rem;
+          margin-top: 1.9rem;
+          margin-bottom: -3.6rem;
+          font-size: 3rem;
+          color: var(--ColorBlanco);
+        }
+        #sub-title-listas {
+          margin-left: 9rem;
+          margin-top: 1.9rem;
+          margin-bottom: 3rem;
+          font-size: 3rem;
+          color: var(--ColorBlanco);
+        }
+    
+    
+    .guardado-albums{
+      margin-left: 30rem;
+      margin-bottom: 2rem;
+      margin-top: 5rem;
+    }
+    .cerrar-albums{
+      margin-left: 30rem;
+    }
+    
+      #guardar-detalle-album{
+      width: 10rem;
+      height: 3.3rem;
+      font-size: 1.5rem;
+      background-color:#590306;
+      color:white;
+      font-family: var(--Fuenteprincipal);
+    }
+    #cerrar-detalle-album{
+      width: 10rem;
+      height: 3.3rem;
+      font-size: 1.5rem;
+      background-color: grey;
+      color:black;
+      font-weight: bold;
+      font-family: var(--Fuenteprincipal);
+    }
+    
+    .container-1 { /* EDITAR */
+      border: solid;
+      height: 54.3rem;
+      width: 70rem;
+      border-radius: 12%;
+      margin-top: 1rem;
+      background-color: #160a3b;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+  }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+    
+    .input-contenedor-2 {
+      border: solid;
+      width: auto;
+     border-color:rgb(255, 255, 255);
+     border-radius: 1rem;
+    }
+    
+    .nombre_usuario{
+      color:rgb(185, 185, 0);
+      font-size: 2rem;
+      margin-top: 0.6rem;
+    }
+    .datos-album{
+      color:white;
+      font-size: 2.7rem;
+      margin-left: 5rem;
+      margin-top: 0rem;
+    }
+    .listado-canciones{
+      color:white;
+      margin-left: 5rem;
+      margin-top: 1rem;
+    }
+    .caracteristica{
+      margin-top: 1rem;
+    }
+    
+    .portada-album{
+      width: 45rem;
+      height: 35rem;
+      margin-left: 5rem;
+      margin-top: 5rem;
+    }
+    
+    .titulo_album{
+      color:white;
+      font-size: 5rem;
+      margin-left: 5rem;
+    }
+    .banda_album{
+      color:white;
+      font-size: 2.3rem;
+      margin-left: 5rem;
+      margin-top: 1rem;
+    }
+    
+    .contenedor-main {
+      display: grid;
+      gap: 1rem;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;                  
+    }
+  
+    .imagen-3 {
+      border: solid;
+      height: 25.4rem;
+      width: 40rem;
+      margin-left: 2.5rem;
+      margin-top: 4rem;
+    }
+    
+    .imagen-4 {
+      border: solid;
+      border-color: gray;
+      height: 25.4rem;
+      width: 40rem;
+      margin-left: 2.6rem;
+      margin-top: 6.3rem;
+    }
+  #H2-dos {
+  margin-top: rem;
+  color: var(--ColorBlanco);
+  text-align: center;
+  }
+  #h3-4 {
+  color: var(--ColorBlanco);
+  margin: auto;
+  }
+  .NAV-LIST a {
+    font-size: 2rem;
+  }
+  button {
+    background-color: black;
+    color: var(--ColorBlanco);
+   width: 11rem;
+   height: 2.3rem;
+   transition: .2s;
+   cursor: pointer;
+   }
+   button span {
+     font-size: 1.7rem;
+     transition: .2s;
+   }
+   button:active {
+     transform: scale(0.9);
+   }
+
+   .input-contenedor-2 {
+    border: solid;
+    width: auto;
+   border-color:rgb(255, 255, 255);
+  }
+  .barra_boton_nueva_lista .btn { 
+    font-size: 20px;
+    color: white;
+    background-color: #590306;
+    border-color: white;
+    border-radius: 5px;
+    padding-bottom: 2.5rem;
+  }
+.formulario__campo-2 {
+  margin: auto;
+  font-size: 1.5rem;
+  font-family: var(--Fuenteprincipal);
+  background-color: black;
+  color: white;
+  width: 20rem;
+  font-size: 1.7rem;
+  font-family: var(--Fuenteprincipal);
+  } 
+.formulario__campo-1{
+        background-color: black;
+        color: white;
+        width: 24.4rem;
+        font-size: 1.7rem;
+        font-family: var(--Fuenteprincipal);
+        font-weight: bold;        
+      }
+.input-contenedor-1 {
+      border: solid;
+      border-radius: 0.7rem;
+      width: 25rem;
+      color: white;
+      }
+.formulario-1{
+        background-color: black;
+      }
+
+  }
+  
+
+/*media queries navbar*/
+
+
+
+@media only screen and (min-width: 800px) and (max-width:1223px) {
+  .NAV-LIST a {
+    font-size: 2rem;
+  }
+  }
+  @media only screen and (min-width: 800px) and (max-width:831px) {
+    .NAV-LIST a {
+        font-size: 1.8rem 
+   }
+  }
+
+  @media only screen and (min-width: 832px) and (max-width:835px) {
+    .NAV-LIST a {
+        font-size: 1.8rem 
+   }
+  }
+  @media only screen and (min-width: 800px) and (max-width:808px) {
+    .NAV-LIST a {
+        font-size: 1.7rem 
+   }
+  }
+  
+  
+  @media only screen and (min-width: 730px) and (max-width:746px) {
+    .NAV-LIST a {
+        font-size: 1.6rem; 
+   }
+  }
+  @media only screen and (min-width: 700px) and (max-width:729px) {
+    .NAV-LIST a {
+        font-size: 1.5rem; 
+   }
+  }
+  
+  @media only screen and (min-width: 747px) and (max-width:799px) {
+    .NAV-LIST a {
+        font-size: 1.7rem 
+   }
+  } 
+/*media queries navbar*/
+
+
+
+
+  @media only screen and (min-width: 800px) and (max-width:831px) {
+    .lista-albums{
+      margin-top: -0.2rem;
+      margin-left: 9rem;
+      margin-bottom: 0rem;
+    }
+    .opcion-album{
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+    .nombre-album{
+      color:white;
+      font-size: 2rem;
+      margin-left: 1.5rem;
+    }
+    #Album { /*ES EL CHECKBOX */
+      margin-left: 4.3rem;
+      margin-top: 0rem;
+      width:16px;
+      height:16px;
+    }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+      .atributo-puntuacion{
+        color:white;
+        margin-top:10rem;
+        margin-left: 6rem;
+        font-size: 3rem;
+      }  
+      
+      #sub-title {
+          margin-left: 11.8rem;
+          margin-top: 1.9rem;
+          margin-bottom: -3.6rem;
+          font-size: 3rem;
+          color: var(--ColorBlanco);
+        }
+        #sub-title-listas {
+          margin-left: 9rem;
+          margin-top: 1.9rem;
+          margin-bottom: 2rem;
+          font-size: 3rem;
+          color: var(--ColorBlanco);
+        }
+    
+    
+    .guardado-albums{
+      margin-left: 30rem;
+      margin-bottom: 2rem;
+      margin-top: 5rem;
+    }
+    .cerrar-albums{
+      margin-left: 30rem;
+    }
+    
+      #guardar-detalle-album{
+      width: 10rem;
+      height: 3.3rem;
+      font-size: 1.5rem;
+      background-color:#590306;
+      color:white;
+      font-family: var(--Fuenteprincipal);
+    }
+    #cerrar-detalle-album{
+      width: 10rem;
+      height: 3.3rem;
+      font-size: 1.5rem;
+      background-color: grey;
+      color:black;
+      font-weight: bold;
+      font-family: var(--Fuenteprincipal);
+    }
+    
+    .container-1 { /* EDITAR */
+      border: solid;
+      height: 54.3rem;
+      width: 70rem;
+      border-radius: 12%;
+      margin-top: 1rem;
+      background-color: #160a3b;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+  }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+    
+    /* .NAV-LIST a {
+      font-size: 1.8rem
+    } */
+  }
+@media only screen and (min-width: 0px) and (max-width:799px) {
+  .review{
+    margin-bottom: 5rem;
+    margin-left: 5.2rem;
+    margin-right: 6.5rem;
+    border-style: solid;
+    border-color: yellow;
+    padding-bottom: 2.5rem;
+  }
+  .datos-review{
+    color:white;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .artista-album{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .datos-album-review{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .datos-album-puntuacion{
+    font-size: 1.7rem;
+  }
+  .foto-album{
+    width: 25rem;
+    height: 18rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+  .titulo_album{
+    color:white;
+    font-size: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  #sub-title-listas {
+    margin-left: 9rem;
+    margin-top: 1.9rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: var(--ColorBlanco);
+  }
+  
+  #modal{ 
+    margin: auto;
+    border: none;
+  background: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    }
+    #modalListas{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+  
+    .select-estrellas{
+      margin-left: 41rem;
+      font-size: 4rem;
+      margin-top: -4.3rem;
+    }
+    .select-estrellas select{
+      font-size: 2.3rem;
+    }  
+    
+    #sub-title {
+        margin-left: 11.8rem;
+        margin-top: 1.9rem;
+        margin-bottom: -3.6rem;
+        font-size: 3rem;
+        color: var(--ColorBlanco);
+      }
+      
+  
+  
+  .guardado-albums{
+    margin-left: 30rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+  }
+  .cerrar-albums{
+    margin-left: 30rem;
+  }
+  
+    #guardar-detalle-album{
+    width: 10rem;
+    height: 3.3rem;
+    font-size: 1.5rem;
+    background-color:#590306;
+    color:white;
+    font-family: var(--Fuenteprincipal);
+  }
+  #cerrar-detalle-album{
+    width: 10rem;
+    height: 3.3rem;
+    font-size: 1.5rem;
+    background-color: grey;
+    color:black;
+    font-weight: bold;
+    font-family: var(--Fuenteprincipal);
+  }
+  
+  .container-1 { /* EDITAR */
+    border: solid;
+    height: 54.3rem;
+    width: 70rem;
+    border-radius: 12%;
+    margin-top: 1rem;
+    background-color: #160a3b;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+}
+  
+  #modal{ 
+    margin: auto;
+    border: none;
+  background: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    }
+    #modalListas{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+  
+  .input-contenedor-2 {
+    border: solid;
+    width: auto;
+   border-color:rgb(255, 255, 255);
+   border-radius: 1rem;
+  }
+.formulario__campo-2 {
+  margin: auto;
+  font-size: 1.5rem;
+  font-family: var(--Fuenteprincipal);
+  background-color: black;
+  color: white;
+  width: 20rem;
+  font-size: 1.7rem;
+  font-family: var(--Fuenteprincipal);
+  }
+  
+  .barra_boton_nueva_lista .btn { 
+    font-size: 20px;
+    color: white;
+    background-color: #590306;
+    border-color: white;
+    border-radius: 5px;
+    padding-bottom: 2.5rem;
+  }
+  
+  .input-contenedor-2 {
+    border: solid;
+    width: auto;
+   border-color:rgb(255, 255, 255);
+   border-radius: 1rem;
+  }
+  
+  .nombre_usuario{
+    color:rgb(185, 185, 0);
+    font-size: 2rem;
+    margin-top: 0.6rem;
+  }
+  .boton-puntuar{
+    background-color:#590306;
+    width: 21rem;
+    height: 3rem;
+    border-color: white;
+    border-radius: 0.7rem;
+    border-style: solid;
+    font-size: 1.8rem;
+  }
+  
+  .link_album{
+    color:white;
+    margin-top: 1rem; 
+  }
+  .datos-album{
+    color:white;
+    font-size: 2.7rem;
+    margin-left: 5rem;
+    margin-top: 0rem;
+  }
+  .listado-canciones{
+    color:white;
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+  .caracteristica{
+    margin-top: 1rem;
+  }
+  
+  .portada-album{
+    width: 45rem;
+    height: 35rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
+  }
+  
+  .titulo_album{
+    color:white;
+    font-size: 5rem;
+    margin-left: 5rem;
+  }
+  .banda_album{
+    color:white;
+    font-size: 2.3rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+  
+  .imagen-3 {
+    border: solid;
+    height: 25.4rem;
+    width: 40rem;
+    margin-left: 2.5rem;
+   margin-top: 1.5rem;
+  }
+  
+  .imagen-4 {
+    border: solid;
+    border-color: gray;
+    height: 25.4rem;
+    width: 40rem;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+  }
+}
+
+  @media only screen and (min-width: 700px) and (max-width:799px) {
+    .lista-albums{
+      margin-top: -0.2rem;
+      margin-left: 9rem;
+      margin-bottom: 0rem;
+    }
+    .opcion-album{
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+    .nombre-album{
+      color:white;
+      font-size: 2rem;
+      margin-left: 1.5rem;
+    }
+    #Album { /*ES EL CHECKBOX */
+      margin-left: 4.3rem;
+      margin-top: 0rem;
+      width:16px;
+      height:16px;
+    }
+    
+    .container-1 { /* EDITAR */
+      border: solid;
+      height: 54.3rem;
+      width: 70rem;
+      border-radius: 12%;
+      margin-top: 1rem;
+      background-color: #160a3b;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+  }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+    
+    .NAV-LIST a {
+      font-size: 1.7rem
+    }
+    button {
+      background-color: black;
+      color: var(--ColorBlanco);
+     width: 11rem;
+     height: 2.3rem;
+     transition: .2s;
+     cursor: pointer;
+     }
+     button span {
+       font-size: 1.7rem;
+       transition: .2s;
+     }
+     button:active {
+       transform: scale(0.9);
+     }
+  
+  }
+  
+  @media only screen and (min-width: 701px) and (max-width:748px) {
+    .lista-albums{
+      margin-top: -0.2rem;
+      margin-left: 9rem;
+      margin-bottom: 0rem;
+    }
+    .opcion-album{
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+    .nombre-album{
+      color:white;
+      font-size: 2rem;
+      margin-left: 1.5rem;
+    }
+    #Album { /*ES EL CHECKBOX */
+      margin-left: 4.3rem;
+      margin-top: 0rem;
+      width:16px;
+      height:16px;
+    }
+    
+    .container-1 { /* EDITAR */
+      border: solid;
+      height: 54.3rem;
+      width: 70rem;
+      border-radius: 12%;
+      margin-top: 1rem;
+      background-color: #160a3b;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+  }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+    
+    .NAV-LIST a {
+      font-size: 1.5rem
+    }
+    .input-contenedor-2 {
+      border: solid;
+      width: auto;
+     border-color:rgb(255, 255, 255);
+    }
+ 
+  
+  }
+
+  @media only screen and (min-width: 701px) and (max-width:799px) {
+    .lista-albums{
+      margin-top: -0.2rem;
+      margin-left: 9rem;
+      margin-bottom: 0rem;
+    }
+    .opcion-album{
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+    .nombre-album{
+      color:white;
+      font-size: 2rem;
+      margin-left: 1.5rem;
+    }
+    #Album { /*ES EL CHECKBOX */
+      margin-left: 4.3rem;
+      margin-top: 0rem;
+      width:16px;
+      height:16px;
+    }
+    
+    .container-1 { /* EDITAR */
+      border: solid;
+      height: 54.3rem;
+      width: 70rem;
+      border-radius: 12%;
+      margin-top: 1rem;
+      background-color: #160a3b;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+  }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+
+    .input-contenedor-2 {
+      border: solid;
+      width: auto;
+     border-color:rgb(255, 255, 255);
+    }
+    
+    .formulario__campo-2 {
+      margin: auto;
+      font-size: 1.5rem;
+      font-family: var(--Fuenteprincipal);
+      background-color: black;
+      color: white;
+      width: 15rem;
+      font-size: 1.7rem;
+      font-family: var(--Fuenteprincipal);
+      } 
+  }
+
+  @media only screen and (min-width:600px) and (max-width:700px) {
+    .lista-albums{
+      margin-top: -0.2rem;
+      margin-left: 9rem;
+      margin-bottom: 0rem;
+    }
+    .opcion-album{
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+    .nombre-album{
+      color:white;
+      font-size: 2rem;
+      margin-left: 1.5rem;
+    }
+    #Album { /*ES EL CHECKBOX */
+      margin-left: 4.3rem;
+      margin-top: 0rem;
+      width:16px;
+      height:16px;
+    }
+    
+    .container-1 { /* EDITAR */
+      border: solid;
+      height: 54.3rem;
+      width: 70rem;
+      border-radius: 12%;
+      margin-top: 1rem;
+      background-color: #160a3b;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+  }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+    
+    .input-contenedor-2 {
+      border: solid;
+      width: auto;
+     border-color:rgb(255, 255, 255);
+    }
+    
+    .formulario__campo-2 {
+      margin: auto;
+      font-size: 1.5rem;
+      font-family: var(--Fuenteprincipal);
+      background-color: black;
+      color: white;
+      width: 15rem;
+      font-size: 1.7rem;
+      font-family: var(--Fuenteprincipal);
+      } 
+  }
+
+  @media only screen and (min-width:600px) and (max-width:599px) {
+    .lista-albums{
+      margin-top: -0.2rem;
+      margin-left: 9rem;
+      margin-bottom: 0rem;
+    }
+    .opcion-album{
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+    .nombre-album{
+      color:white;
+      font-size: 2rem;
+      margin-left: 1.5rem;
+    }
+    #Album { /*ES EL CHECKBOX */
+      margin-left: 4.3rem;
+      margin-top: 0rem;
+      width:16px;
+      height:16px;
+    }
+    
+    
+ 
+  }
+
+  @media only screen and (min-width: 542px) and (max-width:699px) {
+    .lista-albums{
+      margin-top: -0.2rem;
+      margin-left: 9rem;
+      margin-bottom: 0rem;
+    }
+    .opcion-album{
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+    .nombre-album{
+      color:white;
+      font-size: 2rem;
+      margin-left: 1.5rem;
+    }
+    #Album { /*ES EL CHECKBOX */
+      margin-left: 4.3rem;
+      margin-top: 0rem;
+      width:16px;
+      height:16px;
+    }
+    
+    .container-1 { /* EDITAR */
+      border: solid;
+      height: 54.3rem;
+      width: 70rem;
+      border-radius: 12%;
+      margin-top: 1rem;
+      background-color: #160a3b;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+  }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+    
+    .input-contenedor-2 {
+      border: solid;
+      width: auto;
+     border-color:rgb(255, 255, 255);
+     border-radius: 1rem;
+    }
+  .formulario__campo-2 {
+    margin: auto;
+    font-size: 1.5rem;
+    font-family: var(--Fuenteprincipal);
+    background-color: black;
+    color: white;
+    width: 20rem;
+    font-size: 1.7rem;
+    font-family: var(--Fuenteprincipal);
+    }
+    
+    button {
+      background-color: black;
+      color: var(--ColorBlanco);
+     width: 11rem;
+     height: 2.3rem;
+     transition: .2s;
+     cursor: pointer;
+     }
+     button span {
+       font-size: 1.7rem;
+       transition: .2s;
+     }
+     button:active {
+       transform: scale(0.9);
+     }
+  
+     .input-contenedor-2 {
+      border: solid;
+      width: auto;
+     border-color:rgb(255, 255, 255);
+    }
+    
+    .formulario__campo-2 {
+      margin: auto;
+      font-size: 1.5rem;
+      font-family: var(--Fuenteprincipal);
+      background-color: black;
+      color: white;
+      width: 15rem;
+      font-size: 1.7rem;
+      font-family: var(--Fuenteprincipal);
+      } 
+    }
+  
+
+  @media only screen and (min-width: 469px) and (max-width:541px) {
+    .lista-albums{
+      margin-top: -0.2rem;
+      margin-left: 9rem;
+      margin-bottom: 0rem;
+    }
+    .opcion-album{
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+    .nombre-album{
+      color:white;
+      font-size: 2rem;
+      margin-left: 1.5rem;
+    }
+    #Album { /*ES EL CHECKBOX */
+      margin-left: 4.3rem;
+      margin-top: 0rem;
+      width:16px;
+      height:16px;
+    }
+    
+    .container-1 { /* EDITAR */
+      border: solid;
+      height: 54.3rem;
+      width: 70rem;
+      border-radius: 12%;
+      margin-top: 1rem;
+      background-color: #160a3b;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+  }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+    
+    .input-contenedor-2 {
+      border: solid;
+      width: auto;
+     border-color:rgb(255, 255, 255);
+     border-radius: 1rem;
+    }
+  .formulario__campo-2 {
+    margin: auto;
+    font-size: 1.5rem;
+    font-family: var(--Fuenteprincipal);
+    background-color: black;
+    color: white;
+    width: 20rem;
+    font-size: 1.7rem;
+    font-family: var(--Fuenteprincipal);
+    }
+
+    button {
+  color: var(--ColorBlanco);
+  background-color: black;
+  transition: .2s;
+  width: 8rem;
+  height: 3rem;
+  cursor: pointer;
+}
+button span {
+  font-size: 1.4rem;
+transition: .2s;
+}
+button:active {
+  transform: scale(0.9);
+}
+  
+.input-contenedor-2 {
+  border: solid;
+  width: 18rem;
+ border-color:rgb(255, 255, 255);
+
+
+}
+.formulario__campo-2 {
+margin: auto;
+font-size: 1.2rem;
+font-family: var(--Fuenteprincipal);
+background-color: black;
+color: white;
+width: 9rem;
+height: 3rem;
+font-size: 1.5rem;
+font-family: var(--Fuenteprincipal);
+}
+
+}
+
+
+@media only screen and (min-width: 407px) and (max-width:468px) {
+  .lista-albums{
+    margin-top: -0.2rem;
+    margin-left: 9rem;
+    margin-bottom: 0rem;
+  }
+  .opcion-album{
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+  .nombre-album{
+    color:white;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+  }
+  #Album { /*ES EL CHECKBOX */
+    margin-left: 4.3rem;
+    margin-top: 0rem;
+    width:16px;
+    height:16px;
+  }
+  
+  .container-1 { /* EDITAR */
+    border: solid;
+    height: 54.3rem;
+    width: 70rem;
+    border-radius: 12%;
+    margin-top: 1rem;
+    background-color: #160a3b;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+}
+  
+  #modal{ 
+    margin: auto;
+    border: none;
+  background: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    }
+    #modalListas{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+  
+  .input-contenedor-2 {
+    border: solid;
+    width: 18rem;
+   border-color:rgb(255, 255, 255);
+  
+  
+  }
+  .formulario__campo-2 {
+  margin: auto;
+  font-size: 1.2rem;
+  font-family: var(--Fuenteprincipal);
+  background-color: black;
+  color: white;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-family: var(--Fuenteprincipal);
+  }
+  button {
+    color: var(--ColorBlanco);
+    background-color: black;
+    transition: .2s;
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+  button span {
+    font-size: 1.4rem;
+  transition: .2s;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+}
+
+
+@media only screen and (min-width: 360px) and (max-width:406px) {
+  
+  .lista-albums{
+    margin-top: -0.2rem;
+    margin-left: 9rem;
+    margin-bottom: 0rem;
+  }
+  .opcion-album{
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+  .nombre-album{
+    color:white;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+  }
+  #Album { /*ES EL CHECKBOX */
+    margin-left: 4.3rem;
+    margin-top: 0rem;
+    width:16px;
+    height:16px;
+  }
+  
+  .container-1 { /* EDITAR */
+    border: solid;
+    height: 54.3rem;
+    width: 70rem;
+    border-radius: 12%;
+    margin-top: 1rem;
+    background-color: #160a3b;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+}
+  
+  #modal{ 
+    margin: auto;
+    border: none;
+  background: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    }
+    #modalListas{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+  
+  .input-contenedor-2 {
+    border: solid;
+    width: 18rem;
+   border-color:rgb(255, 255, 255);
+  
+  
+  }
+  .formulario__campo-2 {
+  margin: auto;
+  font-size: 1.2rem;
+  font-family: var(--Fuenteprincipal);
+  background-color: black;
+  color: white;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-family: var(--Fuenteprincipal);
+  }
+  
+  button {
+    color: var(--ColorBlanco);
+    background-color: black;
+    transition: .2s;
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+  button span {
+    font-size: 1.4rem;
+  transition: .2s;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+}
+
+
+@media only screen and (min-width:0px) and (max-width:364px) {
+  .lista-albums{
+    margin-top: -0.2rem;
+    margin-left: 9rem;
+    margin-bottom: 0rem;
+  }
+  .opcion-album{
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+  .nombre-album{
+    color:white;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+  }
+  #Album { /*ES EL CHECKBOX */
+    margin-left: 4.3rem;
+    margin-top: 0rem;
+    width:16px;
+    height:16px;
+  }
+  
+  .container-1 { /* EDITAR */
+    border: solid;
+    height: 54.3rem;
+    width: 70rem;
+    border-radius: 12%;
+    margin-top: 1rem;
+    background-color: #160a3b;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+}
+  
+  #modal{ 
+    margin: auto;
+    border: none;
+  background: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    }
+    #modalListas{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+  
+  .input-contenedor-2 {
+    border: solid;
+    width: 18rem;
+   border-color:rgb(255, 255, 255);
+  
+  
+  }
+  .formulario__campo-2 {
+  margin: auto;
+  font-size: 1.2rem;
+  font-family: var(--Fuenteprincipal);
+  background-color: black;
+  color: white;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-family: var(--Fuenteprincipal);
+  }
+  
+  button {
+    color: var(--ColorBlanco);
+    background-color: black;
+    transition: .2s;
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+  }
+  button span {
+    font-size: 1.4rem;
+  transition: .2s;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+}
+
+  
+            .imagen-icono {
+              width: 2.4rem;
+              margin-top: 1px;
+            }
+            .imagen-icono-2 {
+              width: 2.6rem;
+              margin-top: 1.2px;
+            
+            }
+            .imagen-icono-3 {
+              width: 2.5rem;
+              margin-top: 1px;
+            }
+            .imagen-icono-4 {
+              width: 2.5rem;
+              margin-top: 1px;
+            }
+            .imagen-icono-5 {
+              width: 2.5rem;
+              margin-top: 1px;
+            }
+            .imagen-icono-6 {
+              width: 2.9rem;
+              margin-top: 1px;
+            }
+            .imagen-icono-7 {
+              width: 2.5rem;
+              margin-top: 1px;
+            }
+            .imagen-icono-logo {
+              width: 3.4rem;
+              height: 3rem;
+            }
+            .NAV-LIST a:hover{
+              transition: 0.3s ease;
+              color: aqua;
+            }
+            
+  
+
+  
+  
+  
+        .caja1 {
+          height: 30rem;
+          margin-top: 7rem;
+          }
+          .caja2 {
+          height: 30rem;
+          margin-top: 7rem;
+          }
+          .caja3 {
+          height: 30rem;
+          margin-top: 7rem;
+          
+          }
+          .caja4{
+           height: 30rem;
+           margin-top: 7rem;
+          }
+          
+          .imagen-1 {
+            border: solid;
+            border-color:crimson;
+            height: 25.4rem;
+            width: 40rem;
+            margin-left: 2.5rem;
+          }
+          
+          .imagen-2 {
+            height: 25.4rem;
+            width: 40rem;
+            border: solid;
+            margin-left: 2.5rem;
+          }
+        
+  
+        /** Arreglos header **/
+        .header {
+          display: flex;
+          align-items: center;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          padding: 2rem;
+          background-color: var(--ColorNav);
+        }
+        
+        
+        
+        .NAV-LIST{
+        display: flex;
+        list-style-type: none;
+        gap: 1rem;
+        
+        }
+        .NAV-LIST a {
+          text-decoration: none;
+          color: var(--ColorBlanco)
+        }
+        .hamburguer {
+          display: none;
+          cursor: pointer
+        }
+        .bar {
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-left: auto;
+        margin-top: 3px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--ColorBlanco);
+        }
+        
+  
+  
+  
+  
+  
+  
+        @media only screen and (min-width: 0px) and (max-width:700px) {
+          .lista-albums{
+            margin-top: -0.2rem;
+            margin-left: 9rem;
+            margin-bottom: 0rem;
+          }
+          .opcion-album{
+            margin-top: 2rem;
+            margin-bottom: 0rem;
+          }
+          .nombre-album{
+            color:white;
+            font-size: 2rem;
+            margin-left: 1.5rem;
+          }
+          #Album { /*ES EL CHECKBOX */
+            margin-left: 4.3rem;
+            margin-top: 0rem;
+            width:16px;
+            height:16px;
+          }
+          
+          .container-1 { /* EDITAR */
+            border: solid;
+            height: 54.3rem;
+            width: 70rem;
+            border-radius: 12%;
+            margin-top: 1rem;
+            background-color: #160a3b;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          ::-webkit-scrollbar {
+            display: none;
+        }
+          
+          #modal{ 
+            margin: auto;
+            border: none;
+          background: none;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            }
+            #modalListas{ 
+              margin: auto;
+              border: none;
+            background: none;
+              background-repeat: no-repeat;
+              cursor: pointer;
+              }
+          
+          .contenedor-grid{
+            display: grid;
+          
+        grid-template-areas: 
+         "header"
+          "navbar"
+          "main"
+          "footer";
+        }
+        .header {
+            grid-area: header;
+            background-color:var(--ColorNav);
+           
+            
+        }
+        .navbar {
+            grid-area: navbar;
+           background-color: var(--ColorNav);
+        }
+        .main {
+            grid-area: main;
+            background-color: var(--ColorPrincipal);
+        }
+        .footer {
+            grid-area: footer;
+            background-color: var(--ColorPrincipal);
+        }
+        #H2 {
+          color: var(--ColorBlanco);
+          margin-left: 3rem;
+          margin-bottom: 2rem;
+          font-size: 2rem;
+        }
+        #h3-4{
+          color: var(--ColorBlanco);
+        margin-left: 15.5rem;
+       
+        }
+  
+        .hamburguer {
+          display: block;
+        }
+        .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+        }
+        .hamburguer.active .bar:nth-child(1) {
+          transform: translateX(8px) rotate(45deg);
+        }
+        .hamburguer.active .bar:nth-child(3) {
+          transform: translateX(-8px) rotate(-45deg);
+        }
+        .NAV-LIST {
+          position: fixed;
+          right: -100%;
+          top:70px;
+          gap:0;
+          flex-direction: column;
+          align-items: center;
+          background-color: var(--ColorNav);
+          width: 100%;
+          transition: 0.3s;
+        }
+        .Listas {
+          margin: 16px 0;
+        }
+        .NAV-LIST a {
+          font-size: 1.4rem;
+        }
+        .NAV-LIST a:hover{
+          transition: 0.1s ease;
+          color: aqua;
+        }
+        .contenedor-inputs {
+          margin-right: 17rem;
+          margin-top: 2rem;
+          border: solid;
+        }
+        
+      
+  
+      }     
+  
+        
+        .NAV-LIST.active {
+          right: 0;
+        }
+        .barra {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+     
+  
+  
+  
+  
+  
+  
+  
+  
+  /**H2 - H3**/
+  
+  #H2 {
+  color: var(--ColorBlanco);
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  }
+  
+  #H2-dos {
+  color: var(--ColorBlanco);
+  margin-top: 1rem;
+  margin-left: 2rem;
+  }
+  #h3-1 {
+  color: var(--ColorBlanco);
+  margin-left: 2.4rem;
+  }
+  #h3-2{
+  color: var(--ColorBlanco);
+  margin-left: 2.4rem
+  }
+  #h3-3{
+  color: var(--ColorBlanco);
+  margin-left: 2.4rem;
+  }
+  #h3-4{
+  color: var(--ColorBlanco);
+  margin-left: 2.4ren;
+  }
+  .footer {
+  background-color: var(--ColorPrincipal);
+  }
+  
+  
+  
+    /*Cajas y imagenes*/
+  .caja1 {
+    height: 30rem;
+    margin-top: 7rem;
+    margin-right: 5rem;
+    }
+    .caja2 {
+    height: 30rem;
+    margin-top: 7rem;
+    margin-right:5rem;
+    }
+    .caja3 {
+    height: 30rem;
+    margin-top: 7rem;
+    margin-right: 5rem;
+    
+    }
+    .caja4{
+     height: 30rem;
+     margin-top: 2rem;
+     margin-right: 5rem;
+    }
+    
+    
+    .imagen-1 {
+      border: solid;
+      border-color:crimson;
+      height: 25.4rem;
+      width: 40rem;
+    }
+    
+    .imagen-2 {
+      height: 25.4rem;
+      width: 40rem;
+      border: solid;
+      margin-left: 2.5rem;
+    margin-top: 4rem;
+    }
+ 
+  /*Cajas y imagenes*/
+  
+  
+  /*Comienza @media querie mas baja - movil pequeño 360x640px */
+  @media (min-width:0px) {     
+    .container-1 { /* EDITAR */
+      border: solid;
+      height: 54.3rem;
+      width: 70rem;
+      border-radius: 12%;
+      margin-top: 1rem;
+      background-color: #160a3b;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+  }
+    
+    #modal{ 
+      margin: auto;
+      border: none;
+    background: none;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      }
+      #modalListas{ 
+        margin: auto;
+        border: none;
+      background: none;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        }
+    
+    .input-contenedor-2 {
+      border: solid;
+      width: auto;
+     border-color:rgb(255, 255, 255);
+     border-radius: 1rem;
+    }
+  .formulario__campo-2 {
+    margin: auto;
+    font-family: var(--Fuenteprincipal);
+    background-color: black;
+    color: white;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--Fuenteprincipal);
+    }
+    /*Cajas y imagenes*/
+  
+    .caja1 {
+      height: 30rem;
+      margin-top: 7rem;
+      }
+      .caja2 {
+      height: 30rem;
+      margin-top: 7rem;
+      }
+      .caja3 {
+      height: 30rem;
+      margin-top: 7rem;
+      
+      }
+      .caja4{
+       height: 30rem;
+       margin-top: 2rem;
+      }
+      
+      
+      .imagen-1 {
+        border: solid;
+        border-color:crimson;
+        height: 25.4rem;
+        width: 40rem;
+        margin-left: 2.5rem;
+      }
+      
+      .imagen-2 {
+        height: 25.4rem;
+        width: 40rem;
+        border: solid;
+        margin-left: 2.5rem;
+      margin-top: 4rem;
+      }
+      /* .imagen-3 {
+        border: solid;
+        height: 25.4rem;
+        width: 37rem;
+        margin-left: 2.5rem;
+      margin-top: 4rem;
+      }
+       */
+      /* .imagen-4 {
+        border: solid;
+        border-color: gray;
+        height: 25.4rem;
+        width: 40rem;
+        margin-left: 2.5rem;
+      } */
+      #h3-4{
+        color: var(--ColorBlanco);
+        margin-left: 10rem;
+      } 
+  
+      .barra {
+        border-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+      }
+      
+      .formulario-1{
+        /* background-color: black; */
+      }
+
+      .input-contenedor-1 {
+      border: solid;
+      border-radius: 0.7rem;
+      width: 25rem;
+      color: white;
+      }
+      .formulario__campo-1{
+        background-color: black;
+        color: white;
+        width: 24.4rem;
+        font-size: 1.7rem;
+        font-family: var(--Fuenteprincipal);
+        font-weight: bold;        
+      }
+     
+    
+    } 
+  
+  
+  

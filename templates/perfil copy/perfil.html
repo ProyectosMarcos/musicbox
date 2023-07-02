@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="estilo3.css">
+      <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
+      <link rel="stylesheet" href="/Proyecto-Musicbox/logo.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+      </style>
+      <title>Proyecto2</title>
+   </head>
+   <body class="contenedor-grid">
+      <header class="header">
+         <nav class="nav" id="nav">
+            <ul class="NAV-LIST">
+               <span class="logo">Music~<span class="logo-2">box♪</span></span>
+               <li class="Listas"><a href="/Proyecto-Musicbox/index.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="/Proyecto-Musicbox/iconos/house-black-silhouette-without-door.png"></i>Inicio</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/perfil/perfil.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-2" src="/Proyecto-Musicbox/iconos/music-lover.png"></i>Perfil</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/Listenlist/Listenlist.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-3" src="/Proyecto-Musicbox/iconos/album-de-musica.png"></i>Listenlist</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/LISTAS/listas.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="/Proyecto-Musicbox/iconos/icono.png"></i>Listas</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/reviews/reviews.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="/Proyecto-Musicbox/iconos/chat.png"></i>Reviews</a></li>
+               <li class="Listas"><a href="#" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="/Proyecto-Musicbox/iconos/exit.png"></i>Cerrar sesíon</a></li>
+            </ul>
+            <div class="hamburguer">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>
+         </nav>
+      </header>
+      <nav class="navbar">
+         <div class="contenedor-perfil">
+            <picture>
+               <img v-bind:src="avatar" class="imagen-perfil">
+            </picture>
+            <h2 class="h2-nombre">{{nombreUsuario}}</h2>
+         </div>
+
+
+
+         <button aria-label="setting" class="boton__tuerca" id="btn-abrir-modal">
+            <span v-if="loSigo==1">
+               <p class="texto-tuerca">Seguir</p>
+            </span>
+            <span v-if="loSigo==0">
+               <p class="texto-tuerca">No Seguir</p>
+            </span>
+            
+         </button>
+
+
+
+         <dialog  id="modal">
+            <div class="container-1">
+               <form>                  
+                  <span v-if="loSigo==1">
+                     <button id="boton-guardar">Seguir</button>
+                  </span>
+                  <span v-if="loSigo==0">
+                     <button id="boton-guardar">No Seguir</button>
+                  </span>
+                  <button id="boton-cerrar">Cerrar</button> 
+               </form>
+            </div>
+         </dialog>
+         
+         
+      </nav>
+      <main class="main">
+         <h2 id="H2">Artistas Favoritos</h2>
+         <span v-if="cantArtistasFavoritos>=1">
+            <div class="cont-imagenes">
+               <div class="slider">
+                  <button class="slider-prev">
+                  <i class="bx bx-chevron-left"></i>
+                  </button>
+                  <div class="inner-slider">
+                     <li v-for="artistaFav in artistasFavoritos">
+                        <div class="slider-item">
+                           <img v-bind:src="artistaFav.nombreArtistaArchivo" alt="...">
+                        </div>
+                     </li>
+                  </div>
+                  <button class="slider-next">
+                  <i class="bx bx-chevron-right"></i>
+                  </button>
+               </div>
+            </div>
+         </span>
+         <span v-if="cantArtistasFavoritos==0">
+            <h2 id="Aviso">Aun no seleccionaste artistas favoritos!</h2>
+            <br><br><br><br><br><br><br>
+         </span>
+            
+         
+         <h2 id="H2">Albums favoritos</h2>
+         <span v-if="cantAlbumesFavoritos==0">
+            <br><br><br><br><br><br><br>
+         </span>
+         <span v-if="cantAlbumesFavoritos>=1">
+            <div class="listado_portadas_favoritos">
+               <li v-for="albumFav in albumesFavoritos">
+                  <div class="mini-portada">
+                     <img v-bind:src="albumFav.nombreAlbumArchivo" alt="...">
+                     <a href="www.google.com" class="nombre-mini-portada">{{albumFav.nombre}}</a>
+                  </div>
+               </li>
+            </div>
+         </span>
+
+         <br><br><br><br><br><br><br><br><br><br><br><br>
+         
+         <h2 id="H2">Listas de albumes</h2>
+         <span v-if="cantAlbumesFavoritos==0">
+            <br><br><br><br><br><br><br>
+         </span>
+         <span v-if="cantAlbumesFavoritos>=1">
+            <div class="listado_portadas_favoritos">
+               <li v-for="albumFav in actividadReciente">
+                  <div class="mini-portada">
+                     <img v-bind:src="albumFav.nombreAlbumArchivo" alt="...">
+                     <a href="www.google.com" class="nombre-mini-portada">{{albumFav.nombre}}</a>
+                  </div>
+               </li>
+            </div>
+         </span>
+         
+         
+
+
+
+
+
+         
+
+
+         <br><br><br><br><br> <!--para que no se deforme el final de la pagina-->
+      </main>
+      <footer class="footer">
+         <h3 class="Footer-h3">Todos los derechos reservados</h3>
+      </footer>
+      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+      <script src="VUE-PERFIL.js"></script>
+      <script src="/Proyecto-Musicbox/menu.js"></script>
+      <script src="app.js"></script>
+      <script src="perfil.js"></script>
+   </body>
+</html>
+</html>

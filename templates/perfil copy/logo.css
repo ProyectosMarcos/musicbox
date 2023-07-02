@@ -1,0 +1,356 @@
+
+@media (min-width: 1346px) {
+.logo {
+  margin-right: 50rem;
+    display: block;
+    font-size: 2.3rem;
+    font-family: var(--Fuenteprincipal);
+    color: rgb(94, 157, 253);
+    white-space: nowrap;
+    border-right: 4px solid;
+     width: 9.1ch;
+     animation: typing 2s  steps(12), blink .5s infinite step-end alternate;
+    
+     overflow:hidden;
+  
+  }
+  .logo-2 {
+    color: rgb(72, 9, 218);
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    
+  }
+  @keyFrames blink {
+  
+    50% { border-color: transparent}
+   
+   }
+}
+
+
+@media only screen and (min-width: 1300px) and (max-width:1345px) {
+    .logo {
+        margin-right: 40rem;
+        display: block;
+        font-size: 2.3rem;
+        font-family: var(--Fuenteprincipal);
+        color: rgb(94, 157, 253);
+        white-space: nowrap;
+        border-right: 4px solid;
+         width: 9.1ch;
+         animation: typing 2s  steps(12), blink .5s infinite step-end alternate;
+        
+         overflow:hidden;
+      
+      }
+      .logo-2 {
+        color: rgb(72, 9, 218);
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        
+      }
+      @keyFrames blink {
+      
+        50% { border-color: transparent}
+       
+       }
+    }
+    
+    
+    
+@media only screen and (min-width: 1200px) and (max-width:1299px) {
+    .logo {
+        margin-right: 30rem;
+        display: block;
+        font-size: 2.3rem;
+        font-family: var(--Fuenteprincipal);
+        color: rgb(94, 157, 253);
+        white-space: nowrap;
+        border-right: 4px solid;
+         width: 9.1ch;
+         animation: typing 2s  steps(12), blink .5s infinite step-end alternate;
+        
+         overflow:hidden;
+      
+      }
+      .logo-2 {
+        color: rgb(72, 9, 218);
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        
+      }
+      @keyFrames blink {
+      
+        50% { border-color: transparent}
+       
+       }
+    }
+     
+@media only screen and (min-width: 1000px) and (max-width:1199px) {
+    .logo {
+        margin-right: 10rem;
+        display: block;
+        font-size: 2.3rem;
+        font-family: var(--Fuenteprincipal);
+        color: rgb(94, 157, 253);
+        white-space: nowrap;
+        border-right: 4px solid;
+         width: 9.1ch;
+         animation: typing 2s  steps(12), blink .5s infinite step-end alternate;
+        
+         overflow:hidden;
+      
+      }
+      .logo-2 {
+        color: rgb(72, 9, 218);
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        
+      }
+      @keyFrames blink {
+      
+        50% { border-color: transparent}
+       
+       }
+    } 
+       
+@media only screen and (min-width: 900px) and (max-width:999px) {
+    .logo {
+        margin-right: 5rem;
+        display: block;
+        font-size: 2.3rem;
+        font-family: var(--Fuenteprincipal);
+        color: rgb(94, 157, 253);
+        white-space: nowrap;
+        border-right: 4px solid;
+         width: 9.1ch;
+         animation: typing 2s  steps(12), blink .5s infinite step-end alternate;
+        
+         overflow:hidden;
+      
+      }
+      .logo-2 {
+        color: rgb(72, 9, 218);
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        
+      }
+      @keyFrames blink {
+      
+        50% { border-color: transparent}
+       
+       }
+    }  
+          
+@media only screen and (min-width: 856px) and (max-width:900px) {
+    .logo {
+        margin-right: 1rem;
+        display: block;
+        font-size: 2.3rem;
+        font-family: var(--Fuenteprincipal);
+        color: rgb(94, 157, 253);
+        white-space: nowrap;
+        border-right: 4px solid;
+         width: 9.1ch;
+         animation: typing 2s  steps(12), blink .5s infinite step-end alternate;
+        
+         overflow:hidden;
+      
+      }
+      .logo-2 {
+        color: rgb(72, 9, 218);
+      }
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        
+      }
+      @keyFrames blink {
+      
+        50% { border-color: transparent}
+       
+       }
+    }  
+
+             
+@media only screen and (min-width: 835px) and (max-width:855px) {
+    .logo {
+        margin-right: 1rem;
+        font-size: 2.3rem;
+        font-family: var(--Fuenteprincipal);
+        color: rgb(94, 157, 253);
+        white-space: nowrap;
+         overflow:hidden;
+      }
+      .logo-2 {
+        color: rgb(72, 9, 218);
+      }
+    }
+
+
+
+    @media only screen and (min-width: 800px) and (max-width:834px) {
+      .logo {
+          margin-right: 1rem;
+          font-size: 1.89rem;
+          font-family: var(--Fuenteprincipal);
+          color: rgb(94, 157, 253);
+          white-space: nowrap;
+           overflow:hidden;
+        }
+        .logo-2 {
+          color: rgb(72, 9, 218);
+        }
+      }
+  
+  
+
+                
+@media only screen and (min-width: 786px) and (max-width:799px) {
+    .logo {
+        margin-right: 1rem;
+        font-size: 2.3rem;
+        font-family: var(--Fuenteprincipal);
+        color: rgb(94, 157, 253);
+        white-space: nowrap;
+         overflow:hidden;
+      }
+      .logo-2 {
+        color: rgb(72, 9, 218);
+      }
+    }
+                    
+@media only screen and (min-width: 780px) and (max-width:785px) {
+    .logo {
+        margin-right: 1rem;
+        font-size: 2.2rem;
+        font-family: var(--Fuenteprincipal);
+        color: rgb(94, 157, 253);
+        white-space: nowrap;
+         overflow:hidden;
+      }
+      .logo-2 {
+        color: rgb(72, 9, 218);
+      }
+    }
+
+
+                    
+@media only screen and (min-width: 749px) and (max-width:765px) {
+    .logo {
+        margin-right: 1rem;
+        font-size: 1.32rem;
+        font-family: var(--Fuenteprincipal);
+        color: rgb(94, 157, 253);
+        white-space: nowrap;
+         overflow:hidden;
+      }
+      .logo-2 {
+        color: rgb(72, 9, 218);
+      }
+    }
+    @media only screen and (min-width: 771px) and (max-width:799px) {
+        .logo {
+            margin-right: .1rem;
+            font-size: 2.2rem;
+            font-family: var(--Fuenteprincipal);
+            color: rgb(94, 157, 253);
+            white-space: nowrap;
+             overflow:hidden;
+          }
+          .logo-2 {
+            color: rgb(72, 9, 218);
+          }
+        }
+   
+        @media only screen and (min-width: 760px) and (max-width:770px) {
+            .logo {
+                margin-right: .1rem;
+                font-size: 2rem;
+                font-family: var(--Fuenteprincipal);
+                color: rgb(94, 157, 253);
+                white-space: nowrap;
+                 overflow:hidden;
+              }
+              .logo-2 {
+                color: rgb(72, 9, 218);
+              }
+            }
+       
+  
+            @media only screen and (min-width: 754px) and (max-width:759px) {
+                .logo {
+                    margin-right: .1rem;
+                    font-size: 1.89rem;
+                    font-family: var(--Fuenteprincipal);
+                    color: rgb(94, 157, 253);
+                    white-space: nowrap;
+                     overflow:hidden;
+                  }
+                  .logo-2 {
+                    color: rgb(72, 9, 218);
+                  }
+                }
+        
+
+                
+            @media only screen and (min-width: 750px) and (max-width:753px) {
+                .logo {
+                    margin-right: .1rem;
+                    font-size: 1.81rem;
+                    font-family: var(--Fuenteprincipal);
+                    color: rgb(94, 157, 253);
+                    white-space: nowrap;
+                     overflow:hidden;
+                  }
+                  .logo-2 {
+                    color: rgb(72, 9, 218);
+                  }
+                }
+
+
+                  
+            @media only screen and (min-width: 701px) and (max-width:749px) {
+                .logo {
+                    margin-right: .1rem;
+                    font-size: 1.77rem;
+                    font-family: var(--Fuenteprincipal);
+                    color: rgb(94, 157, 253);
+                    white-space: nowrap;
+                     overflow:hidden;
+                  }
+                  .logo-2 {
+                    color: rgb(72, 9, 218);
+                  }
+                }
+
+
+    @media only screen and (min-width: 0px) and (max-width:700px) {
+        .logo {
+           margin-right: -1rem;
+            font-size: 1.77rem;
+            font-family: var(--Fuenteprincipal);
+            color: rgb(94, 157, 253);
+            white-space: nowrap;
+             overflow:hidden;
+          }
+          .logo-2 {
+            color: rgb(72, 9, 218);
+          }
+        }

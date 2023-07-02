@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detalle_lista_propia.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="/Proyecto-Musicbox/logo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ef233ec86e.js" crossorigin="anonymous"></script>
+   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+    </style>
+    <title>Proyecto1</title>
+</head>
+<body class="contenedor-grid">
+    <header class="header">
+        <nav class="nav" id="nav">
+            <ul class="NAV-LIST">
+                <span class="logo">Music~<span class="logo-2">box♪</span></span>
+              <li class="Listas"><a href="/Proyecto-Musicbox/index.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="/Proyecto-Musicbox/iconos/house-black-silhouette-without-door.png"></i>Inicio</a></li>
+              <li class="Listas"><a href="/Proyecto-Musicbox/perfil/perfil.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-2" src="/Proyecto-Musicbox/iconos/music-lover.png"></i>Perfil</a></li>
+              <li class="Listas"><a href="/Proyecto-Musicbox/Listenlist/Listenlist.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-3" src="/Proyecto-Musicbox/iconos/album-de-musica.png"></i>Listenlist</a></li>
+              <li class="Listas"><a href="/Proyecto-Musicbox/LISTAS/listas.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="/Proyecto-Musicbox/iconos/icono.png"></i>Listas</a></li>
+              <li class="Listas"><a href="/Proyecto-Musicbox/reviews/reviews.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="/Proyecto-Musicbox/iconos/chat.png"></i>Reviews</a></li>
+              <li class="Listas"><a href="#" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="/Proyecto-Musicbox/iconos/exit.png"></i>Cerrar sesíon</a></li>
+              </ul>
+              <div class="hamburguer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+          </nav>
+    </header>
+    
+    <nav class="navbar"><nav class="inputs-nav">
+        <div class="barra">
+            <div class="titulo_pagina_navbar">{{nombreLista}}</div>
+        </div>
+        <div class="barra_boton_nueva_lista">
+            <button class="btn" id="btn-abrir-modal">Editar lista</button>
+        </div>
+    </nav></nav>
+    <dialog  id="modal">
+
+        <div class="container-1">
+            <form>
+              <h2 id="sub-title">Nombre de la Lista</h2>
+                <input id="input-1" type="text" v-bind:value="nombreLista">
+                <h2 id="sub-title">Descripcion</h2>
+                <textarea id="descripcion-review" name="descripcion-review" rows="3" cols="30" v-bind:value="descripcion"></textarea>
+                <h2 id="sub-title">Albumes pertenecientes:</h2>
+                <div class="lista-albums">
+                    <li v-for="album in albumes">
+
+                        <div class="opcion-album">
+                            <input type="checkbox" name="Album" id="Album" checked>
+                            <label for="Album" class="nombre-album">{{album.nombreAlbum}}</label>
+                        </div>
+        
+                    </li>
+
+                </div>
+                
+                <div class="guardado-albums">
+                    <button id="guardar-detalle-album">Guardar</button>
+                </div>
+                <div class="cerrar-albums">
+                    <button id="cerrar-detalle-album">Cerrar</button>
+                </div> 
+            </form>
+        </div>
+
+
+
+        
+    </dialog>
+</div>
+
+    <main class="main">
+        <p class="descripcion_lista">"Esta lista contiene las verdaderas canciones del rock"</p>
+        <div class="contenedor-main">
+            <li v-for="album in albumes">
+
+                <div class="caja2">
+                    <section>
+                        <a v-bind:href="album.refAlbum"><i class="Listas-i"><img class="imagen-icono-editado-new-1" v-bind:src="album.nombreArchivoAlbum"></i></a>
+                        <h3 id="h3-2">{{album.nombreAlbum}}</h3>
+                    </section>
+                </div>
+
+            </li>
+            <span v-if="cantAlbumes==0">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </span>
+        </div>
+        
+    </main>
+    <footer class="footer"><h3 class="Footer-h3">Todos los derechos reservados</h3></footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="VUE-DETALLE_LISTA_PROPIA.js"></script>
+    <script src="/Proyecto-Musicbox/menu.js"></script>
+    <script src="/Proyecto-Musicbox/LISTAS/modal.js"></script>
+</body>
+</html>
