@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      {% load static %}
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+      <link href="{% static 'musicboxWebApp/INICIO.css' %}" rel="stylesheet">
+      <link href="{% static 'musicboxWebApp/normalize.css' %}" rel="stylesheet">
+      <link href="{% static 'musicboxWebApp/logo.css' %}" rel="stylesheet">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/ef233ec86e.js" crossorigin="anonymous"></script>
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+      </style>
+      <title>Proyecto1</title>
+   </head>
+   <body class="contenedor-grid">
+      <header class="header">
+         <nav class="nav" id="nav">
+            <ul class="NAV-LIST">
+               <span class="logo">Music~<span class="logo-2">box♪</span></span>
+               <li class="Listas"><a href="/Proyecto-Musicbox/index.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="/Proyecto-Musicbox/iconos/house-black-silhouette-without-door.png"></i>Inicio</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/perfil/perfil.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-2" src="/Proyecto-Musicbox/iconos/music-lover.png"></i>Perfil</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/Listenlist/Listenlist.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-3" src="/Proyecto-Musicbox/iconos/album-de-musica.png"></i>Listenlist</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/LISTAS/listas.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="/Proyecto-Musicbox/iconos/icono.png"></i>Listas</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/reviews/reviews.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="/Proyecto-Musicbox/iconos/chat.png"></i>Reviews</a></li>
+               <li class="Listas"><a href="#" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="/Proyecto-Musicbox/iconos/exit.png"></i>Cerrar sesíon</a></li>
+            </ul>
+            <div class="hamburguer">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>
+         </nav>
+      </header>
+      <nav class="navbar">
+         <nav class="inputs-nav">
+            <div class="barra">
+               <form action="" class="formulario-1">
+                 <div>
+                  <input class="formulario__campo-1" type="text" placeholder="Ingrese texto para buscar" required>
+                  </div>
+                  <div>
+                  <select class="formulario__campo-2" id="selectorOption" name="selectorOption" required>
+                     <option value="0" disabled selected>Tipo busqueda</option>
+                     <option value="1">HHHH</option>
+                     <option value="2">EEEE</option>
+                     <option value="3">AAAA</option>
+                     <input type="button" onclick="validarSelectorBusqueda();" value="confirmar" id="botonValidar">
+                  </select>
+                  </div>
+                   <div class="barra_boton_nueva_lista">
+                  <button class="btn">Buscar</button>
+               </div>
+               </form>
+               <!-- <div class="input-contenedor-1">
+                  <form class="formulario-1">
+                     <input class="formulario__campo-1" type="text" placeholder="Ingrese texto para buscar">
+                  </form>
+               </div>
+               <div class="input-contenedor-2">
+                  <form class="formulario-2">
+                     <select class="formulario__campo-2">
+                        <option disabled selected>Tipo busqueda</option>
+                        <option>HHHH</option>
+                        <option>EEEE</option>
+                        <option>AAAA</option>
+                     </select>
+                  </form>
+               </div>
+               <div class="barra_boton_nueva_lista">
+                  <button class="btn" id="btn-abrir-modal">Buscar</button>
+               </div>
+            </div> -->
+            </div>
+         </nav>
+      </nav>
+      <main class="main">
+            <div class="definicion-app">
+                <p class="descripcion-novedades">
+                    Hola {{nombreUsuario}}!
+                    <br>                    
+                    Music~Box es una red social en donde todo es en torno a albumes de musica, podes:
+                    <br><br> # Crear listas donde almacenar albumes
+                    <br> # Seguir a usuarios para conocer sus gustos musicales y ver sus reseñas sobre distintos albumes
+                    <br> # Dejar reseñas y puntuaciones para los albumes que te gusten, permitiendo a otros usuarios ver tus opiniones
+                    <br> # Poder tener ordenadamente albumes que tenes pendientes para escuchar (ListenList)
+                </p>
+            </div>
+            <div class="estadisticas">
+                <p class="titulo-estadisticas">Tus estadisticas:</p>
+                <div class="listado-estadisticas">
+                    <li> Cantidad de listas: {{cantListas}} </li>
+                    <li> Cantidad de albumes a escuchar: {{cantAlbumesListenlist}} </li>
+                    <li> Cantidad de usuarios seguidos: {{cantUsuariosSeguidos}} </li>
+                    <li> Cantidad de seguidores: {{cantUsuariosSeguidores}} </li>
+                    <!-- SOLO DEJAR ESTOS 4 ITEMS -->
+                </div>
+            </div>
+            <div class="novedades">
+                <p class="descripcion-novedades">
+                    Estos son los ultimos albumes añadidos a la plataforma!
+                </p>
+                <div class="listado-albumes-novedades">
+                    <ul>
+                        <li v-for="novedad in novedades">
+                           {{novedad.nombreAlbumArtista}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacto">
+               <p class="descripcion-novedades">
+                  ¿Querés recomendar contenido (ya sea un artista o album) ? Comunicate con nosotros!
+              </p>
+              <form action="https://formspree.io/f/xayzrzzg" method="POST" class="formulario" id="formulario" autocomplete="off" required>
+               <div class="form-input Email">
+                  <label for="Email" id="Email-nombre">Email</label>
+                 <input type="text" id="Email" placeholder="Ingresar email" required>
+                 <p class="mensajeError"></p>
+               </div>
+               <div class="form-input Usuario">
+                  <label for="Usuario" id="Usuario-nombre">Usuario</label>
+                 <input type="Usuario" id="Usuario" placeholder="Ingresar tu usuario" required>
+                 <p class="mensajeError"></p>
+               </div>
+              
+               <div class="form-input Asunto">
+                  <label for="Asunto" id="Asunto-nombre">Asunto</label>
+                 <input type="text" id="Asunto" placeholder="Ingresar el tema de la recomendación" required>
+                 <p class="mensajeError"></p>
+               </div>
+               <div class="form-input Recomendacíon">
+                  <label for="input-recomendación" class="Recomendacíon" id="Recomendacíon-nombre">Recomendacíon</label>
+                  <textarea id="input-recomendacíon" name="input-recomendacion" rows="10" cols="48"></textarea>
+                  <p class="mensajeError"></p>
+               </div>
+               <div class="form-boton">
+                  <input type="submit" value="Registrarse" class="btn-contacto">
+                </div>
+                <p class="mensajeCorrecto"></p>
+              </form>
+               </div>
+               </div>
+              
+           </div>
+            
+
+      </main>
+      <footer class="footer">
+         <h3 class="Footer-h3">Todos los derechos reservados</h3>
+      </footer>
+      <script src="menu.js"></script>
+      <script src="/Proyecto-Musicbox/form-index.js"></script>
+      </script>
+   </body>
+</html>
