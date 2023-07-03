@@ -110,9 +110,9 @@
                 </p>
                 <div class="listado-albumes-novedades">
                     <ul>
-                        <li v-for="novedad in novedades">
-                           {{novedad.nombreAlbumArtista}}
-                        </li>
+                        {% for novedad in novedades %}
+                           <li>{{novedad}}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
