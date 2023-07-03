@@ -7,9 +7,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
       
-      <link href="{% static 'musicboxWebApp/INICIO.css' %}" rel="stylesheet">
-      <link href="{% static 'musicboxWebApp/normalize.css' %}" rel="stylesheet">
-      <link href="{% static 'musicboxWebApp/logo.css' %}" rel="stylesheet">
+      <link href="{% static 'musicboxWebApp/inicio/INICIO.css' %}" rel="stylesheet">
+      <link href="{% static 'musicboxWebApp/inicio/normalize.css' %}" rel="stylesheet">
+      <link href="{% static 'musicboxWebApp/inicio/logo.css' %}" rel="stylesheet">
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +26,12 @@
          <nav class="nav" id="nav">
             <ul class="NAV-LIST">
                <span class="logo">Music~<span class="logo-2">box♪</span></span>
-               <li class="Listas"><a href="/Proyecto-Musicbox/index.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="/Proyecto-Musicbox/iconos/house-black-silhouette-without-door.png"></i>Inicio</a></li>
-               <li class="Listas"><a href="/Proyecto-Musicbox/perfil/perfil.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-2" src="/Proyecto-Musicbox/iconos/music-lover.png"></i>Perfil</a></li>
-               <li class="Listas"><a href="/Proyecto-Musicbox/Listenlist/Listenlist.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-3" src="/Proyecto-Musicbox/iconos/album-de-musica.png"></i>Listenlist</a></li>
-               <li class="Listas"><a href="/Proyecto-Musicbox/LISTAS/listas.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="/Proyecto-Musicbox/iconos/icono.png"></i>Listas</a></li>
-               <li class="Listas"><a href="/Proyecto-Musicbox/reviews/reviews.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="/Proyecto-Musicbox/iconos/chat.png"></i>Reviews</a></li>
-               <li class="Listas"><a href="#" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="/Proyecto-Musicbox/iconos/exit.png"></i>Cerrar sesíon</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/index.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="{% static 'musicboxWebApp/iconos/house-black-silhouette-without-door.png' %}"></i>Inicio</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/perfil/perfil.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-2" src="{% static 'musicboxWebApp/iconos/music-lover.png' %}"></i>Perfil</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/Listenlist/Listenlist.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-3" src="{% static 'musicboxWebApp/iconos/album-de-musica.png' %}"></i>Listenlist</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/LISTAS/listas.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="{% static 'musicboxWebApp/iconos/icono.png' %}"></i>Listas</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/reviews/reviews.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="{% static 'musicboxWebApp/iconos/chat.png' %}"></i>Reviews</a></li>
+               <li class="Listas"><a href="#" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="{% static 'musicboxWebApp/iconos/exit.png' %}"></i>Cerrar sesíon</a></li>
             </ul>
             <div class="hamburguer">
                <span class="bar"></span>
@@ -157,8 +157,8 @@
       <footer class="footer">
          <h3 class="Footer-h3">Todos los derechos reservados</h3>
       </footer>
-      <script src="menu.js"></script>
-      <script src="/Proyecto-Musicbox/form-index.js"></script>
+      <script src="{% static 'musicboxWebApp/inicio/form-index.js' %}"></script>
+      <script src="{% static 'musicboxWebApp/inicio/menu.js' %}"></script>
       </script>
    </body>
 </html>
