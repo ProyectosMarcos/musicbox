@@ -62,7 +62,7 @@
             <div class="listado-resultados">
                
                <div class="resultado">
-                  <a href="{% url 'mostrar_album' %}"><img src="{% static archivo_imagen %}" alt="" class="imagen-resultado"></a>
+                  <a href="{% url 'detalle_album' album=nombre %}"><img src="{% static archivo_imagen %}" alt="" class="imagen-resultado"></a>
                   <p style="text-decoration:none" class="nombre-resultado">{{nombre}}</p>
                </div>
                

@@ -22,5 +22,5 @@ from musicboxWebApp import views
 urlpatterns = [
     path("",views.inicio),
     path("buscar/",views.buscar),
-    path('mostrar_album/', views.mostrar_album, name="mostrar_album"),
+    path('detalle_album/<album>/', views.detalle_album, name="detalle_album"),
 ]

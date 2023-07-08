@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="detalle_album.css">
-    <link rel="stylesheet" href="/Proyecto-Musicbox/estilo2.css">
-    <link rel="stylesheet" href="/Proyecto-Musicbox/logo.css">
-    <link rel="stylesheet" href="normalize.css">
+
+    <link href="{% static 'musicboxWebApp/detalle_album/detalle_album.css' %}" rel="stylesheet">
+    <link href="{% static 'musicboxWebApp/inicio/logo.css' %}" rel="stylesheet">
+    <link href="{% static 'musicboxWebApp/inicio/normalize.css' %}" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ef233ec86e.js" crossorigin="anonymous"></script>
    
@@ -22,11 +24,11 @@
         <nav class="nav" id="nav">
             <ul class="NAV-LIST">
                 <span class="logo">Music~<span class="logo-2">box♪</span></span>
-              <li class="Listas"><a href="/Proyecto-Musicbox/index.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="/Proyecto-Musicbox/iconos/house-black-silhouette-without-door.png"></i>Inicio</a></li>
-              <li class="Listas"><a href="/perfil/perfil.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-2" src="/Proyecto-Musicbox/iconos/music-lover.png"></i>Perfil</a></li>
-              <li class="Listas"><a href="/Proyecto-Musicbox/LISTAS/listas.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="/Proyecto-Musicbox/iconos/icono.png"></i>Listas</a></li>
-              <li class="Listas"><a href="" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="/Proyecto-Musicbox/iconos/exit.png"></i>Cerrar sesíon</a></li>
-              </ul>
+                <li class="Listas"><a href="/Proyecto-Musicbox/index.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="{% static 'musicboxWebApp/iconos/house-black-silhouette-without-door.png' %}"></i>Inicio</a></li>
+                <li class="Listas"><a href="/Proyecto-Musicbox/perfil/perfil.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-2" src="{% static 'musicboxWebApp/iconos/music-lover.png' %}"></i>Perfil</a></li>
+                <li class="Listas"><a href="/Proyecto-Musicbox/LISTAS/listas.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="{% static 'musicboxWebApp/iconos/icono.png' %}"></i>Listas</a></li>
+                <li class="Listas"><a href="#" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="{% static 'musicboxWebApp/iconos/exit.png' %}"></i>Cerrar sesíon</a></li>
+             </ul>
               <div class="hamburguer">
                   <span class="bar"></span>
                   <span class="bar"></span>
@@ -55,17 +57,17 @@
     <main class="main">
         <p class="titulo_album">{{nombreAlbum}}</p>
         <p class="banda_album">{{nombreArtista}}</p>
-        <img v-bind:src="nombreAlbumArchivo" alt=""class="portada-album" >
+        <img src="{% static archivo_imagen %}" alt=""class="portada-album" >
         <div class="datos-album">
-            <p class="caracteristica">Año: {{anio}}</p>
-            <p class="caracteristica">Duracion: {{duracion}} minutos</p>
             <p class="caracteristica">Canciones:</p>
+
             <ul class="listado-canciones">
+                {% for cancion in canciones %}
                 <li v-for="cancion in canciones">
-                    {{cancion.nombreCancion}}
+                    {{cancion.nombre}}
                 </li>
+                {% endfor %}
             </ul>
-            <a class="link_album" v-bind:href="linkInfo">+ info</a>
         </div>
         
         <div class="boton-agregar-lista">
@@ -86,7 +88,7 @@
                 <div class="container-2">
                     <!-- <h2 id="title">Editar Listenlist</h2> -->
                     <form>
-                        <h2 id="sub-title-listas">A qué lista querés este album?</h2>
+                        <h2 id="sub-title-listas">A qué lista querés agregar este album?</h2>
                         <input id="input-1" type="text" class="input_lista_agregar">
 
 
@@ -103,10 +105,8 @@
         </div>
     </main>
     <footer class="footer"><h3 class="Footer-h3">Todos los derechos reservados</h3></footer>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="VUE-DETALLE_ALBUM.js"></script>
-    <script src="menu.js"></script>
-    <script src="/Proyecto-Musicbox/form-index.js"></script>
-    <script src ="/Proyecto-Musicbox/detalle_album/modal.js"></script>
+    <!-- <script src="/Proyecto-Musicbox/form-index.js"></script> -->
+    <script src="{% static 'musicboxWebApp/detalle_album/modal.js' %}"></script>
+    <script src="{% static 'musicboxWebApp/detalle_album/menu.js' %}"></script>
 </body>
 </html>

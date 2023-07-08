@@ -3,7 +3,7 @@ from django.template import loader
 from django.template import Template,Context
 from django.template.loader import get_template
 from django.shortcuts import render
-from musicboxApp3.models import Album
+from musicboxApp3.models import Album,Cancion
 
 
 def inicio(request):
@@ -31,5 +31,15 @@ def buscar(request):
 		return HttpResponse(mensaje)
 	
 
-def mostrar_album(request):
-	return render(request,"DETALLE_ALBUM.html")
+def detalle_album(request,album): #se pasa el nombre del album
+	albumObjeto = Album.objects.get(nombre=album)
+	canciones = Cancion.objects.filter(album=albumObjeto)
+	
+	dto_detalle_album = {
+		"nombreAlbum": albumObjeto.nombre,
+		"archivo_imagen": albumObjeto.archivo_imagen,
+		"nombreArtista": albumObjeto.artista,
+		"referencia": albumObjeto.link_referencia,
+		"canciones": canciones
+	}
+	return render(request,"DETALLE_ALBUM.html",dto_detalle_album)
