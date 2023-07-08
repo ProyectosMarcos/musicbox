@@ -23,4 +23,5 @@ urlpatterns = [
     path("",views.inicio),
     path("buscar/",views.buscar),
     path('detalle_album/<album>/', views.detalle_album, name="detalle_album"),
+    path("listas/<nombre_usuario>/",views.listas),
 ]
