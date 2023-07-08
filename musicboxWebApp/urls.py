@@ -20,5 +20,6 @@ from musicboxWebApp import views
 
 
 urlpatterns = [
-    path("",views.inicio)
+    path("",views.inicio),
+    path("buscar/",views.buscar)
 ]

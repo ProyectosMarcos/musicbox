@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      {% load static %}
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link href="{% static 'musicboxWebApp/resultado_busqueda/resultado_busqueda.css' %}" rel="stylesheet">
+      <link href="{% static 'musicboxWebApp/resultado_busqueda/normalize.css' %}" rel="stylesheet">
+
+
+      <script src="https://kit.fontawesome.com/ef233ec86e.js" crossorigin="anonymous"></script>
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+      </style>
+      <title>Proyecto1</title>
+   </head>
+   <body class="contenedor-grid">
+      <header class="header">
+         <nav class="nav" id="nav">
+            <ul class="NAV-LIST">
+               <span class="logo">Music~<span class="logo-2">box♪</span></span>
+               <li class="Listas"><a href="/Proyecto-Musicbox/index.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="{% static 'musicboxWebApp/iconos/house-black-silhouette-without-door.png' %}"></i>Inicio</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/perfil/perfil.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-2" src="{% static 'musicboxWebApp/iconos/music-lover.png' %}"></i>Perfil</a></li>
+               <li class="Listas"><a href="/Proyecto-Musicbox/LISTAS/listas.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="{% static 'musicboxWebApp/iconos/icono.png' %}"></i>Listas</a></li>
+               <li class="Listas"><a href="#" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="{% static 'musicboxWebApp/iconos/exit.png' %}"></i>Cerrar sesíon</a></li>
+            </ul>
+            <div class="hamburguer">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>
+         </nav>
+      </header>
+      
+      
+      
+      <nav class="navbar">
+         <nav class="inputs-nav">
+            <div class="barra">
+               
+               <form action="/buscar/" method="GET" class="formulario-1">
+                  <div>
+                     <input class="formulario__campo-1" type="text" placeholder="Ingrese texto para buscar" name="nombre_album" required>
+                  </div>
+                  <div class="barra_boton_nueva_lista">
+                     <button type="submit" class="btn">Buscar</button>
+                  </div>
+               </form>
+
+
+            </div>
+         </nav>
+      </nav>
+
+
+
+      <main class="main">
+            <p class="descripcion-resultado">Resultados:</p>
+            <div class="listado-resultados">
+               
+               <div class="resultado">
+                  <a href="{{referencia}}"><img src="{% static archivo_imagen %}" alt="" class="imagen-resultado"></a>
+                  <p style="text-decoration:none" class="nombre-resultado">{{nombre}}</p>
+               </div>
+               
+               
+            </div>
+
+
+
+
+            <!-- CANTIDAD PARA TENER ESTRUCTURA FIJA-->
+            
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br>
+            
+            
+            
+            
+
+      </main>
+      <footer class="footer">
+         <h3 class="Footer-h3">Todos los derechos reservados</h3>
+      </footer>
+      <script src="{% static 'musicboxWebApp/resultado_busqueda/menu.js' %}"></script>
+   </body>
+</html>
