@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detalle_album.css">
+    <link rel="stylesheet" href="/Proyecto-Musicbox/estilo2.css">
+    <link rel="stylesheet" href="/Proyecto-Musicbox/logo.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ef233ec86e.js" crossorigin="anonymous"></script>
+   
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+    </style>
+    <title>Proyecto1</title>
+</head>
+<body class="contenedor-grid">
+    <header class="header">
+        <nav class="nav" id="nav">
+            <ul class="NAV-LIST">
+                <span class="logo">Music~<span class="logo-2">box♪</span></span>
+              <li class="Listas"><a href="/Proyecto-Musicbox/index.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="/Proyecto-Musicbox/iconos/house-black-silhouette-without-door.png"></i>Inicio</a></li>
+              <li class="Listas"><a href="/perfil/perfil.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-2" src="/Proyecto-Musicbox/iconos/music-lover.png"></i>Perfil</a></li>
+              <li class="Listas"><a href="/Proyecto-Musicbox/LISTAS/listas.html" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="/Proyecto-Musicbox/iconos/icono.png"></i>Listas</a></li>
+              <li class="Listas"><a href="" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="/Proyecto-Musicbox/iconos/exit.png"></i>Cerrar sesíon</a></li>
+              </ul>
+              <div class="hamburguer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+              </div>
+          </nav>
+    </header>
+    <nav class="navbar"><nav class="inputs-nav">
+            <div class="barra">
+                <form action="" class="formulario-1">
+                    <div>
+                     <input class="formulario__campo-1" type="text" placeholder="Ingrese texto para buscar" required>
+                     </div>
+                     <div>
+                     
+                     </div>
+                      <div class="barra_boton_nueva_lista">
+                     <button class="btn">Buscar</button>
+                  </div>
+                  </form>
+    </div>
+    </div>
+    </div>
+    </nav>
+    </nav>
+    <main class="main">
+        <p class="titulo_album">{{nombreAlbum}}</p>
+        <p class="banda_album">{{nombreArtista}}</p>
+        <img v-bind:src="nombreAlbumArchivo" alt=""class="portada-album" >
+        <div class="datos-album">
+            <p class="caracteristica">Año: {{anio}}</p>
+            <p class="caracteristica">Duracion: {{duracion}} minutos</p>
+            <p class="caracteristica">Canciones:</p>
+            <ul class="listado-canciones">
+                <li v-for="cancion in canciones">
+                    {{cancion.nombreCancion}}
+                </li>
+            </ul>
+            <a class="link_album" v-bind:href="linkInfo">+ info</a>
+        </div>
+        
+        <div class="boton-agregar-lista">
+            <button class="boton-puntuar" id="btn-abrir-modal-listas">Agregar a listas</button>
+        </div>
+        
+
+
+
+
+
+
+
+
+        
+        <div class="modalListas">
+            <dialog id="modalListas">
+                <div class="container-2">
+                    <!-- <h2 id="title">Editar Listenlist</h2> -->
+                    <form>
+                        <h2 id="sub-title-listas">A qué lista querés este album?</h2>
+                        <input id="input-1" type="text" class="input_lista_agregar">
+
+
+
+                        <div class="guardado-albums">
+                            <button id="guardar-detalle-album">Guardar</button>
+                        </div>
+                        <div class="cerrar-albums">
+                            <button id="cerrar-detalle-album">Cerrar</button>
+                        </div>                        
+                    </form>
+                </div>
+            </dialog>
+        </div>
+    </main>
+    <footer class="footer"><h3 class="Footer-h3">Todos los derechos reservados</h3></footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="VUE-DETALLE_ALBUM.js"></script>
+    <script src="menu.js"></script>
+    <script src="/Proyecto-Musicbox/form-index.js"></script>
+    <script src ="/Proyecto-Musicbox/detalle_album/modal.js"></script>
+</body>
+</html>
