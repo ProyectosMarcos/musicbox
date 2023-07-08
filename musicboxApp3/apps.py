@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class Musicboxapp2Config(AppConfig):
+class Musicboxapp3Config(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'musicboxApp2'
+    name = 'musicboxApp3'

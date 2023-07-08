@@ -50,15 +50,13 @@ body {
   text-align: center;
 }
 
-.formulario-1 {
-   display: inline-flex;
-   gap: 24rem;
+/* .formulario-1 {
+    display: inline-flex;
+    gap: 24rem;
 }
 
 .btn-contacto{
- 
   margin-left: 10%;
- 
 }
 #botonValidar {
   padding: 0.2rem;
@@ -67,11 +65,24 @@ body {
  background-color: black;
  color: var(--ColorBlanco);
  cursor: pointer;
-}
+} */
 
 
 
 @media (min-width: 1224px) {
+  
+  #btn-open-modal {
+
+  }
+  #cerrarsesion-modal {
+
+  }
+
+  #btn-close-modal {
+
+  }
+  
+  
   .btn-contacto{
     background-color: #88898946;
     font-size: 2.5rem;
@@ -217,6 +228,7 @@ body {
     margin-left: 7rem;
     width: 85.35%;
     padding: 2rem;
+    padding-bottom: 1rem;
     margin-top: 4.7rem;
     margin-bottom: 2rem;
    
@@ -245,9 +257,10 @@ body {
     border-style:groove;
     border-radius: 1.2rem;
     margin-left: 7rem;
-    width: 52%;
+    width: 85.35%;
     padding: 2rem;
     margin-top: 2rem;
+    margin-bottom: 4rem;
   }
   .estadisticas{
     color: green;
@@ -811,6 +824,9 @@ body {
       font-size: 1.8rem 
  }
 }
+
+
+
 @media only screen and (min-width: 0px) and (max-width:799px) {
   /* .btn-contacto{
     background-color: #88898946;
@@ -1068,7 +1084,376 @@ body {
  }
 }
 
+/******************************@Media queries@ Nav******************/
 
+@media (min-width: 1201px) {
+  .formulario-1 {
+    display: inline-flex;
+    gap: 15rem;
+  }
+  
+  #botonValidar {
+  padding: 0.2rem;
+  font-size: 1.4rem;
+  font-family: var(--Fuenteprincipal);
+  background-color: black;
+  color: var(--ColorBlanco);
+  cursor: pointer;
+  }
+  }
+
+@media (min-width: 1001px) and (max-width:1200px) {
+  .formulario-1 {
+    display: inline-flex;
+    gap: 15rem;
+  }
+  
+  #botonValidar {
+  padding: 0.2rem;
+  font-size: 1.4rem;
+  font-family: var(--Fuenteprincipal);
+  background-color: black;
+  color: var(--ColorBlanco);
+  cursor: pointer;
+  }
+  }
+
+
+@media (min-width: 900px) and (max-width:1000px) {
+  .formulario-1 {
+    display: inline-flex;
+    gap: 20rem;
+  }
+  
+  /* .btn-contacto{
+  margin-left: 10%;
+  } */
+  #botonValidar {
+  padding: 0.2rem;
+  margin-left: 4rem;
+  font-size: 1.4rem;
+  font-family: var(--Fuenteprincipal);
+  background-color: black;
+  color: var(--ColorBlanco);
+  cursor: pointer;
+  }
+  }
+
+
+@media (min-width: 800px) and (max-width:900px) {
+  .formulario-1 {
+    display: inline-flex;
+    gap: 15rem;
+  }
+  
+  /* .btn-contacto{
+  margin-left: 10%;
+  } */
+  #botonValidar {
+  padding: 0.2rem;
+  margin-left: 4rem;
+  font-size: 1.4rem;
+  font-family: var(--Fuenteprincipal);
+  background-color: black;
+  color: var(--ColorBlanco);
+  cursor: pointer;
+  }
+  }
+
+
+
+@media (min-width: 750px) and (max-width:799px) {
+.formulario-1 {
+  display: inline-flex;
+  gap: 11rem;
+}
+
+/* .btn-contacto{
+margin-left: 10%;
+} */
+#botonValidar {
+padding: 0.2rem;
+margin-left: 4rem;
+font-size: 1.4rem;
+font-family: var(--Fuenteprincipal);
+background-color: black;
+color: var(--ColorBlanco);
+cursor: pointer;
+}
+}
+
+@media (min-width: 700px) and (max-width:749px) {
+  .formulario-1 {
+    display: inline-flex;
+    gap: 9rem;
+  }
+  
+  .btn-contacto{
+  /* margin-left: 10%; */
+  }
+  #botonValidar {
+  padding: 0.2rem;
+  margin-left: 4rem;
+  font-size: 1.4rem;
+  font-family: var(--Fuenteprincipal);
+  background-color: black;
+  color: var(--ColorBlanco);
+  cursor: pointer;
+  }
+
+  button {
+    background-color: black;
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+  }
+  button span {
+    font-size: 1.7rem;
+    transition: .2s;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+  }
+
+  @media (min-width: 625px) and (max-width:699px) {
+    .formulario-1 {
+      display: inline-flex;
+      gap: 5rem;
+    }
+    
+    .btn-contacto{
+    /* margin-left: 10%; */
+    }
+    #botonValidar {
+    padding: 0.2rem;
+    margin-left: 4rem;
+    font-size: 1.4rem;
+    font-family: var(--Fuenteprincipal);
+    background-color: black;
+    color: var(--ColorBlanco);
+    cursor: pointer;
+    }
+    }
+
+
+    @media (min-width: 550px) and (max-width:624px) {
+      .formulario-1 {
+        display: inline-flex;
+        gap: 3.99rem;
+      }
+      
+      .btn-contacto{
+      /* margin-left: 10%; */
+      }
+      #botonValidar {
+      padding: 0.2rem;
+      margin-left: 4rem;
+      font-size: 1.4rem;
+      font-family: var(--Fuenteprincipal);
+      background-color: black;
+      color: var(--ColorBlanco);
+      cursor: pointer;
+      }
+      }
+
+
+      
+    @media (min-width: 550px) and (max-width:600px) {
+      .formulario-1 {
+        display: inline-flex;
+        gap: 1rem;
+      }
+      
+      .btn-contacto{
+      /* margin-left: 10%; */
+      }
+      #botonValidar {
+      padding: 0.2rem;
+      margin-left: 4rem;
+      font-size: 1.4rem;
+      font-family: var(--Fuenteprincipal);
+      background-color: black;
+      color: var(--ColorBlanco);
+      cursor: pointer;
+      }
+      }
+
+
+      @media (min-width: 500px) and (max-width:549px) {
+        .formulario-1 {
+          display: inline-flex;
+          gap: 1rem;
+        }
+        
+        /* .btn-contacto{
+        margin-left: 10%;
+        } */
+        #botonValidar {
+        padding: 0.2rem;
+        margin-left: 4rem;
+        font-size: 1.4rem;
+        font-family: var(--Fuenteprincipal);
+        background-color: black;
+        color: var(--ColorBlanco);
+        cursor: pointer;
+        }
+        }
+
+         @media (min-width: 400px) and (max-width:499px) {
+          .formulario-1 {
+            display: inline-flex;
+            gap: 1.5rem;
+          }
+          
+          .btn-contacto{
+          /* margin-left: 10%; */
+          }
+          #botonValidar {
+          padding: 0.2rem;
+          margin-left: 4rem;
+          font-size: 1.4rem;
+          font-family: var(--Fuenteprincipal);
+          background-color: black;
+          color: var(--ColorBlanco);
+          cursor: pointer;
+
+          }
+
+          /* .barra_boton_nueva_lista, .btn{
+            margin-left: 1rem;
+          } */
+
+
+          #Email {
+            font-size: 2.3rem;
+           width: 40rem;
+           margin-top: 3rem;
+           border-radius: 0.5rem;
+           border-color: rgb(0, 234, 255);
+           background-color:#232526;
+           padding: 0.4rem;
+           color: #ffffff;
+          }
+          
+          
+          #Usuario {
+           font-size: 2.3rem;
+           width: 40rem;
+           margin-top: 7rem;
+           border-radius: 0.5rem;
+           border-color: rgb(0, 234, 255);
+           background-color:#232526;
+           padding: 0.4rem;
+           color: #ffffff;
+          }
+          
+          
+          
+          
+          #Asunto{
+           font-size: 2.3rem;
+           width: 40rem;
+           margin-top: 7rem;
+           border-radius: 0.5rem;
+           border-color: rgb(0, 234, 255);
+           background-color:#232526;
+           padding: 0.4rem;
+           color: #ffffff;
+          }
+
+          #input-recomendacíon{
+            background-color: #232526;
+            border-radius: 0.8rem;
+            color: white;
+            width: 40rem;
+            height: 3rem;
+            margin-top: 8rem;
+            height: 25rem;
+          }
+        }
+
+        @media (min-width: 0px) and (max-width:399px) {
+          .formulario-1 {
+            display: inline-flex;
+            gap: 1rem;
+          }
+          
+          .btn-contacto{
+          /* margin-left: 10%; */
+          }
+          #botonValidar {
+          padding: 0.2rem;
+          margin-left: 4rem;
+          font-size: 1.4rem;
+          font-family: var(--Fuenteprincipal);
+          background-color: black;
+          color: var(--ColorBlanco);
+          cursor: pointer;
+
+          }
+
+          /* .barra_boton_nueva_lista, .btn{
+            margin-left: 1rem;
+          } */
+
+
+          #Email {
+            font-size: 2.3rem;
+           width: 40rem;
+           margin-top: 3rem;
+           border-radius: 0.5rem;
+           border-color: rgb(0, 234, 255);
+           background-color:#232526;
+           padding: 0.4rem;
+           color: #ffffff;
+          }
+          
+          
+          #Usuario {
+           font-size: 2.3rem;
+           width: 40rem;
+           margin-top: 7rem;
+           border-radius: 0.5rem;
+           border-color: rgb(0, 234, 255);
+           background-color:#232526;
+           padding: 0.4rem;
+           color: #ffffff;
+          }
+          
+          
+          
+          
+          #Asunto{
+           font-size: 2.3rem;
+           width: 40rem;
+           margin-top: 7rem;
+           border-radius: 0.5rem;
+           border-color: rgb(0, 234, 255);
+           background-color:#232526;
+           padding: 0.4rem;
+           color: #ffffff;
+          }
+
+          #input-recomendacíon{
+            background-color: #232526;
+            border-radius: 0.8rem;
+            color: white;
+            width: 40rem;
+            height: 3rem;
+            margin-top: 8rem;
+            height: 25rem;
+          }
+        }
+
+
+
+
+          
+     
+/******************************@Media queries@ Nav*************************************************************/
 
 @media only screen and (min-width: 600px) and (max-width:790px) {
 
@@ -1158,7 +1543,7 @@ body {
   border-radius: 1.1rem;
   border-style: solid;
   border-color: rgb(0, 234, 255);
-  margin-left: 46%;
+  /* margin-left: 46%; */
   margin-top: 2rem;
   height: 5rem;
   width: 14rem;
@@ -1242,7 +1627,7 @@ button:active {
   border-radius: 1.1rem;
   border-style: solid;
   border-color: rgb(0, 234, 255);
-  margin-left: 46%;
+  /* margin-left: 46%; */
   margin-top: 2rem;
   height: 5rem;
   width: 14rem;
@@ -1327,7 +1712,7 @@ button:active {
     border-radius: 1.1rem;
     border-style: solid;
     border-color: rgb(0, 234, 255);
-    margin-left: 46%;
+    /* margin-left: 46%; */
     margin-top: 2rem;
     height: 5rem;
     width: 14rem;
@@ -1353,12 +1738,96 @@ button:active {
     }
 
 
+    /* @media only screen and (min-width: 500px) and (max-width:548px) {
+ 
+      #Email {
+        font-size: 2.3rem;
+       width: 40rem;
+       margin-top: 3rem;
+       border-radius: 0.5rem;
+       border-color: rgb(0, 234, 255);
+       background-color:#232526;
+       padding: 0.4rem;
+       color: #ffffff;
+      }
+      
+      
+      #Usuario {
+       font-size: 2.3rem;
+       width: 40rem;
+       margin-top: 7rem;
+       border-radius: 0.5rem;
+       border-color: rgb(0, 234, 255);
+       background-color:#232526;
+       padding: 0.4rem;
+       color: #ffffff;
+      }
+      
+      
+      
+      
+      #Asunto{
+       font-size: 2.3rem;
+       width: 43rem;
+       margin-top: 7rem;
+       border-radius: 0.5rem;
+       border-color: rgb(0, 234, 255);
+       background-color:#232526;
+       padding: 0.4rem;
+       color: #ffffff;
+      }
+      
+      #input-recomendacíon{
+        background-color: #232526;
+        border-radius: 0.8rem;
+        color: white;
+        font-size: 1.9rem;
+        width: 43rem;
+        height: 3rem;
+        margin-top: 8rem;
+        height: 25rem;
+      }
+      
+      .btn-contacto{
+        background-color: #88898946;
+        font-size: 2.5rem;
+        border-radius: 1.1rem;
+        border-style: solid;
+        border-color: rgb(0, 234, 255);
+        margin-left: 46%;
+        margin-top: 2rem;
+        height: 5rem;
+        width: 14rem;
+        transition: .2s;
+        cursor: pointer;
+        color: var(--ColorBlanco);
+      }
+      button {
+        background-color: black;
+        color: var(--ColorBlanco);
+        width: 11rem;
+        height: 2.3rem;
+        transition: .2s;
+        cursor: pointer;
+      }
+      button span {
+        font-size: 1.7rem;
+        transition: .2s;
+      }
+      button:active {
+        transform: scale(0.9);
+      }
+        } */
+
+
+
+
     
-@media only screen and (min-width: 0px) and (max-width:599px) {
+@media only screen and (min-width: 551px) and (max-width:599px) {
  
   #Email {
     font-size: 2.3rem;
-   width: 44rem;
+   width: 40rem;
    margin-top: 3rem;
    border-radius: 0.5rem;
    border-color: rgb(0, 234, 255);
@@ -1370,7 +1839,7 @@ button:active {
   
   #Usuario {
    font-size: 2.3rem;
-   width: 44rem;
+   width: 40rem;
    margin-top: 7rem;
    border-radius: 0.5rem;
    border-color: rgb(0, 234, 255);
@@ -1384,7 +1853,7 @@ button:active {
   
   #Asunto{
    font-size: 2.3rem;
-   width: 44rem;
+   width: 40rem;
    margin-top: 7rem;
    border-radius: 0.5rem;
    border-color: rgb(0, 234, 255);
@@ -1398,7 +1867,7 @@ button:active {
     border-radius: 0.8rem;
     color: white;
     font-size: 1.9rem;
-    width: 44rem;
+    width: 40rem;
     height: 3rem;
     margin-top: 8rem;
     height: 25rem;
@@ -1410,7 +1879,7 @@ button:active {
     border-radius: 1.1rem;
     border-style: solid;
     border-color: rgb(0, 234, 255);
-    margin-left: 46%;
+    /* margin-left: 46%; */
     margin-top: 2rem;
     height: 5rem;
     width: 14rem;
@@ -1434,6 +1903,96 @@ button:active {
     transform: scale(0.9);
   }
     }
+
+
+
+    @media only screen and (min-width: 500px) and (max-width:550px) {
+ 
+      #Email {
+        font-size: 2.3rem;
+       width: 40rem;
+       margin-top: 3rem;
+       border-radius: 0.5rem;
+       border-color: rgb(0, 234, 255);
+       background-color:#232526;
+       padding: 0.4rem;
+       color: #ffffff;
+      }
+      
+      
+      #Usuario {
+       font-size: 2.3rem;
+       width: 40rem;
+       margin-top: 7rem;
+       border-radius: 0.5rem;
+       border-color: rgb(0, 234, 255);
+       background-color:#232526;
+       padding: 0.4rem;
+       color: #ffffff;
+      }
+      
+      
+      
+      
+      #Asunto{
+       font-size: 2.3rem;
+       width: 40rem;
+       margin-top: 7rem;
+       border-radius: 0.5rem;
+       border-color: rgb(0, 234, 255);
+       background-color:#232526;
+       padding: 0.4rem;
+       color: #ffffff;
+      }
+      
+      #input-recomendacíon{
+        background-color: #232526;
+        border-radius: 0.8rem;
+        color: white;
+        font-size: 1.9rem;
+        width: 40rem;
+        height: 3rem;
+        margin-top: 8rem;
+        height: 25rem;
+      }
+      
+      .btn-contacto{
+        background-color: #88898946;
+        font-size: 2.5rem;
+        border-radius: 1.1rem;
+        border-style: solid;
+        border-color: rgb(0, 234, 255);
+        /* margin-left: 46%; */
+        margin-top: 2rem;
+        height: 5rem;
+        width: 14rem;
+        transition: .2s;
+        cursor: pointer;
+        color: var(--ColorBlanco);
+      }
+      button {
+        background-color: black;
+        color: var(--ColorBlanco);
+        width: 11rem;
+        height: 2.3rem;
+        transition: .2s;
+        cursor: pointer;
+      }
+      button span {
+        font-size: 1.7rem;
+        transition: .2s;
+      }
+      button:active {
+        transform: scale(0.9);
+      }
+        }
+
+
+
+
+
+
+
 
 
 
@@ -1525,6 +2084,8 @@ button:active {
 
 @media only screen and (min-width:600px) and (max-width:599px) {
 }
+
+
 @media only screen and (min-width: 542px) and (max-width:699px) {
   button {
       background-color: black;
@@ -1565,6 +2126,534 @@ button:active {
       font-family: var(--Fuenteprincipal);
  }
 }
+
+
+
+@media only screen and (min-width: 500px) and (max-width:700px) {
+  .btn-contacto{
+    background-color: #88898946;
+    font-size: 1.5rem;
+    border-radius: 1.1rem;
+    border-style: solid;
+    border-color: rgb(0, 234, 255);
+    /* margin-left: 36%; */
+    margin-top: 3rem;
+    height: 3rem;
+    width: 8.5rem;
+  }
+  
+  #input-recomendacion{
+    background-color: #232526;
+    border-radius: 0.8rem;
+    color: white;
+    font-size: 1.5rem;
+    
+  }
+  
+  .input-nombre{
+    font-size: 1.8rem;
+  }
+  .container-input{
+    margin-left: 0rem;
+    margin-top: 3rem;
+  }
+  #input-fijo{
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border-color: rgb(0, 234, 255);
+    background-color:#232526;
+    padding: 0.4rem;
+    color: #ffffff;
+  }
+  
+  .contacto{
+    color: white;
+    border-color: rgb(0, 234, 255);
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 1rem;
+    width: 85.35%;
+    padding: 2rem;
+    padding-right: 2%;
+    margin-top: 4.7rem;
+    margin-bottom: 2rem;
+  }
+  
+  .novedades{
+    color: white;
+    border-color: yellow;
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 1rem;
+    width: 85.35%;
+    padding: 2rem;
+  }
+  .descripcion-novedades{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .listado-albumes-novedades{
+    font-size: 1.8rem;
+    margin-left: 4rem;
+  }
+  .definicion-app{
+    color:white;
+    border-color: violet;
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 1rem;
+    width: 85.35%;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .estadisticas{
+    color: green;
+    border-color: green;
+    border-style:solid;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    width: 85.35%;
+    /* margin-left: 113rem; */
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .titulo-estadisticas{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .listado-estadisticas{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+  }
+  
+  
+  
+  .contenedor-grid{
+      display: grid;
+      grid-template-areas: "header" "navbar" "main" "footer";
+ }
+  .header {
+      grid-area: header;
+      background-color:var(--ColorNav);
+ }
+  .navbar {
+      grid-area: navbar;
+      background-color: var(--ColorNav);
+ }
+  .main {
+      grid-area: main;
+      background-color: var(--ColorPrincipal);
+ }
+  .footer {
+      grid-area: footer;
+      background-color: var(--ColorPrincipal);
+ }
+  #H2 {
+      color: var(--ColorBlanco);
+      margin-left: 3rem;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+ }
+  #h3-4{
+      color: var(--ColorBlanco);
+      margin-left: 15.5rem;
+ }
+  .hamburguer {
+      display: block;
+ }
+  .hamburguer.active .bar:nth-child(2) {
+      opacity: 0;
+ }
+  .hamburguer.active .bar:nth-child(1) {
+      transform: translateX(8px) rotate(45deg);
+ }
+  .hamburguer.active .bar:nth-child(3) {
+      transform: translateX(-8px) rotate(-45deg);
+ }
+  .NAV-LIST {
+      position: fixed;
+      right: -100%;
+      top:70px;
+      gap:0;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--ColorNav);
+      width: 100%;
+      transition: 0.3s;
+ }
+  .Listas {
+      margin: 16px 0;
+ }
+  .NAV-LIST a {
+      font-size: 1.4rem;
+ }
+  .NAV-LIST a:hover{
+      transition: 0.1s ease;
+      color: aqua;
+ }
+  .contenedor-inputs {
+      margin-right: 17rem;
+      margin-top: 2rem;
+      border: solid;
+ }
+}
+
+
+@media only screen and (min-width: 399px) and (max-width:499px) {
+  .btn-contacto{
+    background-color: #88898946;
+    font-size: 1.5rem;
+    border-radius: 1.1rem;
+    border-style: solid;
+    border-color: rgb(0, 234, 255);
+    /* margin-left: 36%; */
+    margin-top: 3rem;
+    height: 3rem;
+    width: 8.5rem;
+  }
+  
+  #input-recomendacion{
+    background-color: #232526;
+    border-radius: 0.8rem;
+    color: white;
+    font-size: 1.5rem;
+    
+  }
+  
+  .input-nombre{
+    font-size: 1.8rem;
+  }
+  .container-input{
+    margin-left: 0rem;
+    margin-top: 3rem;
+  }
+  #input-fijo{
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border-color: rgb(0, 234, 255);
+    background-color:#232526;
+    padding: 0.4rem;
+    color: #ffffff;
+  }
+  
+  .contacto{
+    color: white;
+    border-color: rgb(0, 234, 255);
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 1rem;
+    width: 30%;
+    padding: 2rem;
+    padding-right: 2%;
+    margin-top: 4.7rem;
+    margin-bottom: 2rem;
+  }
+  
+  .novedades{
+    color: white;
+    border-color: yellow;
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 1rem;
+    width: 30%;
+    padding: 2rem;
+  }
+  .descripcion-novedades{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .listado-albumes-novedades{
+    font-size: 1.8rem;
+    margin-left: 4rem;
+  }
+  .definicion-app{
+    color:white;
+    border-color: violet;
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 1rem;
+    width: 30%;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .estadisticas{
+    color: green;
+    border-color: green;
+    border-style:solid;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    width: 35%;
+    /* margin-left: 113rem; */
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .titulo-estadisticas{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .listado-estadisticas{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+  }
+  
+  
+  
+  .contenedor-grid{
+      display: grid;
+      grid-template-areas: "header" "navbar" "main" "footer";
+ }
+  .header {
+      grid-area: header;
+      background-color:var(--ColorNav);
+ }
+  .navbar {
+      grid-area: navbar;
+      background-color: var(--ColorNav);
+ }
+  .main {
+      grid-area: main;
+      background-color: var(--ColorPrincipal);
+ }
+  .footer {
+      grid-area: footer;
+      background-color: var(--ColorPrincipal);
+ }
+  #H2 {
+      color: var(--ColorBlanco);
+      margin-left: 3rem;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+ }
+  #h3-4{
+      color: var(--ColorBlanco);
+      margin-left: 15.5rem;
+ }
+  .hamburguer {
+      display: block;
+ }
+  .hamburguer.active .bar:nth-child(2) {
+      opacity: 0;
+ }
+  .hamburguer.active .bar:nth-child(1) {
+      transform: translateX(8px) rotate(45deg);
+ }
+  .hamburguer.active .bar:nth-child(3) {
+      transform: translateX(-8px) rotate(-45deg);
+ }
+  .NAV-LIST {
+      position: fixed;
+      right: -100%;
+      top:70px;
+      gap:0;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--ColorNav);
+      width: 100%;
+      transition: 0.3s;
+ }
+  .Listas {
+      margin: 16px 0;
+ }
+  .NAV-LIST a {
+      font-size: 1.4rem;
+ }
+  .NAV-LIST a:hover{
+      transition: 0.1s ease;
+      color: aqua;
+ }
+  .contenedor-inputs {
+      margin-right: 17rem;
+      margin-top: 2rem;
+      border: solid;
+ }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width:398px) {
+
+  
+  .btn-contacto{
+    background-color: #88898946;
+    font-size: 1.5rem;
+    border-radius: 1.1rem;
+    border-style: solid;
+    border-color: rgb(0, 234, 255);
+    /* margin-left: 36%; */
+    margin-top: 3rem;
+    height: 3rem;
+    width: 8.5rem;
+  }
+  
+  #input-recomendacion{
+    background-color: #232526;
+    border-radius: 0.8rem;
+    color: white;
+    font-size: 1.5rem;
+    
+  }
+  
+  .input-nombre{
+    font-size: 1.8rem;
+  }
+  .container-input{
+    margin-left: 0rem;
+    margin-top: 3rem;
+  }
+  #input-fijo{
+    font-size: 1.5rem;
+    width: 90%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border-color: rgb(0, 234, 255);
+    background-color:#232526;
+    padding: 0.4rem;
+    color: #ffffff;
+  }
+  
+  .contacto{
+    color: white;
+    border-color: rgb(0, 234, 255);
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 1rem;
+    width: 25%;
+    padding: 2rem;
+    padding-right: 2%;
+    margin-top: 4.7rem;
+    margin-bottom: 2rem;
+  }
+  
+  .novedades{
+    color: white;
+    border-color: yellow;
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 1rem;
+    width: 25%;
+    padding: 2rem;
+  }
+  .descripcion-novedades{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .listado-albumes-novedades{
+    font-size: 1.8rem;
+    margin-left: 4rem;
+  }
+  .definicion-app{
+    color:white;
+    border-color: violet;
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 1rem;
+    width: 25%;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .estadisticas{
+    color: green;
+    border-color: green;
+    border-style:solid;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    width: 25%;
+    /* margin-left: 113rem; */
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .titulo-estadisticas{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .listado-estadisticas{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+  }
+  
+  
+  
+  .contenedor-grid{
+      display: grid;
+      grid-template-areas: "header" "navbar" "main" "footer";
+ }
+  .header {
+      grid-area: header;
+      background-color:var(--ColorNav);
+ }
+  .navbar {
+      grid-area: navbar;
+      background-color: var(--ColorNav);
+ }
+  .main {
+      grid-area: main;
+      background-color: var(--ColorPrincipal);
+ }
+  .footer {
+      grid-area: footer;
+      background-color: var(--ColorPrincipal);
+ }
+  #H2 {
+      color: var(--ColorBlanco);
+      margin-left: 3rem;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+ }
+  #h3-4{
+      color: var(--ColorBlanco);
+      margin-left: 15.5rem;
+ }
+  .hamburguer {
+      display: block;
+ }
+  .hamburguer.active .bar:nth-child(2) {
+      opacity: 0;
+ }
+  .hamburguer.active .bar:nth-child(1) {
+      transform: translateX(8px) rotate(45deg);
+ }
+  .hamburguer.active .bar:nth-child(3) {
+      transform: translateX(-8px) rotate(-45deg);
+ }
+  .NAV-LIST {
+      position: fixed;
+      right: -100%;
+      top:70px;
+      gap:0;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--ColorNav);
+      width: 100%;
+      transition: 0.3s;
+ }
+  .Listas {
+      margin: 16px 0;
+ }
+  .NAV-LIST a {
+      font-size: 1.4rem;
+ }
+  .NAV-LIST a:hover{
+      transition: 0.1s ease;
+      color: aqua;
+ }
+  .contenedor-inputs {
+      margin-right: 17rem;
+      margin-top: 2rem;
+      border: solid;
+ }
+}
+
+
+
+
+
+
 
 
 
@@ -1647,6 +2736,1005 @@ button:active {
       font-size: 1.7rem;
       font-family: var(--Fuenteprincipal);
  }
+}@media only screen and (min-width: 771px) and (max-width:773px) {
+  .NAV-LIST a {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 751px) and (max-width:753px) {
+  .NAV-LIST a {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 753px) and (max-width:768px) {
+  .NAV-LIST a {
+    font-size: 1.6rem;
+  }
+}
+
+
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width:1224px)  {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 18rem;
+    margin-top: 15rem;
+    width: 80rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 40.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width:1201px) and (max-width:1223px) {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 18rem;
+    margin-top: 15rem;
+    width: 80rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 40.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width:1151px) and (max-width:1200px) {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 18rem;
+    margin-top: 15rem;
+    width: 80rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 40.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width:1101px) and (max-width:1150px) {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 16rem;
+    margin-top: 15rem;
+    width: 80rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 40.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width:1101px) and (max-width:1150px) {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 16rem;
+    margin-top: 15rem;
+    width: 80rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 40.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width:1051px) and (max-width:1100px) {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 14rem;
+    margin-top: 15rem;
+    width: 80rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 40.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+
+
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width:1001px) and (max-width:1050px) {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 10rem;
+    margin-top: 15rem;
+    width: 80rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 40.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width:951px) and (max-width:1000px) {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 19rem;
+    margin-top: 15rem;
+    width: 60rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 40.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width:900px) and (max-width:950px) {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 17rem;
+    margin-top: 15rem;
+    width: 60rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 40.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width: 851px) and (max-width:899px) {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 16rem;
+    margin-top: 15rem;
+    width: 60rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 40.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width: 800px) and (max-width:850px) {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 13rem;
+    margin-top: 15rem;
+    width: 60rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 40.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width: 751px) and (max-width:799px) {
+
+  /* .NAV-LIST a {
+    font-size: 1.5rem;
+  } */
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 23rem;
+    margin-top: 15rem;
+    width: 30rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 34.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width: 721px) and (max-width:750px) {
+
+  .NAV-LIST a {
+    font-size: 1.5rem;
+  }
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 23rem;
+    margin-top: 15rem;
+    width: 30rem;
+    
+  }
+  
+  #btn-close-modal {
+  margin-left: 34.5%;
+  }
+
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width: 701px) and (max-width:720px) {
+  .NAV-LIST a {
+    font-size: 1.4rem;
+  }
+  .container-dialog {
+    background-color: rgba(0, 0, 0, 0.667);
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 20.1rem;
+    margin-top: 15rem;
+    width: 30rem;
+  }
+  
+  #btn-close-modal {
+  margin-left: 34.5%;
+  }
+     button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } 
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion*************************************************************************************************************/
+@media only screen and (min-width: 651px) and (max-width:700px) {
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 20.1rem;
+    margin-top: 15rem;
+    width: 30rem;
+  }
+  
+  #btn-close-modal {
+  margin-left: 34.5%;
+  }
+    /* button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } */
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width: 601px) and (max-width:650px) {
+  
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 17rem;
+    margin-top: 15rem;
+    width: 30rem;
+  }
+  
+  #btn-close-modal {
+  margin-left: 34.5%;
+  }
+    /* button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } */
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width: 551px) and (max-width:600px) {
+  
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 15rem;
+    margin-top: 15rem;
+    width: 30rem;
+  }
+  
+  #btn-close-modal {
+  margin-left: 34.5%;
+  }
+    /* button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } */
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width: 521px) and (max-width:550px) {
+  
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 14rem;
+    margin-top: 15rem;
+    width: 30rem;
+  }
+  
+  #btn-close-modal {
+  margin-left: 34.5%;
+  }
+    /* button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } */
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width: 458px) and (max-width:520px) {
+ 
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 10rem;
+    margin-top: 15rem;
+    width: 30rem;
+  }
+  
+  #btn-close-modal {
+  margin-left: 34.5%;
+  }
+    /* button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } */
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width: 407px) and (max-width:457px) {
+ 
+  #btn-open-modal {
+    background-color:var(--ColorNav);
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+  }
+  #cerrarsesion-modal {
+    background-color: rgba(0, 0, 0, 0.667);
+    border-color: var(--ColorBlanco);
+    margin-left: 7.5rem;
+    margin-top: 15rem;
+    width: 30rem;
+  }
+  
+  #btn-close-modal {
+  margin-left: 34.5%;
+  }
+    /* button {
+      background-color: black;
+      color: var(--ColorBlanco);
+      width: 11rem;
+      height: 2.3rem;
+      transition: .2s;
+      cursor: pointer;
+    } */
+    button span {
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    button:active {
+      transform: scale(0.9);
+    }
+  /*******************Cerrar sesion*********************/
+  }
+/*******************Cerrar sesion******************************************************************************/
+@media only screen and (min-width: 365px) and (max-width:406px) {
+
+#btn-open-modal {
+  background-color:var(--ColorNav);
+  color: var(--ColorBlanco);
+  width: 11rem;
+  height: 2.3rem;
+  transition: .2s;
+  cursor: pointer;
+}
+#cerrarsesion-modal {
+  background-color: rgba(0, 0, 0, 0.667);
+  border-color: var(--ColorBlanco);
+  margin-left: 5.3rem;
+  margin-top: 15rem;
+  width: 30rem;
+}
+
+#btn-close-modal {
+margin-left: 34.5%;
+}
+  /* button {
+    background-color: black;
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+  } */
+  button span {
+    font-size: 1.7rem;
+    transition: .2s;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+/*******************Cerrar sesion*********************/
 }
 @media only screen and (min-width: 360px) and (max-width:406px) {
   button {
@@ -1727,7 +3815,50 @@ button:active {
       font-size: 1.7rem;
       font-family: var(--Fuenteprincipal);
  }
+
+
+/*******************Cerrar sesion******************************************************************************/
+
+#btn-open-modal {
+  background-color:var(--ColorNav);
+  color: var(--ColorBlanco);
+  width: 11rem;
+  height: 2.3rem;
+  transition: .2s;
+  cursor: pointer;
 }
+#cerrarsesion-modal {
+  background-color: rgba(0, 0, 0, 0.667);
+  border-color: var(--ColorBlanco);
+  margin-left: 4rem;
+  margin-top: 15rem;
+  width: 30rem;
+}
+
+#btn-close-modal {
+margin-left: 34.5%;
+}
+  /* button {
+    background-color: black;
+    color: var(--ColorBlanco);
+    width: 11rem;
+    height: 2.3rem;
+    transition: .2s;
+    cursor: pointer;
+  } */
+  button span {
+    font-size: 1.7rem;
+    transition: .2s;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+/*******************Cerrar sesion*********************/
+
+
+}
+
+
 .imagen-icono {
   width: 2.4rem;
   margin-top: 1px;
@@ -1825,6 +3956,9 @@ button:active {
   transition: all 0.3s ease-in-out;
   background-color: var(--ColorBlanco);
 }
+
+
+
 @media only screen and (min-width: 0px) and (max-width:700px) {
   .btn-contacto{
     background-color: #88898946;
@@ -1832,12 +3966,16 @@ button:active {
     border-radius: 1.1rem;
     border-style: solid;
     border-color: rgb(0, 234, 255);
-    margin-left: 36%;
+    /* margin-left: 36%; */
     margin-top: 3rem;
     height: 3rem;
     width: 8.5rem;
   }
   
+
+
+
+
   #input-recomendacion{
     background-color: #232526;
     border-radius: 0.8rem;
@@ -2127,7 +4265,7 @@ button:active {
       border-color: white;
       display: flex;
       justify-content: space-evenly;
-      gap: 2rem;
+      gap: 1.5rem;
  }
   .formulario-1{
       /* background-color: black; */
@@ -2135,15 +4273,33 @@ button:active {
   .input-contenedor-1 {
       border: solid;
       border-radius: 0.7rem;
-      width: 25rem;
+      width: 24.2rem;
       color: white;
  }
   .formulario__campo-1{
       background-color: black;
       color: white;
-      width: 24.4rem;
+      width: 24.2rem;
       font-size: 1.7rem;
       font-family: var(--Fuenteprincipal);
       font-weight: bold;
  }
 }
+
+
+
+
+
+
+
+
+#btn-open-modal {
+  background-color:var(--ColorNav);
+  color: var(--ColorBlanco);
+
+}
+
+
+.btn-contacto{
+  align-items: center;
+  }
