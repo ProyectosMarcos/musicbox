@@ -23,8 +23,8 @@
         <nav class="nav" id="nav">
             <ul class="NAV-LIST">
                 <span class="logo">Music~<span class="logo-2">box♪</span></span>
-                <li class="Listas"><a href="{% url 'inicio' %}" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="{% static 'musicboxWebApp/iconos/house-black-silhouette-without-door.png' %}"></i>Inicio</a></li>
-                <li class="Listas"><a href="{% url 'listas' nombre_usuario=usuario.usuario %}" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="{% static 'musicboxWebApp/iconos/icono.png' %}"></i>Listas</a></li>                
+                <li class="Listas"><a href="{% url 'inicio' nombre_usuario=usuario.usuario %}" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="{% static 'musicboxWebApp/iconos/house-black-silhouette-without-door.png' %}"></i>Inicio</a></li>
+                <li class="Listas"><a href="{% url 'listas' nombre_usuario=usuario.usuario %}" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="{% static 'musicboxWebApp/iconos/icono.png' %}"></i>Listas</a></li>
                 <li class="Listas"><a href="#" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="{% static 'musicboxWebApp/iconos/exit.png' %}"></i>Cerrar sesíon</a></li>
              </ul>
               <div class="hamburguer">
@@ -52,7 +52,7 @@
             {% for album in albums %}
                 <div class="caja2">
                     <section>
-                        <a href=""><i class="Listas-i"><img class="imagen-icono-editado-new-1" src="{% static album.archivo_imagen %}"></i></a>
+                        <a href="{% url 'detalle_album' album=album.nombre nombre_usuario=usuario.usuario %}"><i class="Listas-i"><img class="imagen-icono-editado-new-1" src="{% static album.archivo_imagen %}"></i></a>
                         <h3 id="h3-2">{{album.nombre}}</h3>
                     </section>
                 </div>

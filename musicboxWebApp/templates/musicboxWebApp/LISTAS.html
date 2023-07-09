@@ -28,7 +28,7 @@
         <nav class="nav" id="nav">
             <ul class="NAV-LIST">
                 <span class="logo">Music~<span class="logo-2">box♪</span></span>
-                <li class="Listas"><a href="{% url 'inicio' %}" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="{% static 'musicboxWebApp/iconos/house-black-silhouette-without-door.png' %}"></i>Inicio</a></li>
+                <li class="Listas"><a href="{% url 'inicio' nombre_usuario=usuario.usuario %}" class="Listas-a"><i class="Listas-i"><img class="imagen-icono" src="{% static 'musicboxWebApp/iconos/house-black-silhouette-without-door.png' %}"></i>Inicio</a></li>
                 <li class="Listas"><a href="{% url 'listas' nombre_usuario=usuario.usuario %}" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-4" src="{% static 'musicboxWebApp/iconos/icono.png' %}"></i>Listas</a></li>
                 <li class="Listas"><a href="#" class="Listas-a"><i class="Listas-i"><img class="imagen-icono-5" src="{% static 'musicboxWebApp/iconos/exit.png' %}"></i>Cerrar sesíon</a></li>
              </ul>
@@ -74,7 +74,7 @@
 
                 {% for lista in listas %}
                 <div class="caja-1">
-                    <a class="titulo_lista-2" href="{% url 'detalle_lista' lista_nombre=lista.nombre %}">{{lista.nombre}}</a>
+                    <a class="titulo_lista-2" href="{% url 'detalle_lista' lista_nombre=lista.nombre nombre_usuario=usuario.usuario %}">{{lista.nombre}}</a>
                     <br><br>
                     
                 </div>
