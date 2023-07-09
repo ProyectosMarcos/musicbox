@@ -6,6 +6,10 @@ from django.shortcuts import render
 from musicboxApp3.models import Album,Cancion,Lista,Usuario,Albums_x_Lista
 
 
+def login(request):
+	return render(request,"musicboxWebApp/LOG_IN.html")
+
+
 def inicio(request):
     novedades = ["Linkin Park - Hybrid Theory","Linkin Park - Meteora","Linkin Park - Minutes to Midnight","Limp Bizkit - Chocolate Starfish And The Hot Dog Flavored Water"]
     usuario = Usuario.objects.get(usuario="gaalvarez")

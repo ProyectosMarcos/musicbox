@@ -1,0 +1,2768 @@
+:root {
+  --ColorPrincipal:#232526;
+  --ColorNav:#590306;
+  --ColorBlanco: #ffffff;
+  --Fuenteprincipal: 'Work Sans', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+  
+}
+body {
+  min-height: 100%;
+  font-family: var(--Fuenteprincipal);
+  background-color: var(--ColorPrincipal);
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.contenedor-grid > * {
+  padding: 1rem;
+   /*Saco el border:solid; para que la pagina quede lisa*/
+  background-color: var(--ColorPrincipal);
+}
+.contenedor-grid{
+  display: grid;
+  grid-template-areas: "header"  "main" "footer";
+}
+.header {
+  grid-area: header;
+  background-color: var(--ColorPrincipal);
+}
+
+.main {
+  grid-area: main;
+  background-color: var(--ColorPrincipal) 
+}
+.footer {
+  grid-area: footer;
+  background-color: var(--ColorPrincipal);
+  font-family: var(--Fuenteprincipal);
+}
+.Footer-h3 {
+  color: aqua;
+  text-align: center;
+}
+.NAV-LIST {
+  list-style-type: none;
+}
+  
+
+
+
+
+
+@media only screen and (min-width:1901px)  {
+    
+  .logo-musica {
+    margin-left: 45%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: 67rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+
+
+
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+
+
+.form-boton input {
+margin-top: 5rem;
+margin-left: 21rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.botons {
+  display: inline-flex;
+}
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+
+
+}
+
+
+
+@media only screen and (min-width:1800px) and (max-width:1900px) {
+  .logo-musica {
+    margin-left: 45%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: 67rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+
+
+.form-boton input {
+margin-top: 5rem;
+margin-left: 21rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.botons {
+  display: inline-flex;
+}
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:1701px) and (max-width:1799px) {
+  
+  .logo-musica {
+    margin-left: 43.5%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: 59.8rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+
+.form-boton input {
+margin-top: 5rem;
+margin-left: 21rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.botons {
+  display: inline-flex;
+}
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+
+
+
+}
+
+
+@media only screen and (min-width:1601px) and (max-width:1700px) {
+   
+  .logo-musica {
+    margin-left: 40%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: 45.2rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+
+.form-boton input {
+margin-top: 5rem;
+margin-left: 21rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.botons {
+  display: inline-flex;
+}
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+
+}
+
+
+
+@media only screen and (min-width:1501px) and (max-width:1600px) {
+  
+    
+  .logo-musica {
+    margin-left: 40%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: 45.2rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+
+.form-boton input {
+margin-top: 5rem;
+margin-left: 21rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.botons {
+  display: inline-flex;
+}
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+      
+}
+
+
+@media only screen and (min-width:1401px) and (max-width:1500px) {
+  
+     
+  .logo-musica {
+    margin-left: 41%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: 42.3rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+
+/*Correo*/
+.correo {
+font-size: 3rem;
+margin-top: 7rem;
+position: relative;
+color: var(--ColorBlanco);
+
+}
+
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+
+.form-boton input {
+margin-top: 5rem;
+margin-left: 21rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.botons {
+  display: inline-flex;
+}
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+}
+
+
+@media only screen and (min-width:1301px) and (max-width:1400px) {
+ 
+  .logo-musica {
+    margin-left: 41%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: 36rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+.botons {
+  display: inline-flex;
+}
+
+
+
+  
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+
+}
+
+@media only screen and (min-width:1201px) and (max-width:1300px) {
+
+        
+  .logo-musica {
+    margin-left: 41%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: 34rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+
+.form-boton input {
+margin-top: 5rem;
+margin-left: 21rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.botons {
+  display: inline-flex;
+}
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+
+
+
+}      
+
+
+
+
+
+@media only screen and (min-width:1001px) and (max-width:1200px) {
+
+          
+  .logo-musica {
+    margin-left: 41%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: 30rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+
+
+.form-boton input {
+margin-top: 5rem;
+margin-left: 21rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.botons {
+  display: inline-flex;
+}
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+
+
+
+}
+
+@media only screen and (min-width:901px) and (max-width:1000px) {
+
+  .logo-musica {
+    margin-left: 36.9%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: 18rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+
+.form-boton input {
+margin-top: 5rem;
+margin-left: 21rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.botons {
+  display: inline-flex;
+}
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+}
+
+
+
+
+@media only screen and (min-width:801px) and (max-width:900px) {
+
+  .logo-musica {
+    margin-left: 36%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: 13rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+
+
+.form-boton input {
+margin-top: 5rem;
+margin-left: 21rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+.botons {
+  display: inline-flex;
+}
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+}
+
+
+
+
+  @media only screen and (min-width:701px) and (max-width:800px) {
+
+             
+          .logo-musica {
+            margin-left: 36%;
+          width: 20rem;        
+        }
+      
+      
+        .formulario {
+          height: 67rem;
+          width: 60rem;
+          margin-left: 10rem;
+        }
+        
+      .form-input {
+       margin: auto;
+       margin-left: 8rem;
+      }
+      
+      .mensajeError {
+        font-size: 1.53rem;
+        color: red;
+      }
+      .mensajeCorrecto {
+        font-size: 3rem;
+        margin-left: 24rem;
+        margin-top: 1rem;
+        color:rgb(0, 255, 149); 
+      }
+      
+      /*Usuario*/
+        .usuario {
+       font-size: 3rem;
+       position: relative;
+       margin-top: 5rem;
+       color: var(--ColorBlanco);
+      }
+      .usuario label {
+        position: absolute;
+        bottom: 5.4rem;
+        left: 14.2rem;
+      }
+      
+      #usuario {
+       border: solid;
+       border-color: red;
+       color: var(--ColorBlanco);
+       background-color: var(--ColorPrincipal);
+      }
+      /*Usuario*/
+      
+      
+    
+      /*Contraseña*/
+      .contraseña {
+        font-size: 3rem;
+        position: relative;
+        margin-top: 7rem;
+        color: var(--ColorBlanco);
+      }
+      .contraseña label {
+        position: absolute;
+        bottom: 5.5rem;
+        left: 11rem;
+      }
+      
+      #contraseña {
+        border: solid;
+        border-color: red;
+        text-align: center;
+        color: var(--ColorBlanco);
+        background-color: var(--ColorPrincipal);
+      }
+      /*Contraseña*/
+      
+     
+      .form-boton input {
+        margin-top: 5rem;
+        margin-left: 21rem;
+        font-size: 2rem;
+          border: solid;
+          border-radius: 0.7rem;
+          width: 15rem;
+          font-size: 1.9rem;
+          background-color: var(--ColorPrincipal);
+          border-color: red;
+          color:rgb(255, 255, 255);
+          cursor: pointer;
+        }
+        
+        .botons {
+          display: inline-flex;
+        }
+        .form-boton input {
+        margin-top: 5rem;
+        margin-left: 9rem;
+        font-size: 2rem;
+          border: solid;
+          border-radius: 0.7rem;
+          width: 15rem;
+          font-size: 1.9rem;
+          background-color: var(--ColorPrincipal);
+          border-color: red;
+          color:rgb(255, 255, 255);
+          cursor: pointer;
+        }
+        
+        
+        .form-boton:active {
+          transform: scale(0.9);
+          font-size: 1.7rem;
+          transition: .2s;
+        }
+        
+        .boton-registrarse {
+        margin-left: 9rem;
+        margin-top: 5rem;
+        font-size: 2rem;
+          border: solid;
+          border-radius: 0.7rem;
+          width: 15rem;
+          font-size: 1.9rem;
+          background-color: var(--ColorPrincipal);
+          border-color: red;
+          color:rgb(255, 255, 255);
+          cursor: pointer;
+          text-decoration: none;
+          
+        }
+        
+        .boton-registrarse a {
+          text-decoration: none;
+          color: var(--ColorBlanco);
+        }
+        
+      
+      
+      
+      
+      
+        /*----------------Nuevo-----*--*/
+            .contenedor-grid {
+                
+                grid-template-rows: auto;
+                grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+           }
+          
+        
+            .footer {
+                background-color: var(--ColorPrincipal);
+           }
+      
+           /**H2 - H3**/
+
+
+    }
+
+
+
+ 
+
+
+    @media only screen and (min-width:601px) and (max-width:700px) {
+     
+                
+          .logo-musica {
+            margin-left: 27%;
+          width: 20rem;        
+        }
+      
+      
+        .formulario {
+          height: 67rem;
+          width: 60rem;
+          margin-left: -2rem;
+        }
+        
+      .form-input {
+       margin: auto;
+       margin-left: 8rem;
+      }
+      
+      .mensajeError {
+        font-size: 1.53rem;
+        color: red;
+      }
+      .mensajeCorrecto {
+        font-size: 3rem;
+        margin-left: 24rem;
+        margin-top: 1rem;
+        color:rgb(0, 255, 149); 
+      }
+      
+      /*Usuario*/
+        .usuario {
+       font-size: 3rem;
+       position: relative;
+       margin-top: 5rem;
+       color: var(--ColorBlanco);
+      }
+      .usuario label {
+        position: absolute;
+        bottom: 5.4rem;
+        left: 14.2rem;
+      }
+      
+      #usuario {
+       border: solid;
+       border-color: red;
+       color: var(--ColorBlanco);
+       background-color: var(--ColorPrincipal);
+      }
+      /*Usuario*/
+      
+      
+    
+      /*Contraseña*/
+      .contraseña {
+        font-size: 3rem;
+        position: relative;
+        margin-top: 7rem;
+        color: var(--ColorBlanco);
+      }
+      .contraseña label {
+        position: absolute;
+        bottom: 5.5rem;
+        left: 11rem;
+      }
+      
+      #contraseña {
+        border: solid;
+        border-color: red;
+        text-align: center;
+        color: var(--ColorBlanco);
+        background-color: var(--ColorPrincipal);
+      }
+      /*Contraseña*/
+      
+     
+      .form-boton input {
+        margin-top: 5rem;
+        margin-left: 21rem;
+        font-size: 2rem;
+          border: solid;
+          border-radius: 0.7rem;
+          width: 15rem;
+          font-size: 1.9rem;
+          background-color: var(--ColorPrincipal);
+          border-color: red;
+          color:rgb(255, 255, 255);
+          cursor: pointer;
+        }
+        
+        .botons {
+          display: inline-flex;
+        }
+        .form-boton input {
+        margin-top: 5rem;
+        margin-left: 9rem;
+        font-size: 2rem;
+          border: solid;
+          border-radius: 0.7rem;
+          width: 15rem;
+          font-size: 1.9rem;
+          background-color: var(--ColorPrincipal);
+          border-color: red;
+          color:rgb(255, 255, 255);
+          cursor: pointer;
+        }
+        
+        
+        .form-boton:active {
+          transform: scale(0.9);
+          font-size: 1.7rem;
+          transition: .2s;
+        }
+        
+        .boton-registrarse {
+        margin-left: 9rem;
+        margin-top: 5rem;
+        font-size: 2rem;
+          border: solid;
+          border-radius: 0.7rem;
+          width: 15rem;
+          font-size: 1.9rem;
+          background-color: var(--ColorPrincipal);
+          border-color: red;
+          color:rgb(255, 255, 255);
+          cursor: pointer;
+          text-decoration: none;
+          
+        }
+        
+        .boton-registrarse a {
+          text-decoration: none;
+          color: var(--ColorBlanco);
+        }
+        
+      
+      
+      
+  
+        /*----------------Nuevo-----*--*/
+            .contenedor-grid {
+                
+                grid-template-rows: auto;
+                grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+           }
+          
+        
+            .footer {
+                background-color: var(--ColorPrincipal);
+           }
+      
+           /**H2 - H3**/
+
+      }
+  
+    
+
+    @media only screen and (min-width:544px) and (max-width:600px) {
+   
+      .logo-musica {
+        margin-left: 27%;
+      width: 20rem;        
+    }
+  
+  
+    .formulario {
+      height: 67rem;
+      width: 60rem;
+      margin-left: -2rem;
+    }
+    
+  .form-input {
+   margin: auto;
+   margin-left: 8rem;
+  }
+  
+  .mensajeError {
+    font-size: 1.53rem;
+    color: red;
+  }
+  .mensajeCorrecto {
+    font-size: 3rem;
+    margin-left: 24rem;
+    margin-top: 1rem;
+    color:rgb(0, 255, 149); 
+  }
+  
+  /*Usuario*/
+    .usuario {
+   font-size: 3rem;
+   position: relative;
+   margin-top: 5rem;
+   color: var(--ColorBlanco);
+  }
+  .usuario label {
+    position: absolute;
+    bottom: 5.4rem;
+    left: 14.2rem;
+  }
+  
+  #usuario {
+   border: solid;
+   border-color: red;
+   color: var(--ColorBlanco);
+   background-color: var(--ColorPrincipal);
+  }
+  /*Usuario*/
+  
+  
+  
+  /*Contraseña*/
+  .contraseña {
+    font-size: 3rem;
+    position: relative;
+    margin-top: 7rem;
+    color: var(--ColorBlanco);
+  }
+  .contraseña label {
+    position: absolute;
+    bottom: 5.5rem;
+    left: 11rem;
+  }
+  
+  #contraseña {
+    border: solid;
+    border-color: red;
+    text-align: center;
+    color: var(--ColorBlanco);
+    background-color: var(--ColorPrincipal);
+  }
+  /*Contraseña*/
+  
+  
+  .form-boton input {
+    margin-top: 5rem;
+    margin-left: 21rem;
+    font-size: 2rem;
+      border: solid;
+      border-radius: 0.7rem;
+      width: 15rem;
+      font-size: 1.9rem;
+      background-color: var(--ColorPrincipal);
+      border-color: red;
+      color:rgb(255, 255, 255);
+      cursor: pointer;
+    }
+    
+  .form-boton:active {
+      transform: scale(0.9);
+      font-size: 1.7rem;
+      transition: .2s;
+    }
+    
+  
+    .botons {
+      display: inline-flex;
+    }
+    .form-boton input {
+    margin-top: 5rem;
+    margin-left: 9rem;
+    font-size: 2rem;
+      border: solid;
+      border-radius: 0.7rem;
+      width: 15rem;
+      font-size: 1.9rem;
+      background-color: var(--ColorPrincipal);
+      border-color: red;
+      color:rgb(255, 255, 255);
+      cursor: pointer;
+    }
+    
+    .boton-registrarse {
+    margin-left: 9rem;
+    margin-top: 5rem;
+    font-size: 2rem;
+      border: solid;
+      border-radius: 0.7rem;
+      width: 15rem;
+      font-size: 1.9rem;
+      background-color: var(--ColorPrincipal);
+      border-color: red;
+      color:rgb(255, 255, 255);
+      cursor: pointer;
+      text-decoration: none;
+      
+    }
+    
+    .boton-registrarse a {
+      text-decoration: none;
+      color: var(--ColorBlanco);
+    }
+    
+  
+  
+  
+    /*----------------Nuevo-----*--*/
+        .contenedor-grid {
+            
+            grid-template-rows: auto;
+            grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+       }
+      
+    
+        .footer {
+            background-color: var(--ColorPrincipal);
+       }
+  
+       /**H2 - H3**/
+
+    }
+
+
+        @media only screen and (min-width:501px) and (max-width:543px) {
+        
+          .logo-musica {
+            margin-left: 27%;
+          width: 20rem;        
+        }
+      
+      
+        .formulario {
+          height: 67rem;
+          width: 60rem;
+          margin-left: -2rem;
+        }
+        
+      .form-input {
+       margin: auto;
+       margin-left: 8rem;
+      }
+      
+      .mensajeError {
+        font-size: 1.53rem;
+        color: red;
+      }
+      .mensajeCorrecto {
+        font-size: 3rem;
+        margin-left: 24rem;
+        margin-top: 1rem;
+        color:rgb(0, 255, 149); 
+      }
+      
+      /*Usuario*/
+        .usuario {
+       font-size: 3rem;
+       position: relative;
+       margin-top: 5rem;
+       color: var(--ColorBlanco);
+      }
+      .usuario label {
+        position: absolute;
+        bottom: 5.4rem;
+        left: 14.2rem;
+      }
+      
+      #usuario {
+       border: solid;
+       border-color: red;
+       color: var(--ColorBlanco);
+       background-color: var(--ColorPrincipal);
+      }
+      /*Usuario*/
+      
+      
+     
+      /*Contraseña*/
+      .contraseña {
+        font-size: 3rem;
+        position: relative;
+        margin-top: 7rem;
+        color: var(--ColorBlanco);
+      }
+      .contraseña label {
+        position: absolute;
+        bottom: 5.5rem;
+        left: 11rem;
+      }
+      
+      #contraseña {
+        border: solid;
+        border-color: red;
+        text-align: center;
+        color: var(--ColorBlanco);
+        background-color: var(--ColorPrincipal);
+      }
+      /*Contraseña*/
+    
+      .form-boton input {
+        margin-top: 5rem;
+        margin-left: 21rem;
+        font-size: 2rem;
+          border: solid;
+          border-radius: 0.7rem;
+          width: 15rem;
+          font-size: 1.9rem;
+          background-color: var(--ColorPrincipal);
+          border-color: red;
+          color:rgb(255, 255, 255);
+          cursor: pointer;
+        }
+        
+      .form-boton:active {
+          transform: scale(0.9);
+          font-size: 1.7rem;
+          transition: .2s;
+        }
+        
+        .botons {
+          display: inline-flex;
+        }
+        .form-boton input {
+        margin-top: 5rem;
+        margin-left: 9rem;
+        font-size: 2rem;
+          border: solid;
+          border-radius: 0.7rem;
+          width: 15rem;
+          font-size: 1.9rem;
+          background-color: var(--ColorPrincipal);
+          border-color: red;
+          color:rgb(255, 255, 255);
+          cursor: pointer;
+        }
+        
+        
+        .boton-registrarse {
+        margin-left: 9rem;
+        margin-top: 5rem;
+        font-size: 2rem;
+          border: solid;
+          border-radius: 0.7rem;
+          width: 15rem;
+          font-size: 1.9rem;
+          background-color: var(--ColorPrincipal);
+          border-color: red;
+          color:rgb(255, 255, 255);
+          cursor: pointer;
+          text-decoration: none;
+          
+        }
+        
+        .boton-registrarse a {
+          text-decoration: none;
+          color: var(--ColorBlanco);
+        }
+        
+      
+      
+      
+      
+  
+        /*----------------Nuevo-----*--*/
+            .contenedor-grid {
+                
+                grid-template-rows: auto;
+                grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+           }
+          
+        
+            .footer {
+                background-color: var(--ColorPrincipal);
+           }
+      
+           /**H2 - H3**/
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+          @media only screen and (min-width:0px) and (max-width:500px) {
+
+            .logo-musica {
+              margin-left: 27%;
+            width: 20rem;        
+          }
+        
+        
+          .formulario {
+            height: 67rem;
+            width: 60rem;
+            margin-left: -2rem;
+          }
+          
+        .form-input {
+         margin: auto;
+         margin-left: 8rem;
+        }
+        
+        .mensajeError {
+          font-size: 1.53rem;
+          color: red;
+        }
+        .mensajeCorrecto {
+          font-size: 3rem;
+          margin-left: 24rem;
+          margin-top: 1rem;
+          color:rgb(0, 255, 149); 
+        }
+        
+        /*Usuario*/
+          .usuario {
+         font-size: 3rem;
+         position: relative;
+         margin-top: 5rem;
+         color: var(--ColorBlanco);
+        }
+        .usuario label {
+          position: absolute;
+          bottom: 5.4rem;
+          left: 14.2rem;
+        }
+        
+        #usuario {
+         border: solid;
+         border-color: red;
+         color: var(--ColorBlanco);
+         background-color: var(--ColorPrincipal);
+        }
+        /*Usuario*/
+        
+     
+        
+        /*Contraseña*/
+        .contraseña {
+          font-size: 3rem;
+          position: relative;
+          margin-top: 7rem;
+          color: var(--ColorBlanco);
+        }
+        .contraseña label {
+          position: absolute;
+          bottom: 5.5rem;
+          left: 11rem;
+        }
+        
+        #contraseña {
+          border: solid;
+          border-color: red;
+          text-align: center;
+          color: var(--ColorBlanco);
+          background-color: var(--ColorPrincipal);
+        }
+        /*Contraseña*/
+        
+     
+        .form-boton input {
+          margin-top: 5rem;
+          margin-left: 21rem;
+          font-size: 2rem;
+            border: solid;
+            border-radius: 0.7rem;
+            width: 15rem;
+            font-size: 1.9rem;
+            background-color: var(--ColorPrincipal);
+            border-color: red;
+            color:rgb(255, 255, 255);
+            cursor: pointer;
+          }
+          
+        .form-boton:active {
+            transform: scale(0.9);
+            font-size: 1.7rem;
+            transition: .2s;
+          }
+          
+        
+        
+        
+          .botons {
+            display: inline-flex;
+          }
+          .form-boton input {
+          margin-top: 5rem;
+          margin-left: 9rem;
+          font-size: 2rem;
+            border: solid;
+            border-radius: 0.7rem;
+            width: 15rem;
+            font-size: 1.9rem;
+            background-color: var(--ColorPrincipal);
+            border-color: red;
+            color:rgb(255, 255, 255);
+            cursor: pointer;
+          }
+          
+          
+          .form-boton:active {
+            transform: scale(0.9);
+            font-size: 1.7rem;
+            transition: .2s;
+          }
+          
+          .boton-registrarse {
+          margin-left: 9rem;
+          margin-top: 5rem;
+          font-size: 2rem;
+            border: solid;
+            border-radius: 0.7rem;
+            width: 15rem;
+            font-size: 1.9rem;
+            background-color: var(--ColorPrincipal);
+            border-color: red;
+            color:rgb(255, 255, 255);
+            cursor: pointer;
+            text-decoration: none;
+            
+          }
+          
+          .boton-registrarse a {
+            text-decoration: none;
+            color: var(--ColorBlanco);
+          }
+          
+        
+        
+   
+          /*----------------Nuevo-----*--*/
+              .contenedor-grid {
+                  
+                  grid-template-rows: auto;
+                  grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+             }
+            
+          
+              .footer {
+                  background-color: var(--ColorPrincipal);
+             }
+        
+             /**H2 - H3**/
+ }
+
+
+
+ 
+   
+ @media only screen and (min-width:360px) and (max-width:400px) {
+
+           
+  .logo-musica {
+    margin-left: 27%;
+  width: 20rem;        
+}
+
+
+.formulario {
+  height: 67rem;
+  width: 60rem;
+  margin-left: -2rem;
+}
+
+.form-input {
+margin: auto;
+margin-left: 8rem;
+}
+
+.mensajeError {
+font-size: 1.53rem;
+color: red;
+}
+.mensajeCorrecto {
+font-size: 3rem;
+margin-left: 24rem;
+margin-top: 1rem;
+color:rgb(0, 255, 149); 
+}
+
+/*Usuario*/
+.usuario {
+font-size: 3rem;
+position: relative;
+margin-top: 5rem;
+color: var(--ColorBlanco);
+}
+.usuario label {
+position: absolute;
+bottom: 5.4rem;
+left: 14.2rem;
+}
+
+#usuario {
+border: solid;
+border-color: red;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Usuario*/
+
+
+/*Contraseña*/
+.contraseña {
+font-size: 3rem;
+position: relative;
+margin-top: 7rem;
+color: var(--ColorBlanco);
+}
+.contraseña label {
+position: absolute;
+bottom: 5.5rem;
+left: 11rem;
+}
+
+#contraseña {
+border: solid;
+border-color: red;
+text-align: center;
+color: var(--ColorBlanco);
+background-color: var(--ColorPrincipal);
+}
+/*Contraseña*/
+
+.form-boton input {
+margin-top: 5rem;
+margin-left: 21rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.botons {
+  display: inline-flex;
+}
+.form-boton input {
+margin-top: 5rem;
+margin-left: 9rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+.form-boton:active {
+  transform: scale(0.9);
+  font-size: 1.7rem;
+  transition: .2s;
+}
+
+.boton-registrarse {
+margin-left: 9rem;
+margin-top: 5rem;
+font-size: 2rem;
+  border: solid;
+  border-radius: 0.7rem;
+  width: 15rem;
+  font-size: 1.9rem;
+  background-color: var(--ColorPrincipal);
+  border-color: red;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.boton-registrarse a {
+  text-decoration: none;
+  color: var(--ColorBlanco);
+}
+
+
+
+
+
+/*----------------Nuevo-----*--*/
+    .contenedor-grid {
+        
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "navbar navbar navbar" "main main main" "footer footer footer" 
+   }
+  
+
+    .footer {
+        background-color: var(--ColorPrincipal);
+   }
+
+   /**H2 - H3**/
+}
+
+
+
+        
+         
+
+
+
+/* 
+.contenedor {
+  border: solid;
+} 
+
+*/
+.container-1 {
+  margin-top: 20rem;
+}
+.logo-musica{
+  margin: 0,0,0,0;
+}

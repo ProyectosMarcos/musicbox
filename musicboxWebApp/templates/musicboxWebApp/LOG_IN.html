@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      {% load static %}
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link href="{% static 'musicboxWebApp/login/styleLog.css' %}" rel="stylesheet">
+      <link href="{% static 'musicboxWebApp/inicio/normalize.css' %}" rel="stylesheet">
+
+
+      <script src="https://kit.fontawesome.com/ef233ec86e.js" crossorigin="anonymous"></script>
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+      </style>
+      <title>Log in</title>
+   </head>
+   <body class="contenedor-grid">
+      <header class="header">
+         <img class="logo-musica" src="{% static 'musicboxWebApp/iconos/MUSIC--.png' %}" alt="">
+
+      </header>
+
+      </nav>
+      <main class="main">
+         <div class="contenedor">
+            <form action="" class="formulario" id="formulario" autocomplete="off">
+              <div class="form-input usuario">
+                <input type="text" id="usuario" placeholder="Ingresar nombre de usuario">
+                <label for="usuario">Nombre</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input contraseña">
+                <input type="password" id="contraseña" placeholder="Ingrese contraseña">
+                <label for="contraseña">Contraseña</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="botons">
+              <div class="form-boton">
+                <input type="submit" value="Ingresar">
+              </div>
+              
+             </div>
+              <p class="mensajeCorrecto"></p>
+            </form>
+          </div>
+         
+            <!-- CANTIDAD PARA TENER ESTRUCTURA FIJA
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br>
+            -->
+
+
+      </main>
+      <footer class="footer">
+         <h3 class="Footer-h3"></h3>
+      </footer>
+      <link href="{% static 'musicboxWebApp/login/modal.js' %}" rel="stylesheet">
+      <link href="{% static 'musicboxWebApp/login/form.js' %}" rel="stylesheet">
+   </body>
+</html>
