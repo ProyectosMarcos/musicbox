@@ -8,8 +8,9 @@ from musicboxApp3.models import Album,Cancion,Lista,Usuario,Albums_x_Lista
 
 def inicio(request):
     novedades = ["Linkin Park - Hybrid Theory","Linkin Park - Meteora","Linkin Park - Minutes to Midnight","Limp Bizkit - Chocolate Starfish And The Hot Dog Flavored Water"]
+    usuario = Usuario.objects.get(usuario="gaalvarez")
     dto_inicio = {
-	    "nombreUsuario":"gabo_alvarez",
+	    "usuario": usuario,
 	    "novedades":novedades
     }
     return render(request,"musicboxWebApp/INICIO.html",dto_inicio)
@@ -21,7 +22,11 @@ def buscar(request):
 		nombre_album=request.GET["nombre_album"]
 		album = Album.objects.get(nombre=nombre_album)
 		#album=articulos.objects.filter(nombre__icontains=nombre_album)
+
+		usuario = Usuario.objects.get(usuario="gaalvarez")
+
 		dto_resultado_busqueda = {
+			"usuario": usuario,
 			"nombre": album.nombre,
 			"archivo_imagen": album.archivo_imagen
 		}
@@ -35,7 +40,10 @@ def detalle_album(request,album): #se pasa el nombre del album
 	albumObjeto = Album.objects.get(nombre=album)
 	canciones = Cancion.objects.filter(album=albumObjeto)
 	
+	usuario = Usuario.objects.get(usuario="gaalvarez")
+
 	dto_detalle_album = {
+		"usuario": usuario,
 		"nombreAlbum": albumObjeto.nombre,
 		"archivo_imagen": albumObjeto.archivo_imagen,
 		"nombreArtista": albumObjeto.artista,
@@ -71,7 +79,10 @@ def detalle_lista(request,lista_nombre):
 		album = albums_x_lista.album
 		albums.append(album)
 	
+	usuario = Usuario.objects.get(usuario="gaalvarez")
+
 	dto_detalle_lista = {
+		"usuario": usuario,
 		"nombreLista":lista.nombre,
 		"descripcion":lista.descripcion,
 		"albums": albums
