@@ -26,14 +26,14 @@
       </nav>
       <main class="main">
          <div class="contenedor">
-            <form action="" class="formulario" id="formulario" autocomplete="off">
+            <form action="/iniciar/" method="GET" class="formulario" id="formulario" autocomplete="off">
               <div class="form-input usuario">
-                <input type="text" id="usuario" placeholder="Ingresar nombre de usuario">
+                <input type="text" id="usuario" placeholder="Ingresar nombre de usuario" name="usuario_ingresado">
                 <label for="usuario">Nombre</label>
                 <p class="mensajeError"></p>
               </div>
               <div class="form-input contraseña">
-                <input type="password" id="contraseña" placeholder="Ingrese contraseña">
+                <input type="password" id="contraseña" placeholder="Ingrese contraseña" name="contrasenia_ingresado">
                 <label for="contraseña">Contraseña</label>
                 <p class="mensajeError"></p>
               </div>

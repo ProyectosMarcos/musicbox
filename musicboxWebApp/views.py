@@ -6,13 +6,27 @@ from django.shortcuts import render
 from musicboxApp3.models import Album,Cancion,Lista,Usuario,Albums_x_Lista
 
 
+def iniciar(request):
+	usuario_ingresado=request.GET["usuario_ingresado"]
+	contrasenia_ingresado=request.GET["contrasenia_ingresado"]
+
+	try:
+		usuario_logueado = Usuario.objects.get(usuario=usuario_ingresado)
+		if(usuario_logueado.contrasenia == contrasenia_ingresado):
+			return inicio(request,usuario_ingresado)
+		else:
+			return login(request)
+	except:
+		return login(request)
+
+
 def login(request):
 	return render(request,"musicboxWebApp/LOG_IN.html")
 
 
-def inicio(request):
+def inicio(request, nombreUsuario):
     novedades = ["Linkin Park - Hybrid Theory","Linkin Park - Meteora","Linkin Park - Minutes to Midnight","Limp Bizkit - Chocolate Starfish And The Hot Dog Flavored Water"]
-    usuario = Usuario.objects.get(usuario="gaalvarez")
+    usuario = Usuario.objects.get(usuario=nombreUsuario)
     dto_inicio = {
 	    "usuario": usuario,
 	    "novedades":novedades
