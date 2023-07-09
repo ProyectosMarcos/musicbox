@@ -3,7 +3,7 @@ from django.template import loader
 from django.template import Template,Context
 from django.template.loader import get_template
 from django.shortcuts import render
-from musicboxApp3.models import Album,Cancion,Lista,Usuario
+from musicboxApp3.models import Album,Cancion,Lista,Usuario,Albums_x_Lista
 
 
 def inicio(request):
@@ -55,3 +55,25 @@ def listas(request,nombre_usuario): # id_usuario string ?
 	}
 	
 	return render(request,"LISTAS.html",dto_listas)
+
+
+def detalle_lista(request,lista_nombre):
+	lista_nombre_aux = lista_nombre.split("+")
+	lista_nombre_limpia = " ".join(lista_nombre_aux)
+	
+	lista = Lista.objects.get(nombre=lista_nombre_limpia)
+
+	# traer todos los albums_x_lista que contengan como FK a lista
+	listado_albums_x_lista = Albums_x_Lista.objects.filter(lista=lista)
+	albums = [] 
+
+	for albums_x_lista in listado_albums_x_lista:
+		album = albums_x_lista.album
+		albums.append(album)
+	
+	dto_detalle_lista = {
+		"nombreLista":lista.nombre,
+		"descripcion":lista.descripcion,
+		"albums": albums
+	}
+	return render(request,"DETALLE_LISTA.html",dto_detalle_lista)
