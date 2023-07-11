@@ -27,12 +27,12 @@ def crear_lista(request):
 	datos = request.POST
 
 	usuario = Usuario.objects.get(usuario=datos["nombre_usuario"])
-	print("==================== USUARIO: " + usuario.usuario + "====================")
+	
 
 	lista_nueva = Lista()
 	lista_nueva.usuario = usuario
 	lista_nueva.nombre = datos["nombre_nueva_lista"]
-	print("==================== NOMBRE NUEVA LISTA: " + lista_nueva.nombre + "====================")
+	
 	lista_nueva.descripcion = datos["descripcion_nueva_lista"]
 	lista_nueva.archivo_imagen = "nose"
 
@@ -69,13 +69,14 @@ def inicio(request, nombre_usuario):
 	    "usuario": usuario,
 	    "novedades":novedades
     }
-    print("INICIO.HTML --> " + usuario.usuario)
+    
     return render(request,"musicboxWebApp/INICIO.html",dto_inicio)
 
 
 # DEFINITIVO
 def buscar(request):
 	# REVISAR: SI SACANDO EL IF FUNCIONA NORMAL
+
 	if request.GET["nombre_album"]:
 		nombre_album=request.GET["nombre_album"]
 		nombre_usuario=request.GET["nombre_usuario"]
@@ -125,7 +126,7 @@ def listas(request,nombre_usuario):
 		"usuario": usuario,
 		"listas": listas
 	}
-	print("LISTAS.HTML --> " + usuario.usuario)
+	
 	return render(request,"LISTAS.html",dto_listas)
 
 
@@ -152,5 +153,5 @@ def detalle_lista(request,lista_nombre,nombre_usuario):
 		"descripcion":lista.descripcion,
 		"albums": albums
 	}
-	print("DETALLE_LISTA.HTML --> " + usuario.usuario)
+	
 	return render(request,"DETALLE_LISTA.html",dto_detalle_lista)
