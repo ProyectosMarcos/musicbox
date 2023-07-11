@@ -3,6 +3,7 @@ from django.template import loader
 from django.template import Template,Context
 from django.template.loader import get_template
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
 from musicboxApp3.models import Album,Cancion,Lista,Usuario,Albums_x_Lista
 
 
@@ -21,11 +22,32 @@ def iniciar(request):
 		return login(request)
 
 
+@csrf_exempt
+def crear_lista(request):
+	datos = request.POST
+
+	usuario = Usuario.objects.get(usuario=datos["nombre_usuario"])
+	print("==================== USUARIO: " + usuario.usuario + "====================")
+
+	lista_nueva = Lista()
+	lista_nueva.usuario = usuario
+	lista_nueva.nombre = datos["nombre_nueva_lista"]
+	print("==================== NOMBRE NUEVA LISTA: " + lista_nueva.nombre + "====================")
+	lista_nueva.descripcion = datos["descripcion_nueva_lista"]
+	lista_nueva.archivo_imagen = "nose"
+
+	lista_nueva.save()
+	return listas(request,usuario.usuario)
+
+		
+
+
 # DEFINITIVO
 def login(request):
 	return render(request,"musicboxWebApp/LOG_IN.html")
 
 
+# DEFINITIVO
 def inicio(request, nombre_usuario):
     novedades = ["Linkin Park - Hybrid Theory","Linkin Park - Meteora","Linkin Park - Minutes to Midnight","Limp Bizkit - Chocolate Starfish And The Hot Dog Flavored Water"]
     usuario = Usuario.objects.get(usuario=nombre_usuario)
@@ -37,6 +59,7 @@ def inicio(request, nombre_usuario):
     return render(request,"musicboxWebApp/INICIO.html",dto_inicio)
 
 
+# DEFINITIVO
 def buscar(request):
 	# REVISAR: SI SACANDO EL IF FUNCIONA NORMAL
 	if request.GET["nombre_album"]:
@@ -59,6 +82,7 @@ def buscar(request):
 		return HttpResponse(mensaje)
 	
 
+# DEFINITIVO
 def detalle_album(request,album,nombre_usuario): #se pasa el nombre del album
 	albumObjeto = Album.objects.get(nombre=album)
 	canciones = Cancion.objects.filter(album=albumObjeto)
@@ -78,7 +102,8 @@ def detalle_album(request,album,nombre_usuario): #se pasa el nombre del album
 	return render(request,"DETALLE_ALBUM.html",dto_detalle_album)
 
 
-def listas(request,nombre_usuario): # id_usuario string ?
+# DEFINITIVO
+def listas(request,nombre_usuario):
 	usuario = Usuario.objects.get(usuario=nombre_usuario)
 	listas = Lista.objects.filter(usuario=usuario)
 
@@ -90,6 +115,7 @@ def listas(request,nombre_usuario): # id_usuario string ?
 	return render(request,"LISTAS.html",dto_listas)
 
 
+# DEFINITIVO
 def detalle_lista(request,lista_nombre,nombre_usuario):
 	lista_nombre_aux = lista_nombre.split("+")
 	lista_nombre_limpia = " ".join(lista_nombre_aux)

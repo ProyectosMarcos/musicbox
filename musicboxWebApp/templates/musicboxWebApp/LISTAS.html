@@ -49,23 +49,32 @@
         </div>
     </nav></nav>
 
+
+
     <dialog  id="modal">
         <div class="container-1">
-            <form>
+            <form method="POST" action="/crear_lista/">
+                {% csrf_token %}
               <h2 id="sub-title">Nombre de la nueva Lista</h2>
-                <input id="input-1" type="text" placeholder="Ingresar nombre">
+                <input id="input-1" type="text" placeholder="Ingresar nombre" name="nombre_nueva_lista">
                 <h2 id="sub-title">Descripcion</h2>
-                <textarea id="descripcion-review" name="descripcion-review" rows="3" cols="30"></textarea>
+                <textarea id="descripcion-review" name="descripcion_nueva_lista" rows="3" cols="30"></textarea>
+
+                <input type="hidden" name="nombre_usuario" value="{{usuario.usuario}}">
+
                 
                 <div class="guardado-albums">
-                    <button type="button" id="guardar-detalle-album">Crear</button>
+                    <button type="submit" id="guardar-detalle-album">Crear</button>
                 </div>
                 <div class="cerrar-albums">
-                    <button id="cerrar-detalle-album">Cerrar</button>
+                    <button id="cerrar-detalle-album" onclick="cerrarModal(event)">Cerrar</button>
                 </div> 
             </form>
         </div>
     </dialog>
+
+
+
 </div>
 
     <main class="main">
