@@ -39,7 +39,21 @@ def crear_lista(request):
 	lista_nueva.save()
 	return listas(request,usuario.usuario)
 
-		
+
+@csrf_exempt
+def incorporar_album(request):
+	datos = request.POST
+
+	lista = Lista.objects.get(nombre=datos["lista_a_incorporar"])
+	album = Album.objects.get(nombre=datos["nombre_album"])
+
+	nueva_albums_x_Lista = Albums_x_Lista()
+	nueva_albums_x_Lista.lista = lista
+	nueva_albums_x_Lista.album = album
+	
+
+	nueva_albums_x_Lista.save()
+	return detalle_album(request,album.nombre,datos["nombre_usuario"])	
 
 
 # DEFINITIVO
@@ -75,7 +89,7 @@ def buscar(request):
 			"nombre": album.nombre,
 			"archivo_imagen": album.archivo_imagen
 		}
-		print("RESULTADO_BUSQUEDA.HTML --> " + usuario.usuario)
+		
 		return render(request,"RESULTADO_BUSQUEDA.html",dto_resultado_busqueda)
 	else:
 		mensaje="No has introducido ningún dato"
@@ -88,7 +102,7 @@ def detalle_album(request,album,nombre_usuario): #se pasa el nombre del album
 	canciones = Cancion.objects.filter(album=albumObjeto)
 	
 	usuario = Usuario.objects.get(usuario=nombre_usuario)
-	print("HARDCODEADO")
+	
 
 	dto_detalle_album = {
 		"usuario": usuario,
@@ -98,7 +112,7 @@ def detalle_album(request,album,nombre_usuario): #se pasa el nombre del album
 		"referencia": albumObjeto.link_referencia,
 		"canciones": canciones
 	}
-	print("DETALLE_ALBUM.HTML --> " + usuario.usuario)
+	
 	return render(request,"DETALLE_ALBUM.html",dto_detalle_album)
 
 
