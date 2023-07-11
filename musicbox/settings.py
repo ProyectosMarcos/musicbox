@@ -84,6 +84,14 @@ DATABASES = {
         'PASSWORD': '123454321',
         'HOST': '127.0.0.1',
         'PORT': '5432',
+    },
+    'musicbox': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'musicbox',
+        'USER': 'postgres',
+        'PASSWORD': '123454321',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -122,7 +130,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

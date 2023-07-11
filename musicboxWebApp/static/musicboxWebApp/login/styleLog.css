@@ -154,19 +154,7 @@ font-size: 2rem;
 .botons {
   display: inline-flex;
 }
-.form-boton input {
-margin-top: 5rem;
-margin-left: 9rem;
-font-size: 2rem;
-  border: solid;
-  border-radius: 0.7rem;
-  width: 15rem;
-  font-size: 1.9rem;
-  background-color: var(--ColorPrincipal);
-  border-color: red;
-  color:rgb(255, 255, 255);
-  cursor: pointer;
-}
+
 
 
 .form-boton:active {
@@ -312,19 +300,7 @@ font-size: 2rem;
 .botons {
   display: inline-flex;
 }
-.form-boton input {
-margin-top: 5rem;
-margin-left: 9rem;
-font-size: 2rem;
-  border: solid;
-  border-radius: 0.7rem;
-  width: 15rem;
-  font-size: 1.9rem;
-  background-color: var(--ColorPrincipal);
-  border-color: red;
-  color:rgb(255, 255, 255);
-  cursor: pointer;
-}
+
 
 
 .form-boton:active {
@@ -471,19 +447,6 @@ font-size: 2rem;
 .botons {
   display: inline-flex;
 }
-.form-boton input {
-margin-top: 5rem;
-margin-left: 9rem;
-font-size: 2rem;
-  border: solid;
-  border-radius: 0.7rem;
-  width: 15rem;
-  font-size: 1.9rem;
-  background-color: var(--ColorPrincipal);
-  border-color: red;
-  color:rgb(255, 255, 255);
-  cursor: pointer;
-}
 
 
 .form-boton:active {
@@ -626,19 +589,7 @@ font-size: 2rem;
 .botons {
   display: inline-flex;
 }
-.form-boton input {
-margin-top: 5rem;
-margin-left: 9rem;
-font-size: 2rem;
-  border: solid;
-  border-radius: 0.7rem;
-  width: 15rem;
-  font-size: 1.9rem;
-  background-color: var(--ColorPrincipal);
-  border-color: red;
-  color:rgb(255, 255, 255);
-  cursor: pointer;
-}
+
 
 
 .form-boton:active {
@@ -781,19 +732,7 @@ font-size: 2rem;
 .botons {
   display: inline-flex;
 }
-.form-boton input {
-margin-top: 5rem;
-margin-left: 9rem;
-font-size: 2rem;
-  border: solid;
-  border-radius: 0.7rem;
-  width: 15rem;
-  font-size: 1.9rem;
-  background-color: var(--ColorPrincipal);
-  border-color: red;
-  color:rgb(255, 255, 255);
-  cursor: pointer;
-}
+
 
 
 .form-boton:active {
@@ -946,19 +885,7 @@ font-size: 2rem;
 .botons {
   display: inline-flex;
 }
-.form-boton input {
-margin-top: 5rem;
-margin-left: 9rem;
-font-size: 2rem;
-  border: solid;
-  border-radius: 0.7rem;
-  width: 15rem;
-  font-size: 1.9rem;
-  background-color: var(--ColorPrincipal);
-  border-color: red;
-  color:rgb(255, 255, 255);
-  cursor: pointer;
-}
+
 
 
 .form-boton:active {
@@ -1011,7 +938,7 @@ font-size: 2rem;
 @media only screen and (min-width:1301px) and (max-width:1400px) {
  
   .logo-musica {
-    margin-left: 41%;
+    margin-left: 40.8%;
   width: 20rem;        
 }
 
@@ -1089,7 +1016,7 @@ background-color: var(--ColorPrincipal);
   
 .form-boton input {
 margin-top: 5rem;
-margin-left: 9rem;
+margin-left: 21rem;
 font-size: 2rem;
   border: solid;
   border-radius: 0.7rem;
@@ -1151,6 +1078,7 @@ font-size: 2rem;
         
   .logo-musica {
     margin-left: 41%;
+    background-attachment: fixed;
   width: 20rem;        
 }
 
@@ -1222,9 +1150,9 @@ background-color: var(--ColorPrincipal);
 }
 /*Contraseña*/
 
-.form-boton input {
+/* .form-boton input {
 margin-top: 5rem;
-margin-left: 21rem;
+margin-left: rem;
 font-size: 2rem;
   border: solid;
   border-radius: 0.7rem;
@@ -1234,14 +1162,14 @@ font-size: 2rem;
   border-color: red;
   color:rgb(255, 255, 255);
   cursor: pointer;
-}
+} */
 
 .botons {
   display: inline-flex;
 }
 .form-boton input {
 margin-top: 5rem;
-margin-left: 9rem;
+margin-left: 21rem;
 font-size: 2rem;
   border: solid;
   border-radius: 0.7rem;
@@ -1297,9 +1225,6 @@ font-size: 2rem;
     .footer {
         background-color: var(--ColorPrincipal);
    }
-
-
-
 
 }      
 
@@ -1384,9 +1309,9 @@ background-color: var(--ColorPrincipal);
 /*Contraseña*/
 
 
-.form-boton input {
+/* .form-boton input {
 margin-top: 5rem;
-margin-left: 21rem;
+margin-left: 22rem;
 font-size: 2rem;
   border: solid;
   border-radius: 0.7rem;
@@ -1396,14 +1321,14 @@ font-size: 2rem;
   border-color: red;
   color:rgb(255, 255, 255);
   cursor: pointer;
-}
+} */
 
 .botons {
   display: inline-flex;
 }
 .form-boton input {
 margin-top: 5rem;
-margin-left: 9rem;
+margin-left: 21rem;
 font-size: 2rem;
   border: solid;
   border-radius: 0.7rem;
@@ -1541,7 +1466,7 @@ background-color: var(--ColorPrincipal);
 }
 /*Contraseña*/
 
-.form-boton input {
+/* .form-boton input {
 margin-top: 5rem;
 margin-left: 21rem;
 font-size: 2rem;
@@ -1553,14 +1478,14 @@ font-size: 2rem;
   border-color: red;
   color:rgb(255, 255, 255);
   cursor: pointer;
-}
+} */
 
 .botons {
   display: inline-flex;
 }
 .form-boton input {
 margin-top: 5rem;
-margin-left: 9rem;
+margin-left: 21rem;
 font-size: 2rem;
   border: solid;
   border-radius: 0.7rem;
@@ -1622,7 +1547,7 @@ font-size: 2rem;
 @media only screen and (min-width:801px) and (max-width:900px) {
 
   .logo-musica {
-    margin-left: 36%;
+    margin-left: 35%;
   width: 20rem;        
 }
 
@@ -1696,9 +1621,9 @@ background-color: var(--ColorPrincipal);
 
 
 .form-boton input {
-margin-top: 5rem;
-margin-left: 21rem;
-font-size: 2rem;
+  margin-top: 5rem;
+  margin-left: 21rem;
+  font-size: 2rem;
   border: solid;
   border-radius: 0.7rem;
   width: 15rem;
@@ -1710,19 +1635,6 @@ font-size: 2rem;
 }
 .botons {
   display: inline-flex;
-}
-.form-boton input {
-margin-top: 5rem;
-margin-left: 9rem;
-font-size: 2rem;
-  border: solid;
-  border-radius: 0.7rem;
-  width: 15rem;
-  font-size: 1.9rem;
-  background-color: var(--ColorPrincipal);
-  border-color: red;
-  color:rgb(255, 255, 255);
-  cursor: pointer;
 }
 
 
@@ -1869,19 +1781,6 @@ font-size: 2rem;
         .botons {
           display: inline-flex;
         }
-        .form-boton input {
-        margin-top: 5rem;
-        margin-left: 9rem;
-        font-size: 2rem;
-          border: solid;
-          border-radius: 0.7rem;
-          width: 15rem;
-          font-size: 1.9rem;
-          background-color: var(--ColorPrincipal);
-          border-color: red;
-          color:rgb(255, 255, 255);
-          cursor: pointer;
-        }
         
         
         .form-boton:active {
@@ -1937,12 +1836,20 @@ font-size: 2rem;
 
  
 
+    @media only screen and (min-width:601px) and (max-width:650px) {
+     
+                
+      .logo-musica {
+        margin-left: 24%;
+      width: 20rem;        
+    }
+    }
 
     @media only screen and (min-width:601px) and (max-width:700px) {
      
                 
           .logo-musica {
-            margin-left: 27%;
+            margin-left: 24%;
           width: 20rem;        
         }
       
@@ -2032,19 +1939,7 @@ font-size: 2rem;
         .botons {
           display: inline-flex;
         }
-        .form-boton input {
-        margin-top: 5rem;
-        margin-left: 9rem;
-        font-size: 2rem;
-          border: solid;
-          border-radius: 0.7rem;
-          width: 15rem;
-          font-size: 1.9rem;
-          background-color: var(--ColorPrincipal);
-          border-color: red;
-          color:rgb(255, 255, 255);
-          cursor: pointer;
-        }
+      
         
         
         .form-boton:active {
@@ -2196,19 +2091,7 @@ font-size: 2rem;
     .botons {
       display: inline-flex;
     }
-    .form-boton input {
-    margin-top: 5rem;
-    margin-left: 9rem;
-    font-size: 2rem;
-      border: solid;
-      border-radius: 0.7rem;
-      width: 15rem;
-      font-size: 1.9rem;
-      background-color: var(--ColorPrincipal);
-      border-color: red;
-      color:rgb(255, 255, 255);
-      cursor: pointer;
-    }
+  
     
     .boton-registrarse {
     margin-left: 9rem;
@@ -2348,19 +2231,6 @@ font-size: 2rem;
         
         .botons {
           display: inline-flex;
-        }
-        .form-boton input {
-        margin-top: 5rem;
-        margin-left: 9rem;
-        font-size: 2rem;
-          border: solid;
-          border-radius: 0.7rem;
-          width: 15rem;
-          font-size: 1.9rem;
-          background-color: var(--ColorPrincipal);
-          border-color: red;
-          color:rgb(255, 255, 255);
-          cursor: pointer;
         }
         
         
@@ -2524,19 +2394,7 @@ font-size: 2rem;
           .botons {
             display: inline-flex;
           }
-          .form-boton input {
-          margin-top: 5rem;
-          margin-left: 9rem;
-          font-size: 2rem;
-            border: solid;
-            border-radius: 0.7rem;
-            width: 15rem;
-            font-size: 1.9rem;
-            background-color: var(--ColorPrincipal);
-            border-color: red;
-            color:rgb(255, 255, 255);
-            cursor: pointer;
-          }
+         
           
           
           .form-boton:active {
@@ -2664,18 +2522,18 @@ background-color: var(--ColorPrincipal);
 /*Contraseña*/
 
 .form-boton input {
-margin-top: 5rem;
-margin-left: 21rem;
-font-size: 2rem;
-  border: solid;
-  border-radius: 0.7rem;
-  width: 15rem;
-  font-size: 1.9rem;
-  background-color: var(--ColorPrincipal);
-  border-color: red;
-  color:rgb(255, 255, 255);
-  cursor: pointer;
-}
+  margin-top: 5rem;
+  margin-left: 21rem;
+  font-size: 2rem;
+    border: solid;
+    border-radius: 0.7rem;
+    width: 15rem;
+    font-size: 1.9rem;
+    background-color: var(--ColorPrincipal);
+    border-color: red;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+  }
 
 .form-boton:active {
   transform: scale(0.9);
@@ -2686,19 +2544,7 @@ font-size: 2rem;
 .botons {
   display: inline-flex;
 }
-.form-boton input {
-margin-top: 5rem;
-margin-left: 9rem;
-font-size: 2rem;
-  border: solid;
-  border-radius: 0.7rem;
-  width: 15rem;
-  font-size: 1.9rem;
-  background-color: var(--ColorPrincipal);
-  border-color: red;
-  color:rgb(255, 255, 255);
-  cursor: pointer;
-}
+
 
 
 .form-boton:active {

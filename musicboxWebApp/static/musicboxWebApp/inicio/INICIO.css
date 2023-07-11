@@ -71,18 +71,6 @@ body {
 
 @media (min-width: 1224px) {
   
-  #btn-open-modal {
-
-  }
-  #cerrarsesion-modal {
-
-  }
-
-  #btn-close-modal {
-
-  }
-  
-  
   .btn-contacto{
     background-color: #88898946;
     font-size: 2.5rem;
@@ -90,7 +78,7 @@ body {
     border-style: solid;
     border-color: rgb(0, 234, 255);
     margin-left: 46%;
-    margin-top: 2rem;
+    margin-top: 10rem;
     height: 5rem;
     width: 14rem;
     transition: .2s;
@@ -534,7 +522,7 @@ body {
     border-style: solid;
     border-color: rgb(0, 234, 255);
     margin-left: 46%;
-    margin-top: 2rem;
+    margin-top: 10rem;
     height: 5rem;
     width: 14rem;
     transition: .2s;
@@ -705,6 +693,7 @@ body {
     margin-left: 7rem;
     width: 85.35%;
     padding: 2rem;
+    margin-top: 4rem;
   }
   .descripcion-novedades{
     font-size: 3.1rem;
@@ -826,21 +815,7 @@ body {
 }
 
 
-
-@media only screen and (min-width: 0px) and (max-width:799px) {
-  /* .btn-contacto{
-    background-color: #88898946;
-    font-size: 1.5rem;
-    border-radius: 1.1rem;
-    border-style: solid;
-    border-color: rgb(0, 234, 255);
-    margin-left: 36%;
-    margin-top: 3rem;
-    height: 3rem;
-    width: 8.5rem;
-  }
-   */
-
+@media only screen and (min-width: 701px) and (max-width:799px) {
   .btn-contacto{
     background-color: #88898946;
     font-size: 2.5rem;
@@ -848,7 +823,7 @@ body {
     border-style: solid;
     border-color: rgb(0, 234, 255);
     margin-left: 46%;
-    margin-top: 2rem;
+    margin-top: 10rem;
     height: 5rem;
     width: 14rem;
     transition: .2s;
@@ -878,7 +853,7 @@ body {
 
 }
 #Email {
-   font-size: 2.3rem;
+  font-size: 2.3rem;
   width: 55rem;
   margin-top: 3rem;
   border-radius: 0.5rem;
@@ -1023,6 +998,266 @@ body {
     border-style:groove;
     border-radius: 1.2rem;
     margin-left: 7rem;
+    margin-top: 4rem;
+    width: 85.35%;
+    padding: 2rem;
+  }
+  .descripcion-novedades{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .listado-albumes-novedades{
+    font-size: 1.8rem;
+    margin-left: 4rem;
+  }
+  .definicion-app{
+    color:white;
+    border-color: violet;
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 7rem;
+    width: 85.35%;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .estadisticas{
+    color: green;
+    border-color: green;
+    border-style:solid;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    width: 85.35%;
+    /* margin-left: 113rem; */
+    margin-left: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .titulo-estadisticas{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .listado-estadisticas{
+    font-size: 1.8rem;
+    margin-left: 1rem;
+  }
+  
+  
+  
+  .imagen-3 {
+      border: solid;
+      height: 25.4rem;
+      width: 40rem;
+      margin-left: 2.5rem;
+      margin-top: 1.5rem;
+ }
+  .imagen-4 {
+      border: solid;
+      border-color: gray;
+      height: 25.4rem;
+      width: 40rem;
+      margin-left: 2.5rem;
+      margin-top: 2rem;
+ }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width:700px) {
+  /* .btn-contacto{
+    background-color: #88898946;
+    font-size: 1.5rem;
+    border-radius: 1.1rem;
+    border-style: solid;
+    border-color: rgb(0, 234, 255);
+    margin-left: 36%;
+    margin-top: 3rem;
+    height: 3rem;
+    width: 8.5rem;
+  }
+   */
+
+  .btn-contacto{
+    background-color: #88898946;
+    font-size: 2.5rem;
+    border-radius: 1.1rem;
+    border-style: solid;
+    border-color: rgb(0, 234, 255);
+    margin-left: 46%;
+    margin-top: 2rem;
+    height: 5rem;
+    width: 14rem;
+    transition: .2s;
+    cursor: pointer;
+    color: var(--ColorBlanco);
+  }
+
+.btn-contacto {
+    transition: .2s;
+}
+.btn-contacto:active {
+    transform: scale(0.9);
+}
+
+.formulario{
+  height: 79rem;
+  
+}
+.form-input{
+  position: relative;
+}
+
+#Email-nombre {
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 4.4rem;
+
+}
+/* #Email {
+   font-size: 2.3rem;
+  width: 55rem;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  border-color: rgb(0, 234, 255);
+  background-color:#232526;
+  padding: 0.4rem;
+  color: #ffffff;
+} */
+
+.Usuario {
+  font-size: 2.5rem;
+}
+/* #Usuario {
+  font-size: 2.3rem;
+  width: 55rem;
+  margin-top: 7rem;
+  border-radius: 0.5rem;
+  border-color: rgb(0, 234, 255);
+  background-color:#232526;
+  padding: 0.4rem;
+  color: #ffffff;
+} */
+#Usuario-nombre{
+  position: absolute;
+  bottom: 4.4rem;
+}
+
+.Asunto {
+  font-size: 2.5rem;
+}
+
+/* #Asunto{
+  font-size: 2.3rem;
+  width: 55rem;
+  margin-top: 7rem;
+  border-radius: 0.5rem;
+  border-color: rgb(0, 234, 255);
+  background-color:#232526;
+  padding: 0.4rem;
+  color: #ffffff;
+} */
+
+#Asunto-nombre {
+  position: absolute;
+  bottom: 4.4rem;
+}
+
+
+.Recomendacíon {
+  font-size: 2.5rem;
+}
+
+#Recomendacíon-nombre {
+  position: absolute;
+  bottom: 24.9rem;
+}
+.mensajeError {
+  color: red;
+  font-size: 1.77rem;
+}
+.mensajeCorrecto {
+  color: aqua;
+  font-size: 3rem;
+  margin-bottom: 10rem;
+  margin-left: 25rem;
+}
+
+
+
+
+  #input-recomendacíon{
+    background-color: #232526;
+    border-radius: 0.8rem;
+    color: white;
+    font-size: 2rem;
+    height: 3rem;
+    margin-top: 8rem;
+    height: 25rem;
+  }
+  
+  .input-nombre{
+    font-size: 2.9rem;
+  }
+  .container-input{
+    margin-left: 7rem;
+    margin-top: 3rem;
+  }
+  .input-fijo{
+    font-size: 2.3rem;
+    width: 55rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border-color: rgb(0, 234, 255);
+    background-color:#232526;
+    padding: 0.4rem;
+    color: #ffffff;
+  }
+
+
+
+  #input-recomendacion{
+    background-color: #232526;
+    border-radius: 0.8rem;
+    color: white;
+    font-size: 1.5rem; 
+  }
+  
+  .input-nombre{
+    font-size: 1.8rem;
+  }
+  .container-input{
+    margin-left: 0rem;
+    margin-top: 3rem;
+  }
+  #input-fijo{
+    font-size: 1.5rem;
+    width: 45rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border-color: rgb(0, 234, 255);
+    background-color:#232526;
+    padding: 0.4rem;
+    color: #ffffff;
+  }
+  
+  .contacto{
+    color: white;
+    border-color: rgb(0, 234, 255);
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 7rem;
+    width: 85.35%;
+    padding: 2rem;
+    padding-right: 2%;
+    margin-top: 4.7rem;
+    margin-bottom: 2rem;
+  }
+  
+  .novedades{
+    color: white;
+    border-color: yellow;
+    border-style:groove;
+    border-radius: 1.2rem;
+    margin-left: 7rem;
+    margin-top: 4rem;
     width: 85.35%;
     padding: 2rem;
   }
@@ -1302,7 +1537,74 @@ cursor: pointer;
         }
         }
 
-         @media (min-width: 400px) and (max-width:499px) {
+         @media (min-width: 465px) and (max-width:499px) {
+          .formulario-1 {
+            display: inline-flex;
+            gap: 1.5rem;
+          }
+          
+          .btn-contacto{
+          /* margin-left: 10%; */
+          }
+          #botonValidar {
+          padding: 0.2rem;
+          margin-left: 4rem;
+          font-size: 1.4rem;
+          font-family: var(--Fuenteprincipal);
+          background-color: black;
+          color: var(--ColorBlanco);
+          cursor: pointer;
+
+          }
+
+       
+
+          #Email {
+            font-size: 1.8rem;
+           width: 35rem;
+           margin-top: 3rem;
+           border-radius: 0.5rem;
+           border-color: rgb(0, 234, 255);
+           background-color:#232526;
+           padding: 0.4rem;
+           color: #ffffff;
+          }
+          
+          
+          #Usuario {
+           font-size: 1.8rem;
+           width:35rem;
+           margin-top: 7rem;
+           border-radius: 0.5rem;
+           border-color: rgb(0, 234, 255);
+           background-color:#232526;
+           padding: 0.4rem;
+           color: #ffffff;
+          }
+          
+          #Asunto{
+           font-size: 1.8rem;
+           width: 35rem;
+           margin-top: 7rem;
+           border-radius: 0.5rem;
+           border-color: rgb(0, 234, 255);
+           background-color:#232526;
+           padding: 0.4rem;
+           color: #ffffff;
+          }
+
+          #input-recomendacíon{
+            background-color: #232526;
+            border-radius: 0.8rem;
+            color: white;
+            width: 40rem;
+            height: 3rem;
+            margin-top: 8rem;
+            height: 25rem;
+          }
+        }
+
+        @media (min-width: 400px) and (max-width:468px) {
           .formulario-1 {
             display: inline-flex;
             gap: 1.5rem;
@@ -1328,8 +1630,8 @@ cursor: pointer;
 
 
           #Email {
-            font-size: 2.3rem;
-           width: 40rem;
+            font-size: 1.5rem;
+           width: 30rem;
            margin-top: 3rem;
            border-radius: 0.5rem;
            border-color: rgb(0, 234, 255);
@@ -1340,8 +1642,8 @@ cursor: pointer;
           
           
           #Usuario {
-           font-size: 2.3rem;
-           width: 40rem;
+           font-size: 1.5rem;
+           width:30rem;
            margin-top: 7rem;
            border-radius: 0.5rem;
            border-color: rgb(0, 234, 255);
@@ -1354,8 +1656,8 @@ cursor: pointer;
           
           
           #Asunto{
-           font-size: 2.3rem;
-           width: 40rem;
+           font-size: 1.5rem;
+           width: 30rem;
            margin-top: 7rem;
            border-radius: 0.5rem;
            border-color: rgb(0, 234, 255);
@@ -1375,10 +1677,10 @@ cursor: pointer;
           }
         }
 
-        @media (min-width: 0px) and (max-width:399px) {
+        @media (min-width: 0px) and (max-width:411px) {
           .formulario-1 {
             display: inline-flex;
-            gap: 1rem;
+            gap: 1.5rem;
           }
           
           .btn-contacto{
@@ -1401,8 +1703,8 @@ cursor: pointer;
 
 
           #Email {
-            font-size: 2.3rem;
-           width: 40rem;
+            font-size: 1.4rem;
+           width: 28rem;
            margin-top: 3rem;
            border-radius: 0.5rem;
            border-color: rgb(0, 234, 255);
@@ -1413,8 +1715,8 @@ cursor: pointer;
           
           
           #Usuario {
-           font-size: 2.3rem;
-           width: 40rem;
+           font-size: 1.4rem;
+           width:28rem;
            margin-top: 7rem;
            border-radius: 0.5rem;
            border-color: rgb(0, 234, 255);
@@ -1427,8 +1729,8 @@ cursor: pointer;
           
           
           #Asunto{
-           font-size: 2.3rem;
-           width: 40rem;
+           font-size: 1.4rem;
+           width: 28rem;
            margin-top: 7rem;
            border-radius: 0.5rem;
            border-color: rgb(0, 234, 255);
@@ -1447,8 +1749,7 @@ cursor: pointer;
             height: 25rem;
           }
         }
-
-
+      
 
 
           
@@ -1544,7 +1845,7 @@ cursor: pointer;
   border-style: solid;
   border-color: rgb(0, 234, 255);
   /* margin-left: 46%; */
-  margin-top: 2rem;
+  margin-top: 10rem;
   height: 5rem;
   width: 14rem;
   transition: .2s;
@@ -1659,7 +1960,7 @@ button:active {
 @media only screen and (min-width: 600px) and (max-width:647px) {
  
   #Email {
-    font-size: 2.3rem;
+    font-size: 2rem;
    width: 44rem;
    margin-top: 3rem;
    border-radius: 0.5rem;
@@ -1671,7 +1972,7 @@ button:active {
   
   
   #Usuario {
-   font-size: 2.3rem;
+   font-size: 2rem;
    width: 44rem;
    margin-top: 7rem;
    border-radius: 0.5rem;
@@ -1685,7 +1986,7 @@ button:active {
   
   
   #Asunto{
-   font-size: 2.3rem;
+   font-size: 2rem;
    width: 44rem;
    margin-top: 7rem;
    border-radius: 0.5rem;
@@ -1826,7 +2127,7 @@ button:active {
 @media only screen and (min-width: 551px) and (max-width:599px) {
  
   #Email {
-    font-size: 2.3rem;
+    font-size: 2rem;
    width: 40rem;
    margin-top: 3rem;
    border-radius: 0.5rem;
@@ -1838,7 +2139,7 @@ button:active {
   
   
   #Usuario {
-   font-size: 2.3rem;
+   font-size: 2rem;
    width: 40rem;
    margin-top: 7rem;
    border-radius: 0.5rem;
@@ -1852,7 +2153,7 @@ button:active {
   
   
   #Asunto{
-   font-size: 2.3rem;
+   font-size: 2rem;
    width: 40rem;
    margin-top: 7rem;
    border-radius: 0.5rem;
@@ -1905,12 +2206,11 @@ button:active {
     }
 
 
-
     @media only screen and (min-width: 500px) and (max-width:550px) {
  
       #Email {
-        font-size: 2.3rem;
-       width: 40rem;
+        font-size: 1.8rem;
+       width: 35rem;
        margin-top: 3rem;
        border-radius: 0.5rem;
        border-color: rgb(0, 234, 255);
@@ -1921,8 +2221,8 @@ button:active {
       
       
       #Usuario {
-       font-size: 2.3rem;
-       width: 40rem;
+       font-size: 1.8rem;
+       width: 35rem;
        margin-top: 7rem;
        border-radius: 0.5rem;
        border-color: rgb(0, 234, 255);
@@ -1935,8 +2235,8 @@ button:active {
       
       
       #Asunto{
-       font-size: 2.3rem;
-       width: 40rem;
+       font-size: 1.8rem;
+       width: 35rem;
        margin-top: 7rem;
        border-radius: 0.5rem;
        border-color: rgb(0, 234, 255);
@@ -1950,7 +2250,7 @@ button:active {
         border-radius: 0.8rem;
         color: white;
         font-size: 1.9rem;
-        width: 40rem;
+        width: 35rem;
         height: 3rem;
         margin-top: 8rem;
         height: 25rem;
@@ -1987,6 +2287,10 @@ button:active {
       }
         }
 
+
+
+
+    
 
 
 
