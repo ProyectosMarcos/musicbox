@@ -24,6 +24,8 @@ urlpatterns = [
     path("inicio/<nombre_usuario>/",views.inicio, name="inicio"),
     path("buscar/",views.buscar),
     path("iniciar/",views.iniciar),
+    path("crear_lista/",views.crear_lista),
+    path("incorporar_album/",views.incorporar_album),
     path('detalle_album/<album>/<nombre_usuario>/', views.detalle_album, name="detalle_album"),
     path("listas/<nombre_usuario>/",views.listas, name="listas"),
     path("detalle_lista/<lista_nombre>/<nombre_usuario>/",views.detalle_lista, name="detalle_lista"),

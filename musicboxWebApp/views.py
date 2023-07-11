@@ -3,6 +3,7 @@ from django.template import loader
 from django.template import Template,Context
 from django.template.loader import get_template
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
 from musicboxApp3.models import Album,Cancion,Lista,Usuario,Albums_x_Lista
 
 
@@ -21,11 +22,46 @@ def iniciar(request):
 		return login(request)
 
 
+@csrf_exempt
+def crear_lista(request):
+	datos = request.POST
+
+	usuario = Usuario.objects.get(usuario=datos["nombre_usuario"])
+	
+
+	lista_nueva = Lista()
+	lista_nueva.usuario = usuario
+	lista_nueva.nombre = datos["nombre_nueva_lista"]
+	
+	lista_nueva.descripcion = datos["descripcion_nueva_lista"]
+	lista_nueva.archivo_imagen = "nose"
+
+	lista_nueva.save()
+	return listas(request,usuario.usuario)
+
+
+@csrf_exempt
+def incorporar_album(request):
+	datos = request.POST
+
+	lista = Lista.objects.get(nombre=datos["lista_a_incorporar"])
+	album = Album.objects.get(nombre=datos["nombre_album"])
+
+	nueva_albums_x_Lista = Albums_x_Lista()
+	nueva_albums_x_Lista.lista = lista
+	nueva_albums_x_Lista.album = album
+	
+
+	nueva_albums_x_Lista.save()
+	return detalle_album(request,album.nombre,datos["nombre_usuario"])	
+
+
 # DEFINITIVO
 def login(request):
 	return render(request,"musicboxWebApp/LOG_IN.html")
 
 
+# DEFINITIVO
 def inicio(request, nombre_usuario):
     novedades = ["Linkin Park - Hybrid Theory","Linkin Park - Meteora","Linkin Park - Minutes to Midnight","Limp Bizkit - Chocolate Starfish And The Hot Dog Flavored Water"]
     usuario = Usuario.objects.get(usuario=nombre_usuario)
@@ -33,12 +69,14 @@ def inicio(request, nombre_usuario):
 	    "usuario": usuario,
 	    "novedades":novedades
     }
-    print("INICIO.HTML --> " + usuario.usuario)
+    
     return render(request,"musicboxWebApp/INICIO.html",dto_inicio)
 
 
+# DEFINITIVO
 def buscar(request):
 	# REVISAR: SI SACANDO EL IF FUNCIONA NORMAL
+
 	if request.GET["nombre_album"]:
 		nombre_album=request.GET["nombre_album"]
 		nombre_usuario=request.GET["nombre_usuario"]
@@ -52,19 +90,20 @@ def buscar(request):
 			"nombre": album.nombre,
 			"archivo_imagen": album.archivo_imagen
 		}
-		print("RESULTADO_BUSQUEDA.HTML --> " + usuario.usuario)
+		
 		return render(request,"RESULTADO_BUSQUEDA.html",dto_resultado_busqueda)
 	else:
 		mensaje="No has introducido ningún dato"
 		return HttpResponse(mensaje)
 	
 
+# DEFINITIVO
 def detalle_album(request,album,nombre_usuario): #se pasa el nombre del album
 	albumObjeto = Album.objects.get(nombre=album)
 	canciones = Cancion.objects.filter(album=albumObjeto)
 	
 	usuario = Usuario.objects.get(usuario=nombre_usuario)
-	print("HARDCODEADO")
+	
 
 	dto_detalle_album = {
 		"usuario": usuario,
@@ -74,11 +113,12 @@ def detalle_album(request,album,nombre_usuario): #se pasa el nombre del album
 		"referencia": albumObjeto.link_referencia,
 		"canciones": canciones
 	}
-	print("DETALLE_ALBUM.HTML --> " + usuario.usuario)
+	
 	return render(request,"DETALLE_ALBUM.html",dto_detalle_album)
 
 
-def listas(request,nombre_usuario): # id_usuario string ?
+# DEFINITIVO
+def listas(request,nombre_usuario):
 	usuario = Usuario.objects.get(usuario=nombre_usuario)
 	listas = Lista.objects.filter(usuario=usuario)
 
@@ -86,10 +126,11 @@ def listas(request,nombre_usuario): # id_usuario string ?
 		"usuario": usuario,
 		"listas": listas
 	}
-	print("LISTAS.HTML --> " + usuario.usuario)
+	
 	return render(request,"LISTAS.html",dto_listas)
 
 
+# DEFINITIVO
 def detalle_lista(request,lista_nombre,nombre_usuario):
 	lista_nombre_aux = lista_nombre.split("+")
 	lista_nombre_limpia = " ".join(lista_nombre_aux)
@@ -112,5 +153,5 @@ def detalle_lista(request,lista_nombre,nombre_usuario):
 		"descripcion":lista.descripcion,
 		"albums": albums
 	}
-	print("DETALLE_LISTA.HTML --> " + usuario.usuario)
+	
 	return render(request,"DETALLE_LISTA.html",dto_detalle_lista)

@@ -86,22 +86,29 @@
             <dialog id="modalListas">
                 <div class="container-2">
                     <!-- <h2 id="title">Editar Listenlist</h2> -->
-                    <form>
+                    <form method="POST" action="/incorporar_album/">
+                        {% csrf_token %}
                         <h2 id="sub-title-listas">A qué lista querés agregar este album?</h2>
-                        <input id="input-1" type="text" class="input_lista_agregar">
+                        <input id="input-1" type="text" class="input_lista_agregar" name="lista_a_incorporar">
 
-
+                        <input type="hidden" name="nombre_usuario" value="{{usuario.usuario}}">
+                        <input type="hidden" name="nombre_album" value="{{nombreAlbum}}">
 
                         <div class="guardado-albums">
-                            <button id="guardar-detalle-album">Guardar</button>
+                            <button type="submit" id="guardar-detalle-album">Guardar</button>
                         </div>
                         <div class="cerrar-albums">
-                            <button id="cerrar-detalle-album">Cerrar</button>
+                            <button onclick="cerrarModal(event)" id="cerrar-detalle-album">Cerrar</button>
                         </div>                        
                     </form>
                 </div>
             </dialog>
         </div>
+
+
+
+
+
     </main>
     <footer class="footer"><h3 class="Footer-h3">Todos los derechos reservados</h3></footer>
     <!-- <script src="/Proyecto-Musicbox/form-index.js"></script> -->
