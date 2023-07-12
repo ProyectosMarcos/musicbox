@@ -1051,12 +1051,45 @@ font-family: var(--Fuenteprincipal);
     }
     
     .portada-album{
-      width: 45rem;
-      height: 35rem;
+      width: 19rem;
+      height: 5rem;
       margin-left: 5rem;
       margin-top: 5rem;
     }
-    
+    .contenedor-main {
+      display: inline-flex;
+      gap: 10rem;
+        }
+  
+        .contenedor-album {
+         margin-left: 15rem;
+        }
+        #imagen-wall {
+          width: 35rem;
+          height: 25rem;
+          margin-left: 4rem;
+          margin-top: 4rem;
+        }
+        #title-album {
+          font-size: 4rem;
+          margin-left: 4rem;
+          color: var(--ColorBlanco);
+        }
+       #sub-title-album {
+          font-size: 2rem;
+          color: var(--ColorBlanco);
+          margin-left: 4rem;
+       }
+      #detalles {
+          color: var(--ColorBlanco);
+          font-size: 3rem;
+          margin-top: 12rem;
+      }
+      #sub-detalles {
+          color: var(--ColorBlanco);
+          font-size: 2.5rem;
+          margin-top: 1rem;
+      }
     .titulo_album{
       color:white;
       font-size: 5rem;
@@ -3100,4 +3133,11 @@ font-family: var(--Fuenteprincipal);
     } 
   
   
-  
+  .imagen {
+    width: 20rem;
+    height: 15rem;
+  }
+  .portada-album {
+    width:20rem;
+    height:15rem;
+  }

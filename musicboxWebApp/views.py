@@ -5,6 +5,9 @@ from django.template.loader import get_template
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from musicboxApp3.models import Album,Cancion,Lista,Usuario,Albums_x_Lista
+from PIL import Image
+from django.core.files.storage import default_storage
+from django.core.files.base import ContentFile
 
 
 # DEFINITIVO

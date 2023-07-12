@@ -54,12 +54,11 @@
     </nav>
     </nav>
     <main class="main">
-        <p class="titulo_album">{{nombreAlbum}}</p>
-        <p class="banda_album">{{nombreArtista}}</p>
-        <img src="{% static archivo_imagen %}" alt=""class="portada-album" >
-        <div class="datos-album">
+        <h1 id="title-album">{{nombreAlbum}}<h1/>
+        <h2 id="sub-tile-album">{{nombreArtista}}<h2/>
+        <img id="imagen-wall" src="{% static archivo_imagen %}" alt="" >
+        <div class="contenedor-detalles">
             <p class="caracteristica">Canciones:</p>
-
             <ul class="listado-canciones">
                 {% for cancion in canciones %}
                 <li v-for="cancion in canciones">
